@@ -7,6 +7,11 @@ import CtaRed from '@/components/CtaRed'
 import GlimpseSection from '@/components/GlimpseSection'
 import ReadyToExplore from '@/components/ReadyToExplore'
 import AboutSection from '@/components/AboutSection'
+import LimitedSale from '@/components/LimitedSale'
+import ProductSummary from '@/components/ProductSummary'
+import TestimonialsNew from '@/components/TestimonialsNew'
+import FinalCta from '@/components/FinalCta'
+import ContactSection from '@/components/ContactSection'
 
 export default function Home() {
   return (
@@ -20,6 +25,11 @@ export default function Home() {
       <GlimpseSection />
       <ReadyToExplore />
       <AboutSection />
+      <LimitedSale />
+      <ProductSummary />
+      <TestimonialsNew />
+      <FinalCta />
+      <ContactSection />
     </main>
   )
 }
