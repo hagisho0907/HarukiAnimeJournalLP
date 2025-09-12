@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 export default function TroublesSection() {
   const troubles = [
     "It is tough to gather reliable info on anime shops in Tokyo",
-    "Not sure if the info you found is really accurate""",
+    "Not sure if the info you found is really accurate",
     "You do not want to mess up your long awaited Japan trip",
     "Tours and guides are pricey and do not let you go where you want",
     "Want to buy anime figures and goods at the best price",
