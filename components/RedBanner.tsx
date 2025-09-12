@@ -1,11 +1,11 @@
 export default function RedBanner() {
   return (
-    <div className="bg-brand-red text-white py-4 px-4 text-center">
-      <p className="text-lg">
+    <div className="bg-brand-red text-white py-6 md:py-4 px-4 text-center">
+      <p className="text-base md:text-lg leading-relaxed mb-2 md:mb-0">
         Explore Japan&apos;s incredible anime meccas with The Ultimate Tokyo Anime guide.
       </p>
-      <p className="text-lg">
-        <span className="text-brand-yellow font-bold">100+ Hidden Gems</span> from <span className="text-brand-yellow font-bold">300+ Japanese Anime Otaku</span>
+      <p className="text-base md:text-lg leading-relaxed">
+        <span className="text-cyan-300 font-bold">100+</span> Hidden Gems from <span className="text-cyan-300 font-bold">300+</span> Japanese Anime Otaku.
       </p>
     </div>
   )

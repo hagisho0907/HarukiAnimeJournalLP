@@ -12,14 +12,14 @@ export default function TroublesSection() {
   ]
 
   return (
-    <section className="bg-brand-red py-16 lg:py-24 relative overflow-hidden">
+    <section className="bg-brand-red py-12 md:py-16 lg:py-24 relative overflow-hidden">
       <div className="container mx-auto px-4 max-w-6xl">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-5xl lg:text-6xl font-bold text-white text-center mb-12"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white text-center mb-8 md:mb-12"
         >
           Troubles You Face
         </motion.h2>
@@ -32,7 +32,7 @@ export default function TroublesSection() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="text-white text-xl lg:text-2xl text-center mb-6"
+              className="text-white text-lg sm:text-xl lg:text-2xl text-center mb-4 md:mb-6 leading-relaxed px-2"
             >
               &ldquo;{trouble}&rdquo;
             </motion.p>
@@ -45,11 +45,11 @@ export default function TroublesSection() {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="mt-12 flex justify-center"
+          className="mt-8 md:mt-12 flex justify-center"
         >
           <div className="relative">
-            <div className="bg-gray-300 rounded-full w-64 h-64 lg:w-80 lg:h-80 flex items-center justify-center">
-              <p className="text-gray-600 text-center">Stressed Person Image</p>
+            <div className="bg-gray-300 rounded-lg w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 flex items-center justify-center">
+              <p className="text-gray-600 text-center p-4">Stressed Person Image</p>
             </div>
           </div>
         </motion.div>

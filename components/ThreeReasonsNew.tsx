@@ -8,7 +8,7 @@ export default function ThreeReasonsNew() {
       {/* Wave transition from red to cream */}
       <WaveDivider color="#ED1C24" />
       
-      <section className="bg-brand-cream py-16 lg:py-24">
+      <section className="bg-brand-cream py-12 md:py-16 lg:py-24">
         <div className="container mx-auto px-4 max-w-6xl text-center">
           {/* You'll be alright! */}
           <motion.p
@@ -16,7 +16,7 @@ export default function ThreeReasonsNew() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-xl text-gray-700 mb-8"
+            className="text-lg md:text-xl text-gray-700 mb-6 md:mb-8"
           >
             You&apos;ll be <span className="text-brand-red font-bold">alright!</span>
           </motion.p>
@@ -27,11 +27,11 @@ export default function ThreeReasonsNew() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="mb-4"
+            className="mb-6 md:mb-4"
           >
-            <span className="text-6xl lg:text-7xl font-bold text-brand-red">3 Reasons</span>
+            <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-brand-red leading-tight">3 Reasons</span>
             <br />
-            <span className="text-3xl lg:text-4xl font-bold text-gray-800">Why This Guidebook Stands Out</span>
+            <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 leading-tight">Why This Guidebook Stands Out</span>
           </motion.h2>
 
           {/* Reason 1 */}
@@ -52,27 +52,35 @@ export default function ThreeReasonsNew() {
               </div>
             </div>
 
-            <h3 className="text-4xl lg:text-5xl font-bold mb-8">
-              <span className="text-gray-700">100+ Pieces of</span>{' '}
-              <span className="text-brand-red">100% Reliable</span>{' '}
+            <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8 leading-tight px-2">
+              <span className="text-gray-700">100+ Pieces of</span><br className="sm:hidden" />{' '}
+              <span className="text-brand-red">100% Reliable</span><br className="sm:hidden" />{' '}
               <span className="text-gray-700">Information</span>
             </h3>
 
             {/* Key Features Box and Phone Mockups for Reason 1 */}
-            <div className="flex flex-col lg:flex-row justify-center items-center mt-12 gap-12">
-              {/* Key Features Box */}
-              <div className="lg:w-1/2">
-                <div className="bg-white rounded-full px-8 py-3 inline-block mb-6 border border-gray-400">
-                  <span className="text-gray-700 font-medium">Key Features</span>
+            <div className="flex flex-col lg:flex-row justify-center items-center mt-8 md:mt-12 gap-8 lg:gap-12">
+              {/* Key Features Box - Mobile First */}
+              <div className="lg:w-1/2 order-2 lg:order-1">
+                <div className="bg-white rounded-full px-6 md:px-8 py-3 inline-block mb-4 md:mb-6 border border-gray-400">
+                  <span className="text-gray-700 font-medium text-sm md:text-base">Key Features</span>
                 </div>
-                <p className="text-gray-700 text-lg leading-relaxed text-left max-w-md">
+                <p className="text-gray-700 text-base md:text-lg leading-relaxed text-center lg:text-left max-w-md mx-auto lg:mx-0">
                   Info online or even from ChatGPT can be outdated or wrong. This guide is written by an anime native who has lived in Tokyo for over 25 years and carefully selects only the latest and most accurate details.
                 </p>
               </div>
               
-              {/* Phone Mockups */}
-              <div className="lg:w-1/2 relative">
-                <div className="flex space-x-4">
+              {/* Phone Mockups - Show single phone on mobile */}
+              <div className="lg:w-1/2 relative order-1 lg:order-2">
+                {/* Mobile: Single phone */}
+                <div className="lg:hidden flex justify-center">
+                  <div className="bg-gray-300 rounded-lg w-40 h-80 shadow-xl flex items-center justify-center">
+                    <p className="text-gray-600 text-center p-2 text-sm">Ultimate Tokyo Anime Guide</p>
+                  </div>
+                </div>
+                
+                {/* Desktop: Two phones */}
+                <div className="hidden lg:flex space-x-4">
                   <div className="bg-gray-300 rounded-lg w-48 h-96 shadow-xl flex items-center justify-center transform -rotate-3">
                     <p className="text-gray-600 text-center p-4">Ultimate Tokyo Anime Guide</p>
                   </div>
