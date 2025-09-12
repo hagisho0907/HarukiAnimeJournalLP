@@ -10,6 +10,8 @@ import AboutSection from '@/components/AboutSection'
 import LimitedSale from '@/components/LimitedSale'
 import ProductSummary from '@/components/ProductSummary'
 import TestimonialsNew from '@/components/TestimonialsNew'
+import FaqSection from '@/components/FaqSection'
+import MessageSection from '@/components/MessageSection'
 import FinalCta from '@/components/FinalCta'
 import ContactSection from '@/components/ContactSection'
 
@@ -28,6 +30,8 @@ export default function Home() {
       <LimitedSale />
       <ProductSummary />
       <TestimonialsNew />
+      <FaqSection />
+      <MessageSection />
       <FinalCta />
       <ContactSection />
     </main>
