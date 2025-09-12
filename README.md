@@ -49,3 +49,8 @@ Vercel向け静的LP技術構成
     "buildCommand": "npm run build",
     "outputDirectory": "out"
   }
+
+# フォント
+HarukiAnimeJournal:league spartan
+THE ULTIMATE TOKYO ANIME GUIDE:Bebas Neue
+その他は全て:TT Interphases

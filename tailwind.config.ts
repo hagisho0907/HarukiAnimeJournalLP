@@ -17,7 +17,11 @@ const config: Config = {
         }
       },
       fontFamily: {
-        sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+        'league-spartan': ['var(--font-league-spartan)', 'League Spartan', 'sans-serif'],
+        'bebas-neue': ['Bebas Neue', 'cursive'],
+        'inter': ['var(--font-inter)', 'Inter', 'sans-serif'],
+        'tt-interphases': ['TT Interphases', 'Inter', 'var(--font-inter)', 'sans-serif'],
+        sans: ['var(--font-inter)', 'Inter', 'TT Interphases', 'system-ui', 'sans-serif'],
       },
       fontSize: {
         'hero-title': ['48px', { lineHeight: '1.2' }],

@@ -29,7 +29,7 @@ export default function ThreeReasonsNew() {
             viewport={{ once: true }}
             className="mb-6 md:mb-4"
           >
-            <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-brand-red leading-tight">3 Reasons</span>
+            <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-brand-red leading-tight font-bebas-neue">3 REASONS</span>
             <br />
             <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 leading-tight">Why This Guidebook Stands Out</span>
           </motion.h2>
