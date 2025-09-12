@@ -41,6 +41,14 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body className={inter.className}>{children}</body>
     </html>

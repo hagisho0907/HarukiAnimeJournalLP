@@ -11,10 +11,10 @@ export default function LimitedSale() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-5xl lg:text-7xl italic text-white mb-8 font-league-spartan">
+          <h2 className="text-5xl lg:text-7xl italic text-white mb-8" style={{ fontFamily: 'Kalam, cursive' }}>
             Limited
           </h2>
-          <h2 className="text-6xl lg:text-8xl font-bold text-white mb-8 tracking-wider font-bebas-neue">
+          <h2 className="text-6xl lg:text-8xl font-bold text-white mb-8 tracking-wider" style={{ fontFamily: 'Orbitron, monospace' }}>
             SALE
           </h2>
           <h3 className="text-3xl lg:text-4xl font-bold mb-8">
