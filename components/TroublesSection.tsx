@@ -1,0 +1,59 @@
+'use client'
+import { motion } from 'framer-motion'
+
+export default function TroublesSection() {
+  const troubles = [
+    "It is tough to gather reliable info on anime shops in Tokyo",
+    "Not sure if the info you found is really accurate""",
+    "You do not want to mess up your long awaited Japan trip",
+    "Tours and guides are pricey and do not let you go where you want",
+    "Want to buy anime figures and goods at the best price",
+    "Want to discover hidden gems only Japanese otaku know"
+  ]
+
+  return (
+    <section className="bg-brand-red py-16 lg:py-24 relative overflow-hidden">
+      <div className="container mx-auto px-4 max-w-6xl">
+        <motion.h2
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-5xl lg:text-6xl font-bold text-white text-center mb-12"
+        >
+          Troubles You Face
+        </motion.h2>
+
+        <div className="max-w-4xl mx-auto">
+          {troubles.map((trouble, index) => (
+            <motion.p
+              key={index}
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className="text-white text-xl lg:text-2xl text-center mb-6"
+            >
+              &ldquo;{trouble}&rdquo;
+            </motion.p>
+          ))}
+        </div>
+
+        {/* Stressed Person Image */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="mt-12 flex justify-center"
+        >
+          <div className="relative">
+            <div className="bg-gray-300 rounded-full w-64 h-64 lg:w-80 lg:h-80 flex items-center justify-center">
+              <p className="text-gray-600 text-center">Stressed Person Image</p>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  )
+}

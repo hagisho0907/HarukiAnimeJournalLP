@@ -1,17 +1,17 @@
-import Hero from '@/components/Hero'
-import Problem from '@/components/Problem'
-import Reasons from '@/components/Reasons'
-import Testimonial from '@/components/Testimonial'
-import CTA from '@/components/CTA'
+import HeroNew from '@/components/HeroNew'
+import RedBanner from '@/components/RedBanner'
+import PlanningSection from '@/components/PlanningSection'
+import TroublesSection from '@/components/TroublesSection'
+import ThreeReasonsNew from '@/components/ThreeReasonsNew'
 
 export default function Home() {
   return (
     <main>
-      <Hero />
-      <Problem />
-      <Reasons />
-      <Testimonial />
-      <CTA />
+      <HeroNew />
+      <RedBanner />
+      <PlanningSection />
+      <TroublesSection />
+      <ThreeReasonsNew />
     </main>
   )
 }
