@@ -13,7 +13,7 @@ export default function CTA() {
           className="text-center max-w-3xl mx-auto"
         >
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-            Ready to Explore Japan's Hidden Anime Treasures?
+            Ready to Explore Japan&apos;s Hidden Anime Treasures?
           </h2>
           
           <div className="mb-8">

@@ -28,7 +28,7 @@ export default function Testimonial() {
           </div>
 
           <blockquote className="text-lg md:text-xl text-gray-700 mb-6 italic">
-            "This guide completely transformed my Tokyo trip! I discovered amazing shops I never would have found on my own. The insider tips saved me hours of wandering and helped me find exclusive merchandise. Worth every penny!"
+            &ldquo;This guide completely transformed my Tokyo trip! I discovered amazing shops I never would have found on my own. The insider tips saved me hours of wandering and helped me find exclusive merchandise. Worth every penny!&rdquo;
           </blockquote>
 
           <div className="text-gray-600">
