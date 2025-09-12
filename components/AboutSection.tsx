@@ -47,8 +47,8 @@ export default function AboutSection() {
           >
             {/* Logo */}
             <div className="mb-8">
-              <h3 className="text-5xl text-gray-800 mb-2 font-waterlily" style={{ fontWeight: 'normal' }}>Haruki</h3>
-              <h3 className="text-4xl font-bold text-brand-red font-waterlily">ANIME JOURNAL</h3>
+              <h3 className="text-5xl text-gray-800 mb-2" style={{ fontFamily: 'Kalam, cursive', fontWeight: 'normal' }}>Haruki</h3>
+              <h3 className="text-4xl font-bold text-brand-red" style={{ fontFamily: 'Kalam, cursive' }}>ANIME JOURNAL</h3>
             </div>
             
             {/* Profile Image */}
