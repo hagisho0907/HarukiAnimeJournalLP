@@ -98,6 +98,70 @@ export default function ThreeReasonsNew() {
                 <span className="text-gray-700">Secret Spots From</span>{' '}
                 <span className="text-brand-red">Real Otaku</span>
               </h3>
+              
+              {/* Reason 2 Content */}
+              <div className="flex flex-col lg:flex-row justify-center items-center mt-12 gap-12">
+                {/* Left Image */}
+                <div className="lg:w-1/2">
+                  <div className="bg-gray-300 rounded-lg w-full h-64 shadow-xl flex items-center justify-center">
+                    <p className="text-gray-600 text-center p-4">Japanese Otaku Friends Photo</p>
+                  </div>
+                </div>
+                
+                {/* Right Key Features */}
+                <div className="lg:w-1/2">
+                  <div className="bg-white rounded-full px-8 py-3 inline-block mb-6 border border-gray-400">
+                    <span className="text-gray-700 font-medium">Key Features</span>
+                  </div>
+                  <p className="text-gray-700 text-lg leading-relaxed text-left max-w-md">
+                    After interviewing over 300 Japanese anime fans for more than a year, this book reveals hidden info you will never find online. It feels just like having a Japanese otaku friend guide you around Tokyo.
+                  </p>
+                </div>
+              </div>
+              
+              {/* Reason 3 */}
+              <div className="mt-24">
+                <div className="flex justify-center mb-8">
+                  <div className="bg-brand-red text-white rounded-full w-24 h-24 flex items-center justify-center">
+                    <div className="text-center">
+                      <div className="text-xs font-bold">REASON</div>
+                      <div className="text-3xl font-bold">3</div>
+                    </div>
+                  </div>
+                </div>
+
+                <h3 className="text-4xl lg:text-5xl font-bold mb-8">
+                  <span className="text-brand-red">Save</span>{' '}
+                  <span className="text-gray-700">Money, Go</span>{' '}
+                  <span className="text-brand-red">Deeper</span>{' '}
+                  <span className="text-gray-700">Than a Tour</span>
+                </h3>
+                
+                {/* Reason 3 Content */}
+                <div className="flex flex-col lg:flex-row justify-center items-center mt-12 gap-12">
+                  {/* Left Key Features */}
+                  <div className="lg:w-1/2">
+                    <div className="bg-white rounded-full px-8 py-3 inline-block mb-6 border border-gray-400">
+                      <span className="text-gray-700 font-medium">Key Features</span>
+                    </div>
+                    <p className="text-gray-700 text-lg leading-relaxed text-left max-w-md">
+                      After interviewing over 300 Japanese anime fans for more than a year, this book reveals hidden info you will never find online. It feels just like having a Japanese otaku friend guide you around Tokyo.
+                    </p>
+                  </div>
+                  
+                  {/* Right Phone Mockups */}
+                  <div className="lg:w-1/2 relative">
+                    <div className="flex space-x-4">
+                      <div className="bg-gray-300 rounded-lg w-48 h-96 shadow-xl flex items-center justify-center transform -rotate-3">
+                        <p className="text-gray-600 text-center p-4">Akihabara Model Course</p>
+                      </div>
+                      <div className="bg-gray-300 rounded-lg w-48 h-96 shadow-xl flex items-center justify-center transform rotate-3">
+                        <p className="text-gray-600 text-center p-4">Recommended Lunch Options</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
