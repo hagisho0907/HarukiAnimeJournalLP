@@ -12,7 +12,7 @@ export default function HeroNew() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-brand-red text-3xl sm:text-4xl md:text-hero-title font-normal mb-4 px-2 font-league-spartan"
+            className="text-brand-red text-4xl sm:text-5xl md:text-6xl lg:text-hero-title font-normal mb-4 px-2 font-league-spartan"
           >
             Haruki Anime Journal
           </motion.h1>
@@ -21,9 +21,10 @@ export default function HeroNew() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-brand-gold text-3xl sm:text-4xl md:text-6xl lg:text-hero-subtitle font-extrabold uppercase leading-tight px-2 font-bebas-neue"
+            className="text-brand-gold text-4xl sm:text-5xl md:text-6xl lg:text-hero-subtitle font-extrabold uppercase leading-tight px-2 font-bebas-neue"
           >
-            THE ULTIMATE TOKYO ANIME GUIDE
+            <span className="block sm:hidden">THE ULTIMATE<br />TOKYO ANIME GUIDE</span>
+            <span className="hidden sm:block">THE ULTIMATE TOKYO ANIME GUIDE</span>
           </motion.h2>
           
           <motion.p

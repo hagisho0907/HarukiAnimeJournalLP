@@ -47,8 +47,8 @@ export default function AboutSection() {
           >
             {/* Logo */}
             <div className="mb-8">
-              <h3 className="text-4xl font-bold text-gray-800 mb-2">Haruki</h3>
-              <h3 className="text-4xl font-bold text-brand-red">ANIME JOURNAL</h3>
+              <h3 className="text-4xl font-bold text-gray-800 mb-2 font-league-spartan">Haruki</h3>
+              <h3 className="text-4xl font-bold text-brand-red font-league-spartan">ANIME JOURNAL</h3>
             </div>
             
             {/* Profile Image */}
@@ -68,8 +68,8 @@ export default function AboutSection() {
               About Me
             </h2>
             <div className="border-t-2 border-gray-300 pt-6 mb-8">
-              <p className="text-gray-700 text-lg leading-relaxed">
-                Haruki Anime Journal, with 200K followers and over 200M total views, shares anime culture worldwide through engaging interviews. Our mission is to be a bridge between Japan and anime fans around the world, connecting communities and delivering authentic insights into the heart of Japanese anime.
+              <p className="text-gray-700 text-lg leading-relaxed font-tt-interphases">
+                <span className="font-league-spartan font-semibold">Haruki Anime Journal</span>, with 200K followers and over 200M total views, shares anime culture worldwide through engaging interviews. Our mission is to be a bridge between Japan and anime fans around the world, connecting communities and delivering authentic insights into the heart of Japanese anime.
               </p>
             </div>
 
