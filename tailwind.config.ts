@@ -19,7 +19,7 @@ const config: Config = {
       fontFamily: {
         'league-spartan': ['var(--font-league-spartan)', 'League Spartan', 'sans-serif'],
         'bebas-neue': ['Bebas Neue', 'cursive'],
-        'waterlily': ['Dancing Script', 'cursive'],
+        'waterlily': ['Great Vibes', 'cursive'],
         'inter': ['var(--font-inter)', 'Inter', 'sans-serif'],
         'tt-interphases': ['TT Interphases', 'Inter', 'var(--font-inter)', 'sans-serif'],
         sans: ['var(--font-inter)', 'Inter', 'TT Interphases', 'system-ui', 'sans-serif'],
