@@ -71,24 +71,9 @@ export default function ThreeReasonsNew() {
                 </p>
               </div>
               
-              {/* Phone Mockups - Show single phone on mobile */}
-              <div className="lg:w-1/2 relative order-1 lg:order-2">
-                {/* Mobile: Single phone */}
-                <div className="lg:hidden flex justify-center">
-                  <div className="bg-gray-300 rounded-lg w-40 h-80 shadow-xl flex items-center justify-center">
-                    <p className="text-gray-600 text-center p-2 text-sm">Ultimate Tokyo Anime Guide</p>
-                  </div>
-                </div>
-                
-                {/* Desktop: Two phones */}
-                <div className="hidden lg:flex space-x-4">
-                  <div className="bg-gray-300 rounded-lg w-48 h-96 shadow-xl flex items-center justify-center transform -rotate-3">
-                    <p className="text-gray-600 text-center p-4">Ultimate Tokyo Anime Guide</p>
-                  </div>
-                  <div className="bg-gray-300 rounded-lg w-48 h-96 shadow-xl flex items-center justify-center transform rotate-3">
-                    <p className="text-gray-600 text-center p-4">Tokyo Map with Locations</p>
-                  </div>
-                </div>
+              {/* Small Card Carousel */}
+              <div className="lg:w-1/2 relative order-1 lg:order-2 flex justify-center items-center">
+                <SmallCardCarousel />
               </div>
             </div>
             
