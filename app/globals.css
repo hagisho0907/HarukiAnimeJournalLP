@@ -19,6 +19,7 @@
     height: 100vh;
     position: relative;
     touch-action: pan-y pinch-zoom;
+    background-color: #f5f1eb;
   }
   
   * {
@@ -37,6 +38,19 @@
   .carousel-container {
     contain: layout style;
     isolation: isolate;
+  }
+  
+  /* Prevent white gaps between sections during scroll */
+  section {
+    margin: 0 !important;
+    display: block;
+    position: relative;
+  }
+  
+  /* Ensure smooth section transitions */
+  main {
+    background-color: #f5f1eb;
+    min-height: 100vh;
   }
   
   /* Custom font fallbacks */
