@@ -44,9 +44,9 @@ const CardCarousel: React.FC = () => {
   };
 
   return (
-    <div className="carousel-container relative w-full max-w-[400px] mx-auto h-[600px] flex items-center justify-center" style={{touchAction: 'pan-y'}}>
+    <div className="carousel-container relative w-full max-w-[350px] mx-auto h-[500px] flex items-center justify-center" style={{touchAction: 'pan-y'}}>
       {/* Background cards stack */}
-      <div className="relative w-72 h-[520px] overflow-hidden">
+      <div className="relative w-64 h-[450px]">
         {mainCards.map((card, index) => {
           const offset = (index - currentIndex + mainCards.length) % mainCards.length;
           const isActive = offset === 0;
