@@ -1,12 +1,13 @@
 'use client'
 import { motion } from 'framer-motion'
+import CardCarousel from './CardCarousel'
 
 export default function ProductSummary() {
   return (
     <section className="bg-brand-red py-16 lg:py-24">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
-          {/* Left - Phone Mockups */}
+          {/* Left - Card Carousel */}
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -14,28 +15,7 @@ export default function ProductSummary() {
             viewport={{ once: true }}
             className="flex justify-center items-center relative"
           >
-            <div className="relative w-[600px] h-[400px]">
-              {/* Left Phone */}
-              <div className="absolute left-0 top-10 transform -rotate-6 z-10">
-                <div className="bg-gray-300 rounded-lg w-[180px] h-[360px] shadow-2xl flex items-center justify-center">
-                  <p className="text-gray-600 text-center p-4">Tokyo Train Map</p>
-                </div>
-              </div>
-              
-              {/* Center Phone */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 z-20">
-                <div className="bg-gray-300 rounded-lg w-[200px] h-[400px] shadow-2xl flex items-center justify-center">
-                  <p className="text-gray-600 text-center p-4">Ultimate Tokyo Anime Guide</p>
-                </div>
-              </div>
-              
-              {/* Right Phone */}
-              <div className="absolute right-0 top-10 transform rotate-6 z-10">
-                <div className="bg-gray-300 rounded-lg w-[180px] h-[360px] shadow-2xl flex items-center justify-center">
-                  <p className="text-gray-600 text-center p-4">Shibuya & Harajuku Guide</p>
-                </div>
-              </div>
-            </div>
+            <CardCarousel />
           </motion.div>
 
           {/* Right - Product Info */}
