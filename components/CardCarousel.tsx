@@ -44,9 +44,9 @@ const CardCarousel: React.FC = () => {
   };
 
   return (
-    <div className="carousel-container relative w-full max-w-[350px] mx-auto h-[500px] flex items-center justify-center" style={{touchAction: 'pan-y'}}>
+    <div className="carousel-container relative w-full max-w-[300px] sm:max-w-[350px] mx-auto h-[500px] flex items-center justify-center" style={{touchAction: 'pan-y'}}>
       {/* Background cards stack */}
-      <div className="relative w-64 h-[450px]">
+      <div className="relative w-56 sm:w-64 h-[400px] sm:h-[450px]">
         {mainCards.map((card, index) => {
           const offset = (index - currentIndex + mainCards.length) % mainCards.length;
           const isActive = offset === 0;
@@ -85,22 +85,22 @@ const CardCarousel: React.FC = () => {
         })}
       </div>
 
-      {/* Navigation buttons - positioned outside container on desktop */}
+      {/* Navigation buttons - positioned outside container */}
       <button
         onClick={handlePrev}
-        className="absolute -left-12 lg:-left-16 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-3 shadow-lg transition-all duration-200 z-50 hidden sm:block"
+        className="absolute -left-8 sm:-left-12 lg:-left-16 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-2 sm:p-3 shadow-lg transition-all duration-200 z-50"
         aria-label="Previous card"
       >
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
         </svg>
       </button>
       <button
         onClick={handleNext}
-        className="absolute -right-12 lg:-right-16 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-3 shadow-lg transition-all duration-200 z-50 hidden sm:block"
+        className="absolute -right-8 sm:-right-12 lg:-right-16 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-2 sm:p-3 shadow-lg transition-all duration-200 z-50"
         aria-label="Next card"
       >
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>
       </button>
