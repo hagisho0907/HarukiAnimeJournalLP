@@ -9,6 +9,8 @@
     width: 100vw;
     position: fixed;
     height: 100%;
+    background-color: #f5f1eb;
+    overscroll-behavior: none;
   }
   
   body {
@@ -20,6 +22,8 @@
     position: relative;
     touch-action: pan-y pinch-zoom;
     background-color: #f5f1eb;
+    overscroll-behavior-y: none;
+    -webkit-overflow-scrolling: touch;
   }
   
   * {
