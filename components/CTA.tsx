@@ -1,5 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
+import { trackEvent } from '../utils/trackEvent'
 
 export default function CTA() {
   return (
@@ -32,6 +33,7 @@ export default function CTA() {
             href="#"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={() => trackEvent('InitiateCheckout', { value: 29, currency: 'USD' })}
             className="inline-block bg-brand-red text-white font-bold py-4 px-10 rounded-full text-xl hover:bg-red-700 transition-all duration-200 shadow-lg"
           >
             Get It Now

@@ -1,6 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 import WaveDivider from './WaveDivider'
+import { trackEvent } from '../utils/trackEvent'
 
 export default function CtaRed() {
   return (
@@ -36,6 +37,7 @@ export default function CtaRed() {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={() => trackEvent('InitiateCheckout', { value: 29, currency: 'USD' })}
             className="bg-brand-yellow text-black font-bold py-4 px-12 rounded-lg text-xl hover:bg-yellow-400 transition-all duration-200 shadow-lg"
           >
             Get It Now

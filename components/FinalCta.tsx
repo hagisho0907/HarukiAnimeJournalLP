@@ -1,5 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
+import { trackEvent } from '../utils/trackEvent'
 
 export default function FinalCta() {
   return (
@@ -55,6 +56,7 @@ export default function FinalCta() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => trackEvent('InitiateCheckout', { value: 29, currency: 'USD' })}
               className="bg-brand-yellow text-black font-bold py-6 px-16 rounded-lg text-2xl hover:bg-yellow-400 transition-all duration-200 shadow-lg"
             >
               Get It Now
