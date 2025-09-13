@@ -1,5 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
+import { InstagramIcon, TikTokIcon, YouTubeIcon, FacebookIcon } from './SocialIcons'
 
 export default function AboutSection() {
   const socialStats = [
@@ -84,8 +85,11 @@ export default function AboutSection() {
                   viewport={{ once: true }}
                   className="text-center"
                 >
-                  <div className={`text-3xl ${stat.color} mb-2`}>
-                    {stat.icon}
+                  <div className={`${stat.color} mb-2 flex justify-center`}>
+                    {stat.platform === 'Instagram' && <InstagramIcon className="w-8 h-8" />}
+                    {stat.platform === 'TikTok' && <TikTokIcon className="w-8 h-8" />}
+                    {stat.platform === 'YouTube' && <YouTubeIcon className="w-8 h-8" />}
+                    {stat.platform === 'Facebook' && <FacebookIcon className="w-8 h-8" />}
                   </div>
                   <div className="text-2xl lg:text-3xl font-bold text-gray-800 mb-1">
                     {stat.count}

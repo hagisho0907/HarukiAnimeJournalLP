@@ -1,5 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
+import { InstagramIcon, TikTokIcon, YouTubeIcon } from './SocialIcons'
 
 export default function ContactSection() {
   return (
@@ -54,14 +55,14 @@ export default function ContactSection() {
             </h3>
             
             <div className="flex gap-4">
-              <a href="#" className="text-3xl text-red-500 hover:scale-110 transition-transform">
-                📷
+              <a href="#" className="text-pink-600 hover:scale-110 transition-transform">
+                <InstagramIcon className="w-8 h-8" />
               </a>
-              <a href="#" className="text-3xl text-black hover:scale-110 transition-transform">
-                🎵
+              <a href="#" className="text-black hover:scale-110 transition-transform">
+                <TikTokIcon className="w-8 h-8" />
               </a>
-              <a href="#" className="text-3xl text-red-600 hover:scale-110 transition-transform">
-                📺
+              <a href="#" className="text-red-600 hover:scale-110 transition-transform">
+                <YouTubeIcon className="w-8 h-8" />
               </a>
             </div>
           </motion.div>
