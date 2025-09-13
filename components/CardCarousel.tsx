@@ -92,7 +92,9 @@ const CardCarousel: React.FC<CardCarouselProps> = ({ variant = 'default' }) => {
       {/* Navigation buttons - positioned outside container */}
       <button
         onClick={handlePrev}
-        className="absolute -left-8 sm:-left-12 lg:-left-16 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-2 sm:p-3 shadow-lg transition-all duration-200 z-50"
+        className={`absolute top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-2 sm:p-3 shadow-lg transition-all duration-200 z-50 ${
+          variant === 'red-background' ? '-left-4 sm:-left-6' : '-left-8 sm:-left-12 lg:-left-16'
+        }`}
         aria-label="Previous card"
       >
         <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -101,7 +103,9 @@ const CardCarousel: React.FC<CardCarouselProps> = ({ variant = 'default' }) => {
       </button>
       <button
         onClick={handleNext}
-        className="absolute -right-8 sm:-right-12 lg:-right-16 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-2 sm:p-3 shadow-lg transition-all duration-200 z-50"
+        className={`absolute top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-2 sm:p-3 shadow-lg transition-all duration-200 z-50 ${
+          variant === 'red-background' ? '-right-4 sm:-right-6' : '-right-8 sm:-right-12 lg:-right-16'
+        }`}
         aria-label="Next card"
       >
         <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
