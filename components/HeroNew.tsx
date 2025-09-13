@@ -39,7 +39,7 @@ export default function HeroNew() {
         </div>
 
         {/* Main Content Container */}
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 relative max-w-6xl mx-auto">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-24 relative max-w-6xl mx-auto px-4 lg:px-16">
           {/* Card Carousel - Left side on desktop */}
           <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
