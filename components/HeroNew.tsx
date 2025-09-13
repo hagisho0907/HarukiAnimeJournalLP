@@ -22,7 +22,7 @@ export default function HeroNew() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-brand-gold text-4xl sm:text-5xl md:text-6xl lg:text-hero-subtitle font-extrabold uppercase leading-tight px-2 font-bebas-neue"
+            className="text-brand-gold text-5xl sm:text-5xl md:text-6xl lg:text-hero-subtitle font-extrabold uppercase leading-tight px-2 font-bebas-neue"
           >
             <span className="block sm:hidden">THE ULTIMATE<br />TOKYO ANIME GUIDE</span>
             <span className="hidden sm:block">THE ULTIMATE TOKYO ANIME GUIDE</span>
