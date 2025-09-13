@@ -1,6 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 import WaveDivider from './WaveDivider'
+import SmallCardCarousel from './SmallCardCarousel'
 
 export default function ThreeReasonsNew() {
   return (
@@ -157,16 +158,9 @@ export default function ThreeReasonsNew() {
                     </p>
                   </div>
                   
-                  {/* Right Phone Mockups */}
-                  <div className="lg:w-1/2 relative">
-                    <div className="flex space-x-4">
-                      <div className="bg-gray-300 rounded-lg w-48 h-96 shadow-xl flex items-center justify-center transform -rotate-3">
-                        <p className="text-gray-600 text-center p-4">Akihabara Model Course</p>
-                      </div>
-                      <div className="bg-gray-300 rounded-lg w-48 h-96 shadow-xl flex items-center justify-center transform rotate-3">
-                        <p className="text-gray-600 text-center p-4">Recommended Lunch Options</p>
-                      </div>
-                    </div>
+                  {/* Right Card Carousel */}
+                  <div className="lg:w-1/2 relative flex justify-center">
+                    <SmallCardCarousel />
                   </div>
                 </div>
               </div>
