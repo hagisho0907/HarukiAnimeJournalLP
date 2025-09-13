@@ -54,3 +54,37 @@ Vercel向け静的LP技術構成
 HarukiAnimeJournal:league spartan
 THE ULTIMATE TOKYO ANIME GUIDE:Bebas Neue
 その他は全て:TT Interphases
+
+## セクション構成
+
+現在のサイトは以下のセクション構成になっています：
+
+1. **HeroNew** - メインヒーローセクション（カルーセルとBUY NOWボックス）
+2. **RedBanner** - 赤いバナー
+3. **PlanningSection** - プランニングセクション
+4. **TroublesSection** - トラブルセクション  
+5. **ThreeReasonsNew** - 3つの理由セクション
+6. **CtaRed** - 赤いCTAセクション
+7. **GlimpseSection** - グリンプスセクション
+8. **ReadyToExplore** - 探索準備セクション
+9. **AboutSection** - アバウトセクション
+10. **LimitedSale** - 限定セールセクション
+11. **ProductSummary** - 商品概要セクション
+12. **TestimonialsNew** - 証言セクション
+13. **FaqSection** - FAQセクション
+14. **MessageSection** - メッセージセクション
+15. **FinalCta** - 最終CTAセクション
+16. **ContactSection** - コンタクトセクション
+
+## 実装済み機能
+
+### カードカルーセル
+- 3Dアニメーション効果付きのカードスライダー
+- 自動スライド（3秒間隔）と手動ナビゲーション
+- レスポンシブデザイン（モバイル/デスクトップ最適化）
+- 水平スクロール防止機能
+
+### アナリティクス
+- Google Analytics 4 統合
+- カスタムイベントトラッキング
+- 全CTAボタンでのコンバージョン追跡
