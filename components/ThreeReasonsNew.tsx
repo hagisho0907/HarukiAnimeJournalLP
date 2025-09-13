@@ -8,7 +8,7 @@ export default function ThreeReasonsNew() {
       {/* Wave transition from red to cream */}
       <WaveDivider color="#ED1C24" />
       
-      <section className="bg-brand-cream py-12 md:py-16 lg:py-24">
+      <section className="bg-brand-cream pt-4 pb-12 md:pt-8 md:pb-16 lg:pt-12 lg:pb-24">
         <div className="container mx-auto px-4 max-w-6xl text-center">
           {/* You'll be alright! */}
           <motion.p
