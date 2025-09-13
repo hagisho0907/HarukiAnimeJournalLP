@@ -44,7 +44,7 @@ const CardCarousel: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full max-w-[500px] mx-auto h-[500px] flex items-center justify-center" style={{ contain: 'layout' }}>
+    <div className="relative w-full max-w-[350px] mx-auto h-[500px] flex items-center justify-center overflow-hidden">
       {/* Background cards stack */}
       <div className="relative w-64 h-[450px]">
         {mainCards.map((card, index) => {
@@ -60,11 +60,11 @@ const CardCarousel: React.FC = () => {
               key={card.id}
               className="absolute inset-0"
               animate={{
-                x: isPrevious ? -60 : isNext ? 60 : 0,
-                y: isPrevious ? 20 : isNext ? 20 : 0,
-                scale: isActive ? 1 : 0.85,
-                opacity: isActive ? 1 : 0.4,
-                rotate: isPrevious ? -15 : isNext ? 15 : 0,
+                x: isPrevious ? -40 : isNext ? 40 : 0,
+                y: isPrevious ? 15 : isNext ? 15 : 0,
+                scale: isActive ? 1 : 0.9,
+                opacity: isActive ? 1 : 0.5,
+                rotate: isPrevious ? -10 : isNext ? 10 : 0,
                 zIndex: isActive ? 30 : isPrevious ? 10 : isNext ? 10 : 0,
               }}
               transition={{ duration: 0.5, ease: 'easeInOut' }}
