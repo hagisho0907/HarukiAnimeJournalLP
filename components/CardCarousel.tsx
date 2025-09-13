@@ -44,19 +44,19 @@ const CardCarousel: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full max-w-5xl mx-auto h-[600px] overflow-hidden">
+    <div className="relative w-full max-w-[600px] mx-auto h-[400px] md:h-[500px] overflow-visible">
       {/* Background scattered cards */}
       {backgroundCards.map((card) => (
         <motion.div
           key={card.id}
-          className="absolute top-1/2 left-1/2 w-64 h-80"
+          className="absolute top-1/2 left-1/2 w-48 h-64 md:w-64 md:h-80"
           initial={{ opacity: 0 }}
           animate={{
-            x: card.x,
-            y: card.y,
+            x: card.x * 0.7,
+            y: card.y * 0.7,
             rotate: card.rotation,
-            scale: card.scale,
-            opacity: 0.6,
+            scale: card.scale * 0.8,
+            opacity: 0.4,
           }}
           transition={{ duration: 1, delay: card.id * 0.1 }}
           style={{
@@ -70,7 +70,7 @@ const CardCarousel: React.FC = () => {
       ))}
 
       {/* Main carousel cards */}
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-96">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-80 md:w-80 md:h-96">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentIndex}
