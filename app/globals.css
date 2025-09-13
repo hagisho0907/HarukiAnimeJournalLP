@@ -30,6 +30,13 @@
     min-height: 100vh;
     overflow-x: hidden;
     position: relative;
+    contain: layout style;
+  }
+  
+  /* Prevent horizontal scrolling on carousel containers */
+  .carousel-container {
+    contain: layout style size;
+    isolation: isolate;
   }
   
   /* Custom font fallbacks */
