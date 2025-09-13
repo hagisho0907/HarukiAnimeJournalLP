@@ -13,7 +13,7 @@ export default function ProductSummary() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="flex justify-center items-center relative pr-8 lg:pr-12"
+            className="flex justify-center items-center relative lg:pr-12 w-full lg:w-auto"
           >
             <CardCarousel variant="red-background" />
           </motion.div>
