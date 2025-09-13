@@ -44,7 +44,7 @@ const CardCarousel: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full max-w-[400px] mx-auto h-[500px] flex items-center justify-center">
+    <div className="relative w-full max-w-[500px] mx-auto h-[500px] flex items-center justify-center">
       {/* Main carousel cards */}
       <div className="relative w-80 h-96">
         <AnimatePresence mode="wait">

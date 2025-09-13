@@ -39,23 +39,13 @@ export default function HeroNew() {
         </div>
 
         {/* Main Content Container */}
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16">
-          {/* Card Carousel */}
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex justify-center items-center relative w-full lg:w-auto"
-          >
-            <CardCarousel />
-          </motion.div>
-
-          {/* Buy Now Box - Positioned below phones on mobile */}
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16 relative">
+          {/* Buy Now Box - Left side on desktop */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="bg-white rounded-lg shadow-lg p-6 md:p-8 text-center max-w-md mx-auto w-full lg:w-auto lg:mx-0"
+            className="bg-white rounded-lg shadow-lg p-6 md:p-8 text-center max-w-md mx-auto w-full lg:w-auto lg:mx-0 order-2 lg:order-1"
           >
             <h3 className="text-2xl md:text-3xl font-bold mb-2">
               BUY NOW,<br />SAVE <span className="text-brand-red">$30</span>
@@ -79,6 +69,16 @@ export default function HeroNew() {
             >
               Get It Now
             </motion.button>
+          </motion.div>
+
+          {/* Card Carousel - Right side on desktop */}
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="flex justify-center items-center relative w-full lg:w-auto lg:flex-shrink-0 order-1 lg:order-2"
+          >
+            <CardCarousel />
           </motion.div>
         </div>
       </div>
