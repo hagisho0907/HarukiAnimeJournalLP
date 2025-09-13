@@ -4,7 +4,7 @@ import CardCarousel from './CardCarousel'
 
 export default function ProductSummary() {
   return (
-    <section className="bg-brand-red py-16 lg:py-24">
+    <section className="bg-brand-red py-8 lg:py-12">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20">
           {/* Left - Card Carousel */}
