@@ -45,28 +45,44 @@ const CardCarousel: React.FC = () => {
 
   return (
     <div className="relative w-full max-w-[500px] mx-auto h-[500px] flex items-center justify-center">
-      {/* Main carousel cards */}
+      {/* Background cards stack */}
       <div className="relative w-80 h-96">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={currentIndex}
-            className="absolute inset-0"
-            initial={{ x: 300, opacity: 0, rotate: 10 }}
-            animate={{ x: 0, opacity: 1, rotate: 0 }}
-            exit={{ x: -300, opacity: 0, rotate: -10 }}
-            transition={{ duration: 0.5, ease: 'easeInOut' }}
-          >
-            <div className="bg-white rounded-2xl shadow-2xl overflow-hidden w-full h-full border-4 border-yellow-400">
-              <div className="bg-gradient-to-br from-purple-100 to-pink-100 w-full h-full flex flex-col items-center justify-center p-8">
-                <div className="text-6xl mb-4">📖</div>
-                <h3 className="text-2xl font-bold text-gray-800 text-center">
-                  {mainCards[currentIndex].title}
-                </h3>
-                <p className="text-gray-600 mt-2">Page {currentIndex + 1} of 3</p>
+        {mainCards.map((card, index) => {
+          const offset = (index - currentIndex + mainCards.length) % mainCards.length;
+          const isActive = offset === 0;
+          const isPrevious = offset === mainCards.length - 1;
+          const isNext = offset === 1;
+          
+          if (offset > 1 && offset < mainCards.length - 1) return null;
+          
+          return (
+            <motion.div
+              key={card.id}
+              className="absolute inset-0"
+              animate={{
+                x: isPrevious ? -60 : isNext ? 60 : 0,
+                y: isPrevious ? 20 : isNext ? 20 : 0,
+                scale: isActive ? 1 : 0.85,
+                opacity: isActive ? 1 : 0.4,
+                rotate: isPrevious ? -15 : isNext ? 15 : 0,
+                zIndex: isActive ? 30 : isPrevious ? 10 : isNext ? 10 : 0,
+              }}
+              transition={{ duration: 0.5, ease: 'easeInOut' }}
+              onClick={isActive ? undefined : () => setCurrentIndex(index)}
+              style={{ cursor: isActive ? 'default' : 'pointer' }}
+            >
+              <div className="bg-white rounded-2xl shadow-2xl overflow-hidden w-full h-full border-4 border-yellow-400">
+                <div className="bg-gradient-to-br from-purple-100 to-pink-100 w-full h-full flex flex-col items-center justify-center p-8">
+                  <div className="text-6xl mb-4">📖</div>
+                  <h3 className="text-2xl font-bold text-gray-800 text-center">
+                    {card.title}
+                  </h3>
+                  <p className="text-gray-600 mt-2">Page {index + 1} of 3</p>
+                </div>
               </div>
-            </div>
-          </motion.div>
-        </AnimatePresence>
+            </motion.div>
+          );
+        })}
       </div>
 
       {/* Navigation buttons */}
