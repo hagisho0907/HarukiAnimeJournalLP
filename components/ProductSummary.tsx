@@ -15,7 +15,7 @@ export default function ProductSummary() {
             viewport={{ once: true }}
             className="flex justify-center items-center relative"
           >
-            <CardCarousel />
+            <CardCarousel variant="red-background" />
           </motion.div>
 
           {/* Right - Product Info */}

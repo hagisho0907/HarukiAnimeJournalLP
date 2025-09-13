@@ -10,7 +10,11 @@ interface Card {
   title: string;
 }
 
-const CardCarousel: React.FC = () => {
+interface CardCarouselProps {
+  variant?: 'default' | 'red-background';
+}
+
+const CardCarousel: React.FC<CardCarouselProps> = ({ variant = 'default' }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   
   const mainCards: Card[] = [
@@ -112,7 +116,11 @@ const CardCarousel: React.FC = () => {
             key={index}
             onClick={() => setCurrentIndex(index)}
             className={`w-2 h-2 rounded-full transition-all duration-200 ${
-              index === currentIndex ? 'bg-brand-red w-6' : 'bg-gray-400'
+              index === currentIndex 
+                ? variant === 'red-background' 
+                  ? 'bg-brand-cream w-6' 
+                  : 'bg-brand-red w-6' 
+                : 'bg-gray-400'
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />
