@@ -44,7 +44,7 @@ const CardCarousel: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full max-w-[500px] mx-auto h-[500px] flex items-center justify-center">
+    <div className="relative w-full max-w-[400px] mx-auto h-[500px] flex items-center justify-center overflow-hidden">
       {/* Background cards stack */}
       <div className="relative w-80 h-96">
         {mainCards.map((card, index) => {

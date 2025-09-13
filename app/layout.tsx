@@ -76,7 +76,7 @@ export default function RootLayout({
         </noscript>
         {/* End Meta Pixel Code */}
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} overflow-x-hidden`}>{children}</body>
     </html>
   );
 }
