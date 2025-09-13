@@ -44,9 +44,9 @@ const CardCarousel: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full max-w-[400px] mx-auto h-[400px] overflow-hidden">
+    <div className="relative w-full max-w-[400px] mx-auto h-[500px] flex items-center justify-center">
       {/* Main carousel cards */}
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-96">
+      <div className="relative w-80 h-96">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentIndex}
@@ -72,31 +72,31 @@ const CardCarousel: React.FC = () => {
       {/* Navigation buttons */}
       <button
         onClick={handlePrev}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all duration-200 z-10"
+        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow-lg transition-all duration-200 z-10"
         aria-label="Previous card"
       >
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
         </svg>
       </button>
       <button
         onClick={handleNext}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-3 shadow-lg transition-all duration-200 z-10"
+        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 shadow-lg transition-all duration-200 z-10"
         aria-label="Next card"
       >
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>
       </button>
 
       {/* Dots indicator */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {mainCards.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
             className={`w-2 h-2 rounded-full transition-all duration-200 ${
-              index === currentIndex ? 'bg-brand-red w-8' : 'bg-gray-400'
+              index === currentIndex ? 'bg-brand-red w-6' : 'bg-gray-400'
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />
