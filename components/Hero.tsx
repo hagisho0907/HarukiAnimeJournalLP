@@ -1,6 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import CardCarousel from './CardCarousel'
 
 export default function Hero() {
   return (
@@ -28,9 +29,7 @@ export default function Hero() {
           </motion.button>
 
           <div className="mt-16 relative">
-            <div className="bg-gray-200 rounded-lg w-full h-[400px] md:h-[500px] flex items-center justify-center">
-              <p className="text-gray-500">Tokyo Anime Guide Image Placeholder</p>
-            </div>
+            <CardCarousel />
           </div>
         </motion.div>
       </div>
