@@ -1,6 +1,6 @@
 export default function WaveDivider({ color = "#ED1C24" }: { color?: string }) {
   return (
-    <div className="relative h-20 overflow-hidden">
+    <div className="relative h-20 overflow-hidden -mt-1">
       <svg
         className="absolute bottom-0 w-full"
         viewBox="0 0 1200 120"
