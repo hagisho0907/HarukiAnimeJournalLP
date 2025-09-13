@@ -15,7 +15,7 @@ export default function FinalCta() {
           viewport={{ once: true }}
           className="text-4xl lg:text-5xl font-bold text-brand-gold text-center mb-12"
         >
-          Let's Dive Into Japan's Hidden Gems
+          Let&apos;s Dive Into Japan&apos;s Hidden Gems
         </motion.h2>
 
         <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-24 relative max-w-6xl mx-auto px-4 lg:px-16">
@@ -44,7 +44,7 @@ export default function FinalCta() {
             </h3>
             
             <p className="text-gray-700 text-lg mb-6">
-              Get <strong>The Ultimate Tokyo Anime Guide</strong> and kickstart an unforgettable adventure across Japan's most vibrant cities today!
+              Get <strong>The Ultimate Tokyo Anime Guide</strong> and kickstart an unforgettable adventure across Japan&apos;s most vibrant cities today!
             </p>
             
             <div className="mb-8">
