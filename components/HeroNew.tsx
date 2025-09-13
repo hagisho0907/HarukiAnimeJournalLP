@@ -1,6 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import CardCarousel from './CardCarousel'
 
 export default function HeroNew() {
   return (
@@ -39,46 +40,14 @@ export default function HeroNew() {
 
         {/* Main Content Container */}
         <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16">
-          {/* Phone Mockups */}
+          {/* Card Carousel */}
           <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex justify-center items-center relative w-full lg:w-auto"
           >
-            {/* Mobile: Single centered phone, Desktop: 3 phones */}
-            <div className="relative w-full max-w-[300px] h-[300px] sm:w-[400px] sm:h-[350px] lg:w-[600px] lg:h-[400px]">
-              {/* Mobile: Show only center phone */}
-              <div className="lg:hidden absolute left-1/2 transform -translate-x-1/2 top-0">
-                <div className="bg-gray-300 rounded-lg w-[200px] h-[300px] shadow-2xl flex items-center justify-center">
-                  <p className="text-gray-600 text-center p-4 text-sm">Ultimate Tokyo Anime Guide Cover</p>
-                </div>
-              </div>
-              
-              {/* Desktop: Show all 3 phones */}
-              <div className="hidden lg:block">
-                {/* Left Phone */}
-                <div className="absolute left-0 top-10 transform -rotate-6 z-10">
-                  <div className="bg-gray-300 rounded-lg w-[180px] h-[360px] shadow-2xl flex items-center justify-center">
-                    <p className="text-gray-600 text-center p-4">Tokyo Train Map Mockup</p>
-                  </div>
-                </div>
-                
-                {/* Center Phone */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 z-20">
-                  <div className="bg-gray-300 rounded-lg w-[200px] h-[400px] shadow-2xl flex items-center justify-center">
-                    <p className="text-gray-600 text-center p-4">Ultimate Tokyo Anime Guide Cover</p>
-                  </div>
-                </div>
-                
-                {/* Right Phone */}
-                <div className="absolute right-0 top-10 transform rotate-6 z-10">
-                  <div className="bg-gray-300 rounded-lg w-[180px] h-[360px] shadow-2xl flex items-center justify-center">
-                    <p className="text-gray-600 text-center p-4">Shibuya & Harajuku Guide</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <CardCarousel />
           </motion.div>
 
           {/* Buy Now Box - Positioned below phones on mobile */}
