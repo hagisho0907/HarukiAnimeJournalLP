@@ -1,5 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function PlanningSection() {
   return (
@@ -28,12 +29,16 @@ export default function PlanningSection() {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="bg-gray-200 rounded-lg overflow-hidden shadow-xl order-first lg:order-last"
+            className="rounded-lg overflow-hidden shadow-xl order-first lg:order-last"
           >
             <div className="aspect-[4/3] md:aspect-square relative">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <p className="text-gray-500 text-center p-4">300+ Local Otaku Photos Collage</p>
-              </div>
+              <Image
+                src="/images/planning/plan.jpg"
+                alt="300+ Local Otaku Photos Collage"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
           </motion.div>
         </div>

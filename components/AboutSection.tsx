@@ -9,28 +9,28 @@ export default function AboutSection() {
       count: "85K +",
       followers: "Instagram Followers",
       icon: "📷",
-      color: "text-pink-600"
+      color: "text-brand-red"
     },
     {
       platform: "TikTok", 
       count: "95K +",
       followers: "TikTok Followers",
       icon: "🎵",
-      color: "text-black"
+      color: "text-brand-red"
     },
     {
       platform: "YouTube",
       count: "16K +", 
       followers: "YouTube Subscribers",
       icon: "📺",
-      color: "text-red-600"
+      color: "text-brand-red"
     },
     {
       platform: "Facebook",
       count: "27K +",
       followers: "Facebook Followers", 
       icon: "📘",
-      color: "text-blue-600"
+      color: "text-brand-red"
     }
   ]
 

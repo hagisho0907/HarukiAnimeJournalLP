@@ -1,5 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function TroublesSection() {
   const troubles = [
@@ -47,10 +48,14 @@ export default function TroublesSection() {
           viewport={{ once: true }}
           className="mt-8 md:mt-12 flex justify-center"
         >
-          <div className="relative">
-            <div className="bg-gray-300 rounded-lg w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 flex items-center justify-center">
-              <p className="text-gray-600 text-center p-4">Stressed Person Image</p>
-            </div>
+          <div className="relative w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80">
+            <Image
+              src="/images/trouble/trouble.png"
+              alt="Stressed Person"
+              fill
+              className="object-contain rounded-lg"
+              sizes="(max-width: 640px) 192px, (max-width: 1024px) 256px, 320px"
+            />
           </div>
         </motion.div>
       </div>
