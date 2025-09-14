@@ -19,7 +19,12 @@ export const metadata: Metadata = {
   title: "Haruki Anime Journal - Tokyo Anime Guide",
   description: "Explore Japan's incredible anime meccas with 100+ hidden gems from 300+ Japanese Anime Otaku",
   icons: {
-    icon: '/favicon.ico',
+    icon: [
+      { url: '/favicon.ico', sizes: '16x16', type: 'image/x-icon' },
+      { url: '/icon.png', sizes: '32x32', type: 'image/png' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: '/icon.png',
   },
   openGraph: {
     title: "Haruki Anime Journal - Tokyo Anime Guide",
