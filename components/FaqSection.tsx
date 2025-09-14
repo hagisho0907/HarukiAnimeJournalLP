@@ -26,15 +26,17 @@ export default function FaqSection() {
     <section className="relative py-12 md:py-16 lg:py-24 overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
-        <Image
-          src="/images/faq/FAQ.jpeg"
-          alt="Tokyo Street Scene Background"
-          fill
-          className="object-cover"
-          sizes="100vw"
-          priority
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-70"></div>
+        <div className="relative w-full h-full">
+          <Image
+            src="/images/faq/FAQ.jpeg"
+            alt="Tokyo Street Scene Background"
+            fill
+            className="object-cover object-[50%_30%] md:object-center scale-110 md:scale-100"
+            sizes="100vw"
+            priority
+          />
+        </div>
+        <div className="absolute inset-0 bg-black bg-opacity-50 md:bg-opacity-70"></div>
       </div>
       
       {/* Content */}

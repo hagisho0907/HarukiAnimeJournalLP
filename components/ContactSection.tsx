@@ -44,7 +44,7 @@ export default function ContactSection() {
                 Phone Number
               </h3>
               <p className="text-gray-600 text-lg">
-                080-6617-6604
+                +81 80-6617-6604
               </p>
             </div>
           </motion.div>

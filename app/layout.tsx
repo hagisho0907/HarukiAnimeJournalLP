@@ -20,10 +20,11 @@ export const metadata: Metadata = {
   description: "Explore Japan's incredible anime meccas with 100+ hidden gems from 300+ Japanese Anime Otaku",
   icons: {
     icon: [
+      { url: '/favicon-face.svg', type: 'image/svg+xml' },
       { url: '/favicon.ico', sizes: '16x16', type: 'image/x-icon' },
       { url: '/icon.png', sizes: '32x32', type: 'image/png' },
     ],
-    shortcut: '/favicon.ico',
+    shortcut: '/favicon-face.svg',
     apple: '/icon.png',
   },
   openGraph: {
