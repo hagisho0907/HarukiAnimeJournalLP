@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion'
 import WaveDivider from './WaveDivider'
 import SmallCardCarousel from './SmallCardCarousel'
+import Image from 'next/image'
 
 export default function ThreeReasonsNew() {
   return (
@@ -73,7 +74,7 @@ export default function ThreeReasonsNew() {
               
               {/* Small Card Carousel */}
               <div className="lg:w-1/2 relative order-1 lg:order-2 flex justify-center items-center">
-                <SmallCardCarousel />
+                <SmallCardCarousel reasonNumber={1} />
               </div>
             </div>
             
@@ -97,8 +98,14 @@ export default function ThreeReasonsNew() {
               <div className="flex flex-col lg:flex-row justify-center items-center mt-12 gap-12">
                 {/* Left Image */}
                 <div className="lg:w-1/2">
-                  <div className="bg-gray-300 rounded-lg w-full h-64 shadow-xl flex items-center justify-center">
-                    <p className="text-gray-600 text-center p-4">Japanese Otaku Friends Photo</p>
+                  <div className="relative w-full h-64 rounded-lg overflow-hidden shadow-xl">
+                    <Image
+                      src="/images/reason/2/2.png"
+                      alt="Japanese Otaku Friends Photo"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                    />
                   </div>
                 </div>
                 
@@ -145,7 +152,7 @@ export default function ThreeReasonsNew() {
                   
                   {/* Right Card Carousel */}
                   <div className="lg:w-1/2 relative flex justify-center">
-                    <SmallCardCarousel />
+                    <SmallCardCarousel reasonNumber={3} />
                   </div>
                 </div>
               </div>

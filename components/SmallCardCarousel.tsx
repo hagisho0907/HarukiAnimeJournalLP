@@ -2,18 +2,27 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 interface Card {
   id: number;
+  image: string;
   title: string;
 }
 
-const SmallCardCarousel: React.FC = () => {
+interface SmallCardCarouselProps {
+  reasonNumber?: 1 | 3;
+}
+
+const SmallCardCarousel: React.FC<SmallCardCarouselProps> = ({ reasonNumber = 1 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   
-  const cards: Card[] = [
-    { id: 1, title: 'Akihabara Model Course' },
-    { id: 2, title: 'Recommended Lunch Options' },
+  const cards: Card[] = reasonNumber === 1 ? [
+    { id: 1, image: '/images/reason/1/1-1.PNG', title: 'Akihabara Model Course' },
+    { id: 2, image: '/images/reason/1/1-2.PNG', title: 'Recommended Lunch Options' },
+  ] : [
+    { id: 1, image: '/images/reason/3/3-1.PNG', title: 'Save Money Guide' },
+    { id: 2, image: '/images/reason/3/3-2.PNG', title: 'Deeper Experience Tips' },
   ];
 
   useEffect(() => {
@@ -57,13 +66,13 @@ const SmallCardCarousel: React.FC = () => {
               style={{ cursor: isActive ? 'default' : 'pointer' }}
             >
               <div className="bg-white rounded-2xl shadow-2xl overflow-hidden w-full h-full border-4 border-yellow-400">
-                <div className="bg-gradient-to-br from-purple-100 to-pink-100 w-full h-full flex flex-col items-center justify-center p-6">
-                  <div className="text-5xl mb-4">📖</div>
-                  <h3 className="text-xl font-bold text-gray-800 text-center leading-tight">
-                    {card.title}
-                  </h3>
-                  <p className="text-gray-600 mt-2">Page {index + 1} of 2</p>
-                </div>
+                <Image
+                  src={card.image}
+                  alt={card.title}
+                  fill
+                  className="object-cover"
+                  sizes="300px"
+                />
               </div>
             </motion.div>
           );
