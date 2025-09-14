@@ -21,7 +21,7 @@ export default function CtaRed() {
       </div>
       
       <section className="bg-brand-red py-16 text-center text-white">
-        <div className="container mx-auto px-4 max-w-4xl">
+        <div className="container mx-auto px-4 max-w-6xl">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -30,8 +30,9 @@ export default function CtaRed() {
             className="text-2xl lg:text-3xl mb-8"
           >
             <span className="text-brand-yellow font-bold">Unlock the secrets of Japan&apos;s otaku culture</span>{' '}
-            and start planning<br />
-            your ultimate anime, manga, and game pilgrimage.
+            <span className="lg:inline-block">and start planning</span>
+            <br className="lg:hidden" />
+            <span className="lg:inline"> your ultimate anime, manga, and game pilgrimage.</span>
           </motion.h2>
 
           <motion.a
