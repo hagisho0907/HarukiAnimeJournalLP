@@ -36,7 +36,7 @@ export default function FaqSection() {
             priority
           />
         </div>
-        <div className="absolute inset-0 bg-black bg-opacity-40 md:bg-opacity-50"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-30 md:bg-opacity-40"></div>
       </div>
       
       {/* Content */}
@@ -74,7 +74,7 @@ export default function FaqSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-black bg-opacity-40 rounded-lg p-6 backdrop-blur-sm"
+              className="bg-black bg-opacity-30 rounded-lg p-6 backdrop-blur-sm"
             >
               <h3 className="text-white text-lg md:text-xl font-bold mb-4 leading-tight">
                 {faq.question}
