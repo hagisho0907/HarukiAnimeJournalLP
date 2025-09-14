@@ -1,5 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function FaqSection() {
   const faqs = [
@@ -24,11 +25,16 @@ export default function FaqSection() {
   return (
     <section className="relative py-12 md:py-16 lg:py-24 overflow-hidden">
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0 bg-gray-600">
+      <div className="absolute inset-0">
+        <Image
+          src="/images/faq/FAQ.jpeg"
+          alt="Tokyo Street Scene Background"
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
+        />
         <div className="absolute inset-0 bg-black bg-opacity-70"></div>
-        <div className="absolute inset-0 flex items-center justify-center">
-          <p className="text-gray-300">Tokyo Street Scene Background Image</p>
-        </div>
       </div>
       
       {/* Content */}

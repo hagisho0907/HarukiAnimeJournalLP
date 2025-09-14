@@ -1,5 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import { InstagramIcon, TikTokIcon, YouTubeIcon, FacebookIcon } from './SocialIcons'
 
 export default function AboutSection() {
@@ -53,8 +54,14 @@ export default function AboutSection() {
             </div>
             
             {/* Profile Image */}
-            <div className="bg-gray-300 rounded-lg w-80 h-80 mx-auto lg:mx-0 shadow-xl flex items-center justify-center">
-              <p className="text-gray-600 text-center p-4">Haruki Profile Photo<br/>in Library/Bookstore</p>
+            <div className="relative w-80 h-80 mx-auto lg:mx-0 shadow-xl rounded-lg overflow-hidden">
+              <Image
+                src="/images/about/me.jpg"
+                alt="Haruki Profile Photo in Library/Bookstore"
+                fill
+                className="object-cover"
+                sizes="320px"
+              />
             </div>
           </motion.div>
 
