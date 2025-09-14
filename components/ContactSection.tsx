@@ -4,7 +4,13 @@ import { InstagramIcon, TikTokIcon, YouTubeIcon } from './SocialIcons'
 
 export default function ContactSection() {
   return (
-    <section className="bg-brand-cream py-16 lg:py-24">
+    <>
+      {/* Decorative divider */}
+      <div className="bg-brand-cream">
+        <div className="h-1 bg-gradient-to-r from-brand-red via-brand-gold to-brand-red"></div>
+      </div>
+      
+      <section className="bg-white py-16 lg:py-24">
       <div className="container mx-auto px-4 max-w-4xl">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -86,6 +92,7 @@ export default function ContactSection() {
           </a>
         </motion.div>
       </div>
-    </section>
+      </section>
+    </>
   )
 }
