@@ -18,9 +18,9 @@ const CardCarousel: React.FC<CardCarouselProps> = ({ variant = 'default' }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   
   const mainCards: Card[] = [
-    { id: 1, image: '/images/anime-card-1.jpg', title: 'Tokyo Anime Guide Cover' },
-    { id: 2, image: '/images/anime-card-2.jpg', title: 'Akihabara Guide' },
-    { id: 3, image: '/images/anime-card-3.jpg', title: 'Anime Cafe Map' },
+    { id: 1, image: '/images/carousel/1.PNG', title: 'Tokyo Anime Guide Cover' },
+    { id: 2, image: '/images/carousel/2.PNG', title: 'Akihabara Guide' },
+    { id: 3, image: '/images/carousel/3.PNG', title: 'Anime Cafe Map' },
   ];
 
   const backgroundCards = [
@@ -76,13 +76,13 @@ const CardCarousel: React.FC<CardCarouselProps> = ({ variant = 'default' }) => {
               style={{ cursor: isActive ? 'default' : 'pointer' }}
             >
               <div className="bg-white rounded-2xl shadow-2xl overflow-hidden w-full h-full border-4 border-yellow-400">
-                <div className="bg-gradient-to-br from-purple-100 to-pink-100 w-full h-full flex flex-col items-center justify-center p-8">
-                  <div className="text-6xl mb-4">📖</div>
-                  <h3 className="text-2xl font-bold text-gray-800 text-center">
-                    {card.title}
-                  </h3>
-                  <p className="text-gray-600 mt-2">Page {index + 1} of 3</p>
-                </div>
+                <Image
+                  src={card.image}
+                  alt={card.title}
+                  fill
+                  className="object-cover"
+                  sizes="300px"
+                />
               </div>
             </motion.div>
           );

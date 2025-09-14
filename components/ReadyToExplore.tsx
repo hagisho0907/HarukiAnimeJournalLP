@@ -1,15 +1,21 @@
 'use client'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function ReadyToExplore() {
   return (
     <section className="relative py-24 lg:py-32 overflow-hidden">
       {/* Background Image Overlay */}
-      <div className="absolute inset-0 bg-gray-400">
+      <div className="absolute inset-0">
+        <Image
+          src="/images/explore/渋谷交差点.gif"
+          alt="Tokyo Shibuya Crossing"
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
+        />
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div className="absolute inset-0 flex items-center justify-center">
-          <p className="text-gray-300">Tokyo Shibuya Crossing Background Image</p>
-        </div>
       </div>
       
       {/* Content */}

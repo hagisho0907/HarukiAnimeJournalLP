@@ -76,9 +76,14 @@ export default function ContactSection() {
           viewport={{ once: true }}
           className="text-center mt-16 pt-8 border-t border-gray-300"
         >
-          <p className="text-gray-600">
+          <a 
+            href="https://haruki-anime-journal-psi.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 hover:text-gray-800 hover:underline transition-colors"
+          >
             特定商取引法に基づく表記
-          </p>
+          </a>
         </motion.div>
       </div>
     </section>
