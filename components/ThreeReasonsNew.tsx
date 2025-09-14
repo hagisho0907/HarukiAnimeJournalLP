@@ -61,7 +61,7 @@ export default function ThreeReasonsNew() {
             </h3>
 
             {/* Key Features Box and Phone Mockups for Reason 1 */}
-            <div className="flex flex-col lg:flex-row justify-center items-center mt-8 md:mt-12 gap-8 lg:gap-12">
+            <div className="flex flex-col lg:flex-row justify-center items-center mt-8 md:mt-12 gap-4 lg:gap-8">
               {/* Key Features Box - Mobile First */}
               <div className="lg:w-1/2 order-2 lg:order-1">
                 <div className="text-center lg:text-left mb-4 md:mb-6">
@@ -143,7 +143,7 @@ export default function ThreeReasonsNew() {
                 </h3>
                 
                 {/* Reason 3 Content */}
-                <div className="flex flex-col lg:flex-row justify-center items-center mt-12 gap-12">
+                <div className="flex flex-col lg:flex-row justify-center items-center mt-12 gap-4 lg:gap-8">
                   {/* Left Key Features */}
                   <div className="lg:w-1/2">
                     <div className="text-center lg:text-left mb-6">
