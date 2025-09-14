@@ -1,5 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function TestimonialsNew() {
   const testimonials = [
@@ -8,21 +9,21 @@ export default function TestimonialsNew() {
       location: "(USA, 28)",
       quote: "&ldquo;Finally found all the anime hotspots I dreamed of! 😁&rdquo;",
       text: "This guidebook helped me navigate Akihabara without getting lost. Thanks to the maps and shop lists, I scored limited-edition figures and doujinshi I never thought I'd find. It truly leveled up my otaku pilgrimage.",
-      avatar: "Happy male customer photo"
+      avatar: "/images/testimonial/Alex Johnson.png"
     },
     {
       name: "Mei Wong", 
       location: "(Singapore, 24)",
       quote: "&ldquo;Ikebukuro's hidden gems unlocked!😁&rdquo;",
       text: "I loved the recommendations for themed cafés and female-oriented shops. I discovered places dedicated to my favorite BL series and met other fans from around the world. This guide made my Tokyo trip unforgettable!",
-      avatar: "Young female customer photo"
+      avatar: "/images/testimonial/Mei Wong.png"
     },
     {
       name: "Daniel García",
       location: "(Spain, 32)", 
       quote: "&ldquo;From Nakano to Akihabara, everything covered! 😁&rdquo;",
       text: "This guidebook explained Japan's tricky train system in a way even I could follow. Without it, I would have missed rare retro game shops and anime exhibitions. Highly recommended for every true otaku travel",
-      avatar: "Male customer with glasses photo"
+      avatar: "/images/testimonial/Daniel García.png"
     }
   ]
 
@@ -51,8 +52,14 @@ export default function TestimonialsNew() {
             >
               {/* Avatar */}
               <div className="mb-6">
-                <div className="bg-gray-300 rounded-full w-32 h-32 mx-auto shadow-lg flex items-center justify-center">
-                  <p className="text-gray-600 text-xs text-center p-2">{testimonial.avatar}</p>
+                <div className="rounded-full w-32 h-32 mx-auto shadow-lg overflow-hidden relative">
+                  <Image
+                    src={testimonial.avatar}
+                    alt={testimonial.name}
+                    fill
+                    className="object-cover object-center"
+                    sizes="128px"
+                  />
                 </div>
               </div>
 
