@@ -86,10 +86,26 @@ export default function AboutSection() {
                   className="text-center"
                 >
                   <div className={`${stat.color} mb-2 flex justify-center`}>
-                    {stat.platform === 'Instagram' && <InstagramIcon className="w-8 h-8" />}
-                    {stat.platform === 'TikTok' && <TikTokIcon className="w-8 h-8" />}
-                    {stat.platform === 'YouTube' && <YouTubeIcon className="w-8 h-8" />}
-                    {stat.platform === 'Facebook' && <FacebookIcon className="w-8 h-8" />}
+                    {stat.platform === 'Instagram' && (
+                      <a href="https://www.instagram.com/harukianimejournal/?igsh=MWk4MGt3bm1pNWRjeg%3D%3D&utm_source=qr#" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
+                        <InstagramIcon className="w-8 h-8" />
+                      </a>
+                    )}
+                    {stat.platform === 'TikTok' && (
+                      <a href="https://www.tiktok.com/@harukianimejournal?_t=ZS-8zLp3wbbOpb&_r=1" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
+                        <TikTokIcon className="w-8 h-8" />
+                      </a>
+                    )}
+                    {stat.platform === 'YouTube' && (
+                      <a href="https://www.youtube.com/@harukianimejournal" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
+                        <YouTubeIcon className="w-8 h-8" />
+                      </a>
+                    )}
+                    {stat.platform === 'Facebook' && (
+                      <a href="https://www.facebook.com/people/Haruki-Nishioka/61561169736812/#" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
+                        <FacebookIcon className="w-8 h-8" />
+                      </a>
+                    )}
                   </div>
                   <div className="text-2xl lg:text-3xl font-bold text-gray-800 mb-1">
                     {stat.count}

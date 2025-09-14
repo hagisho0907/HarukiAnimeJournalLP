@@ -55,13 +55,13 @@ export default function ContactSection() {
             </h3>
             
             <div className="flex gap-4">
-              <a href="#" className="text-pink-600 hover:scale-110 transition-transform">
+              <a href="https://www.instagram.com/harukianimejournal/?igsh=MWk4MGt3bm1pNWRjeg%3D%3D&utm_source=qr#" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:scale-110 transition-transform">
                 <InstagramIcon className="w-8 h-8" />
               </a>
-              <a href="#" className="text-black hover:scale-110 transition-transform">
+              <a href="https://www.tiktok.com/@harukianimejournal?_t=ZS-8zLp3wbbOpb&_r=1" target="_blank" rel="noopener noreferrer" className="text-black hover:scale-110 transition-transform">
                 <TikTokIcon className="w-8 h-8" />
               </a>
-              <a href="#" className="text-red-600 hover:scale-110 transition-transform">
+              <a href="https://www.youtube.com/@harukianimejournal" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:scale-110 transition-transform">
                 <YouTubeIcon className="w-8 h-8" />
               </a>
             </div>

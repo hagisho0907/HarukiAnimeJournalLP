@@ -72,13 +72,16 @@ export default function HeroNew() {
               <span className="text-4xl md:text-5xl font-bold text-brand-red">$29</span>
             </div>
             
-            <motion.button
+            <motion.a
+              href="https://harukianimejournal.myshopify.com/products/the-ultimate-tokyo-anime-guide-1"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-brand-yellow text-black font-bold py-4 px-8 md:px-12 rounded-lg text-lg md:text-xl hover:bg-yellow-400 transition-all duration-200 shadow-lg w-full"
+              className="bg-brand-yellow text-black font-bold py-4 px-8 md:px-12 rounded-lg text-lg md:text-xl hover:bg-yellow-400 transition-all duration-200 shadow-lg w-full inline-block text-center"
             >
               Get It Now
-            </motion.button>
+            </motion.a>
           </motion.div>
         </div>
       </div>
