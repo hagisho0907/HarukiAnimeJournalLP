@@ -64,8 +64,10 @@ export default function ThreeReasonsNew() {
             <div className="flex flex-col lg:flex-row justify-center items-center mt-8 md:mt-12 gap-8 lg:gap-12">
               {/* Key Features Box - Mobile First */}
               <div className="lg:w-1/2 order-2 lg:order-1">
-                <div className="bg-white rounded-full px-6 md:px-8 py-3 inline-block mb-4 md:mb-6 border border-gray-400">
-                  <span className="text-gray-700 font-medium text-sm md:text-base">Key Features</span>
+                <div className="text-center lg:text-left mb-4 md:mb-6">
+                  <div className="bg-white rounded-full px-6 md:px-8 py-3 inline-block border border-gray-400">
+                    <span className="text-gray-700 font-medium text-sm md:text-base">Key Features</span>
+                  </div>
                 </div>
                 <p className="text-gray-700 text-base md:text-lg leading-relaxed text-center lg:text-left max-w-md mx-auto lg:mx-0">
                   Info online or even from ChatGPT can be outdated or wrong. This guide is written by an anime native who has lived in Tokyo for over 25 years and carefully selects only the latest and most accurate details.
@@ -111,10 +113,12 @@ export default function ThreeReasonsNew() {
                 
                 {/* Right Key Features */}
                 <div className="lg:w-1/2">
-                  <div className="bg-white rounded-full px-8 py-3 inline-block mb-6 border border-gray-400">
-                    <span className="text-gray-700 font-medium">Key Features</span>
+                  <div className="text-center lg:text-left mb-6">
+                    <div className="bg-white rounded-full px-8 py-3 inline-block border border-gray-400">
+                      <span className="text-gray-700 font-medium">Key Features</span>
+                    </div>
                   </div>
-                  <p className="text-gray-700 text-lg leading-relaxed text-left max-w-md">
+                  <p className="text-gray-700 text-lg leading-relaxed text-center lg:text-left max-w-md mx-auto lg:mx-0">
                     After interviewing over 300 Japanese anime fans for more than a year, this book reveals hidden info you will never find online. It feels just like having a Japanese otaku friend guide you around Tokyo.
                   </p>
                 </div>
@@ -142,10 +146,12 @@ export default function ThreeReasonsNew() {
                 <div className="flex flex-col lg:flex-row justify-center items-center mt-12 gap-12">
                   {/* Left Key Features */}
                   <div className="lg:w-1/2">
-                    <div className="bg-white rounded-full px-8 py-3 inline-block mb-6 border border-gray-400">
-                      <span className="text-gray-700 font-medium">Key Features</span>
+                    <div className="text-center lg:text-left mb-6">
+                      <div className="bg-white rounded-full px-8 py-3 inline-block border border-gray-400">
+                        <span className="text-gray-700 font-medium">Key Features</span>
+                      </div>
                     </div>
-                    <p className="text-gray-700 text-lg leading-relaxed text-left max-w-md">
+                    <p className="text-gray-700 text-lg leading-relaxed text-center lg:text-left max-w-md mx-auto lg:mx-0">
                       After interviewing over 300 Japanese anime fans for more than a year, this book reveals hidden info you will never find online. It feels just like having a Japanese otaku friend guide you around Tokyo.
                     </p>
                   </div>

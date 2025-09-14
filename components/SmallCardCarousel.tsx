@@ -41,9 +41,9 @@ const SmallCardCarousel: React.FC<SmallCardCarouselProps> = ({ reasonNumber = 1 
   };
 
   return (
-    <div className="carousel-container relative w-full max-w-[300px] mx-auto h-[400px] flex items-center justify-center" style={{touchAction: 'pan-y'}}>
+    <div className="carousel-container relative w-full max-w-[300px] mx-auto h-[450px] flex items-center justify-center" style={{touchAction: 'pan-y'}}>
       {/* Cards stack */}
-      <div className="relative w-56 h-[350px]">
+      <div className="relative w-56 h-[400px]">
         {cards.map((card, index) => {
           const offset = (index - currentIndex + cards.length) % cards.length;
           const isActive = offset === 0;
