@@ -37,7 +37,7 @@ export default function GlimpseSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="relative w-full max-w-xs mx-auto md:max-w-none h-[500px] md:h-[400px] rounded-lg overflow-hidden shadow-lg"
+              className="relative w-full max-w-xs mx-auto md:max-w-none h-[600px] md:h-[400px] rounded-lg overflow-hidden shadow-lg"
             >
               <Image
                 src={image.src}
