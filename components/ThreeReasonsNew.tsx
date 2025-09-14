@@ -99,14 +99,14 @@ export default function ThreeReasonsNew() {
               {/* Reason 2 Content */}
               <div className="flex flex-col lg:flex-row justify-center items-center mt-12 gap-12">
                 {/* Left Image */}
-                <div className="lg:w-1/2">
-                  <div className="relative w-full h-64 rounded-lg overflow-hidden shadow-xl">
+                <div className="w-full max-w-sm lg:w-1/2 lg:max-w-none mx-auto">
+                  <div className="relative w-full h-48 sm:h-56 lg:h-64 rounded-lg overflow-hidden shadow-xl">
                     <Image
                       src="/images/reason/2/2.png"
                       alt="Japanese Otaku Friends Photo"
                       fill
                       className="object-cover"
-                      sizes="(max-width: 1024px) 100vw, 50vw"
+                      sizes="(max-width: 640px) 384px, (max-width: 1024px) 448px, 50vw"
                     />
                   </div>
                 </div>
