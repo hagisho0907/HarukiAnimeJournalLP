@@ -7,7 +7,7 @@ export default function TestimonialsNew() {
     {
       name: "Rob",
       location: "NYC",
-      text: "Thanks to this guidebook, I found anime treasures you&apos;d never come across in the US. It&apos;s literally like a treasure map drawn by locals in Japan.",
+      text: "Thanks to this guidebook, I found anime treasures you'd never come across in the US. It's literally like a treasure map drawn by locals in Japan.",
       avatar: "/images/testimonial/Rob.png"
     },
     {
