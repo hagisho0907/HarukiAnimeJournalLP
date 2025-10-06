@@ -58,8 +58,8 @@ export default function TopSection() {
             <h3 className="text-xl font-bold mb-2">Rob, NYC</h3>
             <div className="flex text-brand-yellow text-2xl mb-2">★★★★★</div>
             <p className="text-gray-700 max-w-xs">
-              Thanks to this guidebook, I found anime treasures you&apos;d never come across in the US. 
-              It&apos;s literally like a treasure map drawn by locals in Japan.
+              Thanks to this guidebook, I found anime treasures you'd never come across in the US. 
+              It's literally like a treasure map drawn by locals in Japan.
             </p>
           </div>
 
