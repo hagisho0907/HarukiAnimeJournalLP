@@ -19,7 +19,7 @@ export default function TestimonialsNew() {
     {
       name: "Alex",
       location: "London",
-      text: "This guidebook helped me navigate Akihabara without getting lost. Thanks to the maps and shop lists, I scored limited-edition figures and doujinshi I never thought I&apos;d find. It truly leveled up my otaku pilgrimage.",
+      text: "This guidebook helped me navigate Akihabara without getting lost. Thanks to the maps and shop lists, I scored limited-edition figures and doujinshi I never thought I'd find. It truly leveled up my otaku pilgrimage.",
       avatar: "/images/testimonial/Alex Johnson.png"
     },
     {
