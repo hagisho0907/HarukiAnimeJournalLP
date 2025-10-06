@@ -39,9 +39,6 @@ export default function Home() {
         buttonUrl="https://harukianimejournal.myshopify.com/products/the-ultimate-tokyo-anime-guide-1"
         price="$19"
         hideAtSectionId="faq-section"
-        onButtonClick={() => {
-          console.log('Sticky CTA clicked!')
-        }}
       />
     </>
   )
