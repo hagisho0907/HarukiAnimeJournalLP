@@ -1,9 +1,9 @@
 'use client'
 import { motion, AnimatePresence } from 'framer-motion'
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import Image from 'next/image'
 
-interface BenefitModalProps {
+interface BenefitPopupProps {
   isOpen: boolean
   onClose: () => void
   benefit: {
@@ -14,13 +14,17 @@ interface BenefitModalProps {
   }
 }
 
-export default function BenefitModal({ isOpen, onClose, benefit }: BenefitModalProps) {
-  // モーダル外クリックで閉じる
-  const handleBackdropClick = (e: React.MouseEvent) => {
-    if (e.target === e.currentTarget) {
-      onClose()
+export default function BenefitPopup({ isOpen, onClose, benefit }: BenefitPopupProps) {
+  // 3秒後に自動で閉じる
+  useEffect(() => {
+    if (isOpen) {
+      const timer = setTimeout(() => {
+        onClose()
+      }, 3000)
+      
+      return () => clearTimeout(timer)
     }
-  }
+  }, [isOpen, onClose])
 
   // ESCキーで閉じる
   useEffect(() => {
@@ -32,12 +36,10 @@ export default function BenefitModal({ isOpen, onClose, benefit }: BenefitModalP
     
     if (isOpen) {
       document.addEventListener('keydown', handleEsc)
-      document.body.style.overflow = 'hidden'
     }
     
     return () => {
       document.removeEventListener('keydown', handleEsc)
-      document.body.style.overflow = 'unset'
     }
   }, [isOpen, onClose])
 
@@ -61,66 +63,57 @@ export default function BenefitModal({ isOpen, onClose, benefit }: BenefitModalP
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75"
-          onClick={handleBackdropClick}
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-40 pointer-events-none"
         >
           <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0.8, opacity: 0 }}
-            transition={{ type: "spring", stiffness: 300, damping: 30 }}
-            className="bg-white rounded-lg p-8 max-w-4xl max-h-[90vh] overflow-y-auto mx-4 relative"
+            initial={{ scale: 0.9, opacity: 0, y: 30 }}
+            animate={{ scale: 1, opacity: 1, y: 0 }}
+            exit={{ scale: 0.9, opacity: 0, y: 30 }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
+            className="bg-white rounded-lg shadow-2xl p-6 max-w-2xl mx-4 relative border pointer-events-auto"
           >
-            {/* 閉じるボタン */}
-            <button
-              onClick={onClose}
-              className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl z-10"
-            >
-              ×
-            </button>
-
             {/* ヘッダー */}
-            <div className="text-center mb-8">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <div className="text-center mb-6">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">
                 What this <span className="text-gray-500">guidebook</span><br />
                 <span className="text-brand-red">Gives</span> you
               </h2>
               
-              <div className="flex items-center justify-center gap-4 mb-6">
-                <div className="bg-brand-red text-white rounded-full w-16 h-16 flex flex-col items-center justify-center font-bold">
+              <div className="flex items-center justify-center gap-4 mb-4">
+                <div className="bg-brand-red text-white rounded-full w-14 h-14 flex flex-col items-center justify-center font-bold">
                   <span className="text-xs">BENEFIT</span>
-                  <span className="text-xl">{benefit.number}</span>
+                  <span className="text-lg">{benefit.number}</span>
                 </div>
                 <div className="text-left">
-                  <h3 className="text-2xl font-bold">
+                  <h3 className="text-xl font-bold">
                     <span className="text-brand-red">{benefit.title.split(' ')[0]}</span>{' '}
                     {benefit.title.split(' ').slice(1).join(' ')}
                   </h3>
-                  <p className="text-lg text-gray-700">{benefit.subtitle}</p>
+                  <p className="text-gray-700">{benefit.subtitle}</p>
                 </div>
               </div>
             </div>
 
             {/* メインコンテンツエリア */}
-            <div className="bg-gray-100 rounded-lg p-6 mb-6">
-              <div className="bg-white rounded p-4 mb-4">
-                <h4 className="text-xl font-bold mb-2">100+ spots with the latest and most accurate info</h4>
-                <div className="text-gray-400 text-sm mb-4">100+ spots with the latest and</div>
+            <div className="bg-gray-100 rounded-lg p-4 mb-4">
+              <div className="bg-white rounded p-3 mb-3">
+                <h4 className="font-bold mb-2">100+ spots with the latest and most accurate info</h4>
+                <div className="text-gray-400 text-sm mb-2">100+ spots with the latest and</div>
               </div>
 
               {/* カルーセルエリア */}
-              <div className="relative w-full overflow-hidden bg-white rounded mb-4">
-                <div className="carousel-wrapper-modal">
-                  <div className="carousel-belt-modal">
+              <div className="relative w-full overflow-hidden bg-white rounded mb-3">
+                <div className="carousel-wrapper-popup">
+                  <div className="carousel-belt-popup">
                     {allImages.map((image, index) => (
-                      <div key={index} className="carousel-item-modal">
-                        <div className="relative h-48 rounded overflow-hidden">
+                      <div key={index} className="carousel-item-popup">
+                        <div className="relative h-32 rounded overflow-hidden">
                           <Image
                             src={image.src}
                             alt={image.alt}
                             fill
                             className="object-cover"
-                            sizes="200px"
+                            sizes="150px"
                           />
                         </div>
                       </div>
@@ -129,9 +122,8 @@ export default function BenefitModal({ isOpen, onClose, benefit }: BenefitModalP
                 </div>
               </div>
 
-              <div className="bg-gray-200 rounded p-4">
+              <div className="bg-gray-200 rounded p-3">
                 <p className="text-sm text-gray-700">
-                  説明説明説明説明説明説明説明説明<br />
                   説明説明説明説明説明説明説明説明<br />
                   説明説明説明説明説明説明説明説明<br />
                   説明説明
@@ -141,7 +133,7 @@ export default function BenefitModal({ isOpen, onClose, benefit }: BenefitModalP
 
             {/* CTAボタン */}
             <div className="text-center">
-              <p className="text-2xl font-bold mb-4">
+              <p className="text-xl font-bold mb-3">
                 BUY NOW SAVE <span className="text-brand-red">$30</span>
               </p>
               <motion.a
@@ -150,36 +142,48 @@ export default function BenefitModal({ isOpen, onClose, benefit }: BenefitModalP
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-brand-yellow text-black font-bold py-3 px-8 rounded-lg text-lg hover:bg-yellow-400 transition-all duration-200 shadow-lg inline-block"
+                className="bg-brand-yellow text-black font-bold py-2 px-6 rounded-lg hover:bg-yellow-400 transition-all duration-200 shadow-lg inline-block"
               >
                 Get It Now
               </motion.a>
             </div>
+
+            {/* 自動閉じるインジケーター */}
+            <div className="absolute top-2 right-2">
+              <div className="w-8 h-1 bg-gray-200 rounded-full overflow-hidden">
+                <motion.div
+                  className="h-full bg-brand-red"
+                  initial={{ width: "100%" }}
+                  animate={{ width: "0%" }}
+                  transition={{ duration: 3, ease: "linear" }}
+                />
+              </div>
+            </div>
           </motion.div>
 
           <style jsx>{`
-            .carousel-wrapper-modal {
+            .carousel-wrapper-popup {
               display: flex;
               align-items: center;
               position: relative;
               width: 100%;
-              height: 200px;
+              height: 140px;
             }
 
-            .carousel-belt-modal {
+            .carousel-belt-popup {
               display: flex;
-              gap: 1rem;
-              animation: scroll-modal 15s linear infinite;
+              gap: 0.75rem;
+              animation: scroll-popup 12s linear infinite;
               width: fit-content;
-              padding: 1rem;
+              padding: 0.5rem;
             }
 
-            .carousel-item-modal {
+            .carousel-item-popup {
               flex-shrink: 0;
-              width: 180px;
+              width: 120px;
             }
 
-            @keyframes scroll-modal {
+            @keyframes scroll-popup {
               0% {
                 transform: translateX(0);
               }
@@ -188,7 +192,7 @@ export default function BenefitModal({ isOpen, onClose, benefit }: BenefitModalP
               }
             }
 
-            .carousel-belt-modal:hover {
+            .carousel-belt-popup:hover {
               animation-play-state: paused;
             }
           `}</style>

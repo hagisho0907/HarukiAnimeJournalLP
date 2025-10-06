@@ -1,7 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import BenefitModal from './BenefitModal'
+import BenefitPopup from './BenefitPopup'
 
 export default function InsideSection() {
   const [selectedBenefit, setSelectedBenefit] = useState<number | null>(null)
@@ -156,9 +156,9 @@ export default function InsideSection() {
 
       </div>
       
-      {/* モーダル */}
+      {/* ポップアップ */}
       {selectedBenefit && (
-        <BenefitModal
+        <BenefitPopup
           isOpen={selectedBenefit !== null}
           onClose={() => setSelectedBenefit(null)}
           benefit={features.find(f => f.number === selectedBenefit)!}
