@@ -86,7 +86,7 @@ export default function ConveyorCarousel({
 
         .conveyor-belt {
           display: flex;
-          gap: 1rem;
+          gap: 0.5rem;
           animation: scroll ${animationDuration}s linear infinite;
           width: fit-content;
           padding: 0 2rem;
