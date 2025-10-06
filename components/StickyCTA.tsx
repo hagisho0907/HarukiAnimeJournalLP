@@ -92,8 +92,8 @@ export default function StickyCTA({
 
   const handleClick = () => {
     // Facebook Pixel tracking (if tracking ID provided)
-    if (trackingId && typeof window !== 'undefined' && window.fbq) {
-      window.fbq('track', 'InitiateCheckout', {
+    if (trackingId && typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', 'InitiateCheckout', {
         value: parseFloat(price.replace('$', '')),
         currency: 'USD',
         content_type: 'product',
@@ -147,9 +147,3 @@ export default function StickyCTA({
   )
 }
 
-// Facebook Pixel用の型定義
-declare global {
-  interface Window {
-    fbq?: any
-  }
-}
