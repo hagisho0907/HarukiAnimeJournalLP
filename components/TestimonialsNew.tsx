@@ -31,7 +31,7 @@ export default function TestimonialsNew() {
   ]
 
   return (
-    <section className="py-16 lg:py-24 bg-white">
+    <section className="py-16 lg:py-24 bg-brand-cream">
       <div className="container mx-auto px-4 max-w-6xl">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
