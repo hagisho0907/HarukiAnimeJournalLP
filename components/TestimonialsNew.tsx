@@ -5,6 +5,18 @@ import Image from 'next/image'
 export default function TestimonialsNew() {
   const testimonials = [
     {
+      name: "Rob",
+      location: "NYC",
+      text: "Thanks to this guidebook, I found anime treasures you&apos;d never come across in the US. It&apos;s literally like a treasure map drawn by locals in Japan.",
+      avatar: "/images/testimonial/Rob.png"
+    },
+    {
+      name: "Kaan",
+      location: "Istanbul",
+      text: "On my first trip to Japan I wasted 150 USD on a fake anime figure, but after getting this guidebook I can finally shop with confidence. Thanks!",
+      avatar: "/images/testimonial/Kaan.png"
+    },
+    {
       name: "Alex Johnson",
       location: "USA",
       text: "This guidebook helped me navigate Akihabara without getting lost. Thanks to the maps and shop lists, I scored limited-edition figures and doujinshi I never thought I&apos;d find. It truly leveled up my otaku pilgrimage.",
@@ -15,18 +27,12 @@ export default function TestimonialsNew() {
       location: "Singapore",
       text: "I loved the recommendations for themed cafés and female-oriented shops. I discovered places dedicated to my favorite BL series and met other fans from around the world. This guide made my Tokyo trip unforgettable!",
       avatar: "/images/testimonial/Mei Wong.png"
-    },
-    {
-      name: "Daniel García",
-      location: "Spain",
-      text: "This guidebook explained Japan&apos;s tricky train system in a way even I could follow. Without it, I would have missed rare retro game shops and anime exhibitions. Highly recommended for every true otaku travel",
-      avatar: "/images/testimonial/Daniel García.png"
     }
   ]
 
   return (
     <section className="py-16 lg:py-24 bg-white">
-      <div className="container mx-auto px-4 max-w-7xl">
+      <div className="container mx-auto px-4 max-w-6xl">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -34,10 +40,10 @@ export default function TestimonialsNew() {
           viewport={{ once: true }}
           className="text-4xl lg:text-5xl font-bold text-center text-gray-800 mb-16"
         >
-          What Our Readers Say
+          Testimonials
         </motion.h2>
 
-        <div className="flex flex-wrap justify-center gap-16 lg:gap-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
@@ -45,7 +51,7 @@ export default function TestimonialsNew() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="flex flex-col items-center text-center max-w-sm"
+              className="flex flex-col items-center text-center"
             >
               <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
                 <Image
