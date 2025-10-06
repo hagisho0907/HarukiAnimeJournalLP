@@ -53,7 +53,7 @@ export default function TopSection() {
         >
           <div className="flex flex-col items-center text-center">
             <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
-              <Image src="/images/rob-avatar.jpg" alt="Rob from NYC" width={128} height={128} className="w-full h-full object-cover" />
+              <Image src="/images/top/Rob.png" alt="Rob from NYC" width={128} height={128} className="w-full h-full object-cover" />
             </div>
             <h3 className="text-xl font-bold mb-2">Rob, NYC</h3>
             <div className="flex text-brand-yellow text-2xl mb-2">★★★★★</div>
@@ -65,7 +65,7 @@ export default function TopSection() {
 
           <div className="flex flex-col items-center text-center">
             <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
-              <Image src="/images/kaan-avatar.jpg" alt="Kaan from Istanbul" width={128} height={128} className="w-full h-full object-cover" />
+              <Image src="/images/top/Kaan.png" alt="Kaan from Istanbul" width={128} height={128} className="w-full h-full object-cover" />
             </div>
             <h3 className="text-xl font-bold mb-2">Kaan, Istanbul</h3>
             <div className="flex text-brand-yellow text-2xl mb-2">★★★★★</div>
