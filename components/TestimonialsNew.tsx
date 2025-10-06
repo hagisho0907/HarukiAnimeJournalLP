@@ -17,13 +17,13 @@ export default function TestimonialsNew() {
       avatar: "/images/testimonial/Kaan.png"
     },
     {
-      name: "Alex Johnson",
-      location: "USA",
+      name: "Alex",
+      location: "London",
       text: "This guidebook helped me navigate Akihabara without getting lost. Thanks to the maps and shop lists, I scored limited-edition figures and doujinshi I never thought I&apos;d find. It truly leveled up my otaku pilgrimage.",
       avatar: "/images/testimonial/Alex Johnson.png"
     },
     {
-      name: "Mei Wong", 
+      name: "Mei", 
       location: "Singapore",
       text: "I loved the recommendations for themed cafés and female-oriented shops. I discovered places dedicated to my favorite BL series and met other fans from around the world. This guide made my Tokyo trip unforgettable!",
       avatar: "/images/testimonial/Mei Wong.png"
