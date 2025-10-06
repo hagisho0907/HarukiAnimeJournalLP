@@ -23,7 +23,7 @@ export default function FaqSection() {
   ]
 
   return (
-    <section className="relative py-12 md:py-16 lg:py-24 overflow-hidden">
+    <section id="faq-section" className="relative py-12 md:py-16 lg:py-24 overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <div className="relative w-full h-full">
