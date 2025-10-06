@@ -97,8 +97,8 @@ export default function BenefitPopup({ isOpen, onClose, benefit }: BenefitPopupP
             {/* メインコンテンツエリア */}
             <div className="bg-gray-100 rounded-lg p-4 mb-4">
               <div className="bg-white rounded p-3 mb-3">
-                <h4 className="font-bold mb-2">100+ spots with the latest and most accurate info</h4>
-                <div className="text-gray-400 text-sm mb-2">100+ spots with the latest and</div>
+                <h4 className="font-bold mb-2">{benefit.title}</h4>
+                <div className="text-gray-600 text-sm mb-2">{benefit.subtitle}</div>
               </div>
 
               {/* カルーセルエリア */}
@@ -124,28 +124,9 @@ export default function BenefitPopup({ isOpen, onClose, benefit }: BenefitPopupP
 
               <div className="bg-gray-200 rounded p-3">
                 <p className="text-sm text-gray-700">
-                  説明説明説明説明説明説明説明説明<br />
-                  説明説明説明説明説明説明説明説明<br />
-                  説明説明
+                  {benefit.description}
                 </p>
               </div>
-            </div>
-
-            {/* CTAボタン */}
-            <div className="text-center">
-              <p className="text-xl font-bold mb-3">
-                BUY NOW SAVE <span className="text-brand-red">$30</span>
-              </p>
-              <motion.a
-                href="https://harukianimejournal.myshopify.com/products/the-ultimate-tokyo-anime-guide-1"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-brand-yellow text-black font-bold py-2 px-6 rounded-lg hover:bg-yellow-400 transition-all duration-200 shadow-lg inline-block"
-              >
-                Get It Now
-              </motion.a>
             </div>
 
             {/* 自動閉じるインジケーター */}

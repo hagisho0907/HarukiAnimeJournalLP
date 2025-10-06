@@ -11,21 +11,21 @@ export default function InsideSection() {
       number: 1,
       title: "100+ Trusted spots",
       subtitle: "from real Japanese otaku",
-      description: "Carefully curated locations loved by local anime fans",
+      description: "Get access to over 100 carefully curated anime locations that only real Japanese otaku know about. These aren't your typical tourist spots - they're the hidden gems where locals actually go to experience authentic anime culture. From rare figure shops in back alleys to themed cafes off the beaten path, discover the real Tokyo anime scene that guidebooks never mention.",
       icon: "📍"
     },
     {
       number: 2,
       title: "Never get lost!",
       subtitle: "A Google Maps Link List",
-      description: "Direct links to every location for easy navigation",
+      description: "Every single location comes with a direct Google Maps link, so you'll never waste time trying to find places or getting lost in Tokyo's maze-like streets. Simply click the link and let your phone guide you directly to each spot. No more fumbling with addresses or trying to translate location names - just seamless navigation to every anime destination.",
       icon: "🗺️"
     },
     {
       number: 3,
       title: "No tour guide needed!",
       subtitle: "Ready to use Tour Courses",
-      description: "Pre-planned routes for the perfect anime adventure",
+      description: "Follow our pre-planned anime tour routes that group nearby locations for maximum efficiency. Each course is designed to save you time and transportation costs while ensuring you don't miss any must-see spots in each area. Whether you have 4 hours or a full day, we've created the perfect itineraries for every schedule.",
       icon: "🚶"
     }
   ]
