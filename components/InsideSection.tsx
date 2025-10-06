@@ -63,67 +63,6 @@ export default function InsideSection() {
           ))}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-16 bg-gray-100 rounded-lg p-8"
-        >
-          <h3 className="text-3xl md:text-4xl font-bold text-center mb-8">
-            What this <span className="text-gray-500">guidebook</span><br />
-            <span className="text-brand-red">Gives</span> you
-          </h3>
-
-          <div className="space-y-8">
-            <div className="flex items-start gap-4">
-              <div className="bg-brand-red text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold flex-shrink-0">
-                1
-              </div>
-              <div className="flex-1">
-                <h4 className="text-xl font-bold">100+ spots with the latest and most accurate info</h4>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="bg-brand-red text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold flex-shrink-0">
-                2
-              </div>
-              <div className="flex-1">
-                <h4 className="text-xl font-bold">Interactive maps and navigation</h4>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="bg-brand-red text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold flex-shrink-0">
-                3
-              </div>
-              <div className="flex-1">
-                <h4 className="text-xl font-bold">Exclusive insider tips and explanations</h4>
-              </div>
-            </div>
-          </div>
-
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            className="text-center mt-12"
-          >
-            <p className="text-3xl font-bold mb-6">
-              BUY NOW SAVE <span className="text-brand-red">$30</span>
-            </p>
-            <motion.a
-              href="https://harukianimejournal.myshopify.com/products/the-ultimate-tokyo-anime-guide-1"
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-brand-yellow text-black font-bold py-4 px-12 rounded-lg text-xl hover:bg-yellow-400 transition-all duration-200 shadow-lg inline-block"
-            >
-              Get It Now
-            </motion.a>
-          </motion.div>
-        </motion.div>
       </div>
     </section>
   )
