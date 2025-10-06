@@ -35,8 +35,8 @@ export default function InsideSection() {
           transition={{ duration: 0.8 }}
           className="text-4xl md:text-6xl font-bold text-center mb-16"
         >
-          Let's See<br />
-          What's Inside...
+          Let&apos;s See<br />
+          What&apos;s Inside...
         </motion.h2>
 
         <div className="space-y-12">
