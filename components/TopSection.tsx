@@ -34,15 +34,67 @@ export default function TopSection() {
       </div>
 
       {/* Conveyor Carousel */}
-      <ConveyorCarousel
-        images={carouselImages}
-        sectionId="top-carousel"
-        title=""
-        description=""
-        backgroundColor="bg-transparent"
-        itemWidth={{ mobile: 250, desktop: 300 }}
-        animationDuration={20}
-      />
+      <div className="relative w-full overflow-hidden">
+        <div className="conveyor-wrapper">
+          <div className="conveyor-belt-custom">
+            {[...carouselImages, ...carouselImages].map((image, index) => (
+              <div key={index} className="conveyor-item-custom">
+                <div className="relative h-[400px] md:h-[500px] rounded-lg overflow-hidden shadow-lg bg-white">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    className="object-cover"
+                    sizes="300px"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <style jsx>{`
+        .conveyor-wrapper {
+          display: flex;
+          align-items: center;
+          position: relative;
+          width: 100%;
+          height: 100%;
+        }
+
+        .conveyor-belt-custom {
+          display: flex;
+          gap: 0.25rem;
+          animation: scroll 20s linear infinite;
+          width: fit-content;
+          padding: 0 2rem;
+        }
+
+        .conveyor-item-custom {
+          flex-shrink: 0;
+          width: 250px;
+        }
+
+        @media (min-width: 768px) {
+          .conveyor-item-custom {
+            width: 300px;
+          }
+        }
+
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+
+        .conveyor-belt-custom:hover {
+          animation-play-state: paused;
+        }
+      `}</style>
 
       <div className="container mx-auto px-4 max-w-6xl">
         <motion.div
