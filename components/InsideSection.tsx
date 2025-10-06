@@ -1,7 +1,11 @@
 'use client'
 import { motion } from 'framer-motion'
+import { useState } from 'react'
+import BenefitModal from './BenefitModal'
 
 export default function InsideSection() {
+  const [selectedBenefit, setSelectedBenefit] = useState<number | null>(null)
+  
   const features = [
     {
       number: 1,
@@ -100,7 +104,7 @@ export default function InsideSection() {
               
               {/* Image Placeholder Grid */}
               <motion.div 
-                className="flex justify-center mb-8"
+                className="flex justify-center mb-8 cursor-pointer"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ 
@@ -109,33 +113,40 @@ export default function InsideSection() {
                   ease: "easeOut"
                 }}
                 viewport={{ once: true }}
+                onMouseEnter={() => setSelectedBenefit(feature.number)}
+                whileHover={{ scale: 1.05 }}
               >
                 <div className="relative">
                   {/* Background cards */}
                   <div className="grid grid-cols-2 gap-4 max-w-lg mx-auto">
-                    <div className="bg-gray-200 rounded-lg h-32 w-32 flex items-center justify-center border-2 border-gray-300">
+                    <div className="bg-gray-200 rounded-lg h-32 w-32 flex items-center justify-center border-2 border-gray-300 hover:bg-gray-300 transition-colors">
                       <span className="text-gray-500 text-sm">画像</span>
                     </div>
-                    <div className="bg-gray-200 rounded-lg h-32 w-32 flex items-center justify-center border-2 border-gray-300">
+                    <div className="bg-gray-200 rounded-lg h-32 w-32 flex items-center justify-center border-2 border-gray-300 hover:bg-gray-300 transition-colors">
                       <span className="text-gray-500 text-sm">画像</span>
                     </div>
                   </div>
                   
                   {/* Center overlapping cards */}
                   <div className="absolute top-8 left-1/2 transform -translate-x-1/2 grid grid-cols-2 gap-4">
-                    <div className="bg-gray-200 rounded-lg h-32 w-32 flex items-center justify-center border-2 border-gray-300 shadow-lg">
+                    <div className="bg-gray-200 rounded-lg h-32 w-32 flex items-center justify-center border-2 border-gray-300 shadow-lg hover:bg-gray-300 transition-colors">
                       <span className="text-gray-500 text-sm">画像</span>
                     </div>
-                    <div className="bg-gray-200 rounded-lg h-32 w-32 flex items-center justify-center border-2 border-gray-300 shadow-lg">
+                    <div className="bg-gray-200 rounded-lg h-32 w-32 flex items-center justify-center border-2 border-gray-300 shadow-lg hover:bg-gray-300 transition-colors">
                       <span className="text-gray-500 text-sm">画像</span>
                     </div>
                   </div>
                   
                   {/* Center front card */}
                   <div className="absolute top-16 left-1/2 transform -translate-x-1/2">
-                    <div className="bg-gray-200 rounded-lg h-32 w-32 flex items-center justify-center border-2 border-gray-300 shadow-xl">
+                    <div className="bg-gray-200 rounded-lg h-32 w-32 flex items-center justify-center border-2 border-gray-300 shadow-xl hover:bg-gray-300 transition-colors">
                       <span className="text-gray-500 text-sm">画像</span>
                     </div>
+                  </div>
+                  
+                  {/* ホバーヒント */}
+                  <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-xs text-gray-500 opacity-70">
+                    Click to see details
                   </div>
                 </div>
               </motion.div>
@@ -144,6 +155,15 @@ export default function InsideSection() {
         </div>
 
       </div>
+      
+      {/* モーダル */}
+      {selectedBenefit && (
+        <BenefitModal
+          isOpen={selectedBenefit !== null}
+          onClose={() => setSelectedBenefit(null)}
+          benefit={features.find(f => f.number === selectedBenefit)!}
+        />
+      )}
     </section>
   )
 }
