@@ -4,7 +4,7 @@ import InsideSection from '@/components/InsideSection'
 import TestimonialsNew from '@/components/TestimonialsNew'
 import AboutSection from '@/components/AboutSection'
 import FaqSection from '@/components/FaqSection'
-import LimitedSale from '@/components/LimitedSale'
+import LimitedSection from '@/components/LimitedSection'
 import ContactSection from '@/components/ContactSection'
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
       <TestimonialsNew />
       <AboutSection />
       <FaqSection />
-      <LimitedSale />
+      <LimitedSection />
       <ContactSection />
     </main>
   )
