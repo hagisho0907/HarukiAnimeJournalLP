@@ -114,6 +114,7 @@ export default function InsideSection() {
                 }}
                 viewport={{ once: true }}
                 onMouseEnter={() => setSelectedBenefit(feature.number)}
+                onTouchStart={() => setSelectedBenefit(feature.number)}
                 whileHover={{ scale: 1.05 }}
               >
                 <div className="relative">
