@@ -49,11 +49,9 @@ export default function InsideSection() {
               className="text-center"
             >
               <div className="flex items-center justify-start gap-4 mb-8">
-                <div className="bg-brand-red text-white rounded-full w-16 h-16 flex items-center justify-center text-xl font-bold flex-shrink-0">
-                  <span className="text-sm">REASON</span>
-                </div>
-                <div className="bg-brand-red text-white rounded-full w-12 h-12 flex items-center justify-center text-2xl font-bold">
-                  {feature.number}
+                <div className="bg-brand-red text-white rounded-full w-20 h-20 flex flex-col items-center justify-center font-bold flex-shrink-0">
+                  <span className="text-xs">BENEFIT</span>
+                  <span className="text-2xl">{feature.number}</span>
                 </div>
                 <div className="text-left">
                   <h3 className="text-2xl md:text-3xl font-bold">
