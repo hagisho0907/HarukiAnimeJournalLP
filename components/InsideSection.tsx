@@ -89,9 +89,8 @@ export default function InsideSection() {
               <div className="bg-brand-red text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold flex-shrink-0">
                 1
               </div>
-              <div>
-                <h4 className="text-xl font-bold mb-2">100+ spots with the latest and most accurate info</h4>
-                <div className="bg-white rounded-lg p-4 h-32"></div>
+              <div className="flex-1">
+                <h4 className="text-xl font-bold">100+ spots with the latest and most accurate info</h4>
               </div>
             </div>
 
@@ -99,9 +98,8 @@ export default function InsideSection() {
               <div className="bg-brand-red text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold flex-shrink-0">
                 2
               </div>
-              <div>
-                <h4 className="text-xl font-bold mb-2">Interactive maps and navigation</h4>
-                <div className="bg-white rounded-lg p-4 h-32"></div>
+              <div className="flex-1">
+                <h4 className="text-xl font-bold">Interactive maps and navigation</h4>
               </div>
             </div>
 
@@ -109,13 +107,8 @@ export default function InsideSection() {
               <div className="bg-brand-red text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold flex-shrink-0">
                 3
               </div>
-              <div>
-                <h4 className="text-xl font-bold mb-2">Exclusive insider tips and explanations</h4>
-                <div className="bg-white rounded-lg p-4 h-32 flex items-center justify-center text-gray-500">
-                  説明説明説明説明説明説明説明説明<br />
-                  説明説明説明説明説明説明説明説明<br />
-                  説明説明
-                </div>
+              <div className="flex-1">
+                <h4 className="text-xl font-bold">Exclusive insider tips and explanations</h4>
               </div>
             </div>
           </div>
