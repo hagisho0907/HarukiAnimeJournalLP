@@ -14,16 +14,23 @@ export default function SectionDivider({
   
   if (variant === 'wave') {
     return (
-      <div className="relative h-12 -mt-1">
+      <div className="relative h-6 -mt-1">
         <svg
-          className="absolute bottom-0 w-full h-12"
+          className="absolute bottom-0 w-full h-6"
           preserveAspectRatio="none"
-          viewBox="0 0 1440 48"
+          viewBox="0 0 1440 24"
           xmlns="http://www.w3.org/2000/svg"
         >
+          <defs>
+            <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#EF4444" />
+              <stop offset="50%" stopColor="#FCD34D" />
+              <stop offset="100%" stopColor="#EF4444" />
+            </linearGradient>
+          </defs>
           <path
-            d="M0,48 L0,16 Q360,48 720,16 T1440,16 L1440,48 Z"
-            fill={toColor}
+            d="M0,24 L0,8 Q360,24 720,8 T1440,8 L1440,24 Z"
+            fill="url(#waveGradient)"
           />
         </svg>
       </div>

@@ -12,16 +12,16 @@ export default function Home() {
   return (
     <main>
       <TopSection />
-      <SectionDivider variant="wave" fromColor="#FFF8F3" toColor="#FFF8F3" />
+      <SectionDivider variant="wave" />
       
       <TroublesAndReasonSection />
-      <SectionDivider variant="curve" fromColor="#FFF8F3" toColor="#FFF8F3" />
+      <SectionDivider variant="wave" />
       
       <InsideSection />
-      <SectionDivider variant="zigzag" fromColor="#FFF8F3" toColor="#FFFFFF" />
+      <SectionDivider variant="wave" />
       
       <TestimonialsNew />
-      <SectionDivider variant="dots" />
+      <SectionDivider variant="wave" />
       
       <AboutSection />
       
