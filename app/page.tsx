@@ -12,13 +12,13 @@ export default function Home() {
   return (
     <main>
       <TopSection />
-      <SectionDivider variant="wave" fromColor="bg-brand-cream" toColor="bg-brand-cream" />
+      <SectionDivider variant="wave" fromColor="#FFF8F3" toColor="#FFF8F3" />
       
       <TroublesAndReasonSection />
-      <SectionDivider variant="curve" fromColor="bg-brand-cream" toColor="bg-brand-cream" />
+      <SectionDivider variant="curve" fromColor="#FFF8F3" toColor="#FFF8F3" />
       
       <InsideSection />
-      <SectionDivider variant="zigzag" fromColor="bg-brand-cream" toColor="bg-white" />
+      <SectionDivider variant="zigzag" fromColor="#FFF8F3" toColor="#FFFFFF" />
       
       <TestimonialsNew />
       <SectionDivider variant="dots" />

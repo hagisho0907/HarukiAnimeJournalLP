@@ -8,22 +8,22 @@ interface SectionDividerProps {
 
 export default function SectionDivider({ 
   variant = 'wave', 
-  fromColor = 'bg-brand-cream',
-  toColor = 'bg-white'
+  fromColor = '#FFF8F3',
+  toColor = '#FFFFFF'
 }: SectionDividerProps) {
   
   if (variant === 'wave') {
     return (
-      <div className="relative">
+      <div className="relative h-12 -mt-1">
         <svg
-          className="absolute top-0 w-full h-12"
+          className="absolute bottom-0 w-full h-12"
           preserveAspectRatio="none"
           viewBox="0 0 1440 48"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
             d="M0,48 L0,16 Q360,48 720,16 T1440,16 L1440,48 Z"
-            className={`fill-current ${toColor.replace('bg-', 'text-')}`}
+            fill={toColor}
           />
         </svg>
       </div>
@@ -32,16 +32,16 @@ export default function SectionDivider({
 
   if (variant === 'zigzag') {
     return (
-      <div className="relative overflow-hidden">
+      <div className="relative h-8 -mt-1">
         <svg
-          className="absolute top-0 w-full h-8"
+          className="absolute bottom-0 w-full h-8"
           preserveAspectRatio="none"
           viewBox="0 0 1440 32"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
             d="M0,32 L80,0 L160,32 L240,0 L320,32 L400,0 L480,32 L560,0 L640,32 L720,0 L800,32 L880,0 L960,32 L1040,0 L1120,32 L1200,0 L1280,32 L1360,0 L1440,32 Z"
-            className={`fill-current ${toColor.replace('bg-', 'text-')}`}
+            fill={toColor}
           />
         </svg>
       </div>
@@ -50,16 +50,16 @@ export default function SectionDivider({
 
   if (variant === 'curve') {
     return (
-      <div className="relative">
+      <div className="relative h-16 -mt-1">
         <svg
-          className="absolute top-0 w-full h-16"
+          className="absolute bottom-0 w-full h-16"
           preserveAspectRatio="none"
           viewBox="0 0 1440 64"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
             d="M0,64 L0,0 Q720,64 1440,0 L1440,64 Z"
-            className={`fill-current ${toColor.replace('bg-', 'text-')}`}
+            fill={toColor}
           />
         </svg>
       </div>
@@ -68,7 +68,7 @@ export default function SectionDivider({
 
   if (variant === 'dots') {
     return (
-      <div className="relative py-8">
+      <div className="relative py-8 bg-white">
         <div className="flex justify-center items-center space-x-3">
           {[...Array(7)].map((_, i) => (
             <div
@@ -83,7 +83,12 @@ export default function SectionDivider({
 
   if (variant === 'gradient') {
     return (
-      <div className={`h-24 bg-gradient-to-b ${fromColor.replace('bg-', 'from-')} ${toColor.replace('bg-', 'to-')}`} />
+      <div 
+        className="h-24"
+        style={{
+          background: `linear-gradient(to bottom, ${fromColor}, ${toColor})`
+        }}
+      />
     )
   }
 
