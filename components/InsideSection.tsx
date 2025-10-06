@@ -46,28 +46,18 @@ export default function InsideSection() {
               initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
-              className="flex flex-col md:flex-row items-center gap-8"
+              className="flex items-center gap-8"
             >
               <div className="bg-brand-red text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold flex-shrink-0">
                 {feature.number}
               </div>
               
-              <div className="flex-1 text-center md:text-left">
+              <div className="flex-1">
                 <h3 className="text-2xl md:text-3xl font-bold mb-2">
                   <span className="text-brand-red">{feature.title.split(' ')[0]}</span>{' '}
                   {feature.title.split(' ').slice(1).join(' ')}
                 </h3>
                 <p className="text-xl text-gray-700">{feature.subtitle}</p>
-              </div>
-
-              <div className="flex-1">
-                <div className="bg-gray-100 rounded-lg p-4 h-40 flex items-center justify-center">
-                  <div className="grid grid-cols-3 gap-2 w-full max-w-xs">
-                    {[...Array(6)].map((_, i) => (
-                      <div key={i} className="bg-gray-300 rounded h-12"></div>
-                    ))}
-                  </div>
-                </div>
               </div>
             </motion.div>
           ))}
