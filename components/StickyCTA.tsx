@@ -116,16 +116,16 @@ export default function StickyCTA({
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 100 }}
           transition={{ duration: 0.3, ease: "easeOut" }}
-          className="fixed bottom-0 left-0 right-0 z-50 p-4 bg-gradient-to-t from-white via-white to-transparent"
+          className="fixed bottom-0 left-0 right-0 z-50 p-2 md:p-4 bg-gradient-to-t from-white via-white to-transparent"
         >
           <div className="container mx-auto max-w-4xl">
-            <div className="bg-white rounded-lg shadow-2xl p-4 md:p-6 border border-gray-100">
-              <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-                <div className="text-center md:text-left">
-                  <p className="text-lg md:text-xl font-bold text-gray-800 mb-1">
+            <div className="bg-white rounded-lg shadow-2xl p-2 md:p-6 border border-gray-100">
+              <div className="flex flex-row items-center justify-between gap-2 md:gap-4">
+                <div className="text-left flex-1">
+                  <p className="text-sm md:text-xl font-bold text-gray-800 mb-0 md:mb-1 leading-tight">
                     {title}
                   </p>
-                  <p className="text-sm md:text-base text-gray-600">
+                  <p className="text-xs md:text-base text-gray-600 leading-tight">
                     {description} {price && `for just ${price}!`}
                   </p>
                 </div>
@@ -133,7 +133,7 @@ export default function StickyCTA({
                   href={buttonUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 text-lg whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+                  className="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 md:py-3 md:px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 text-sm md:text-lg whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 flex-shrink-0"
                   onClick={handleClick}
                 >
                   {buttonText}

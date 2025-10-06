@@ -34,7 +34,7 @@ export default function Home() {
       
       <StickyCTA
         title="Get Your Ultimate Tokyo Anime Guide!"
-        description="Join thousands exploring authentic anime spots"
+        description="Buy Now Save $30!"
         buttonText="Get It Now"
         buttonUrl="https://harukianimejournal.myshopify.com/products/the-ultimate-tokyo-anime-guide-1"
         price="$19"
