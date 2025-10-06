@@ -34,7 +34,7 @@ export default function TopSection() {
       </div>
 
       {/* Conveyor Carousel */}
-      <div className="relative w-full overflow-hidden mb-24">
+      <div className="relative w-full overflow-hidden mb-16">
         <div className="conveyor-wrapper">
           <div className="conveyor-belt-custom">
             {[...carouselImages, ...carouselImages].map((image, index) => (
