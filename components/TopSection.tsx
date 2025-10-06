@@ -1,10 +1,21 @@
 'use client'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import ConveyorCarousel from './ConveyorCarousel'
 
 export default function TopSection() {
+  const carouselImages = [
+    { src: '/images/top/1.PNG', alt: 'Tokyo Anime Guide Page 1' },
+    { src: '/images/top/2.PNG', alt: 'Tokyo Anime Guide Page 2' },
+    { src: '/images/top/3.PNG', alt: 'Tokyo Anime Guide Page 3' },
+    { src: '/images/top/4.PNG', alt: 'Tokyo Anime Guide Page 4' },
+    { src: '/images/top/5.PNG', alt: 'Tokyo Anime Guide Page 5' },
+    { src: '/images/top/6.PNG', alt: 'Tokyo Anime Guide Page 6' },
+    { src: '/images/top/7.PNG', alt: 'Tokyo Anime Guide Page 7' }
+  ]
+
   return (
-    <section className="bg-brand-cream min-h-screen relative overflow-hidden py-16">
+    <section className="bg-brand-cream relative overflow-hidden py-16">
       <div className="container mx-auto px-4 max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -20,30 +31,18 @@ export default function TopSection() {
             <span className="text-black">Anime guide book!</span>
           </h1>
         </motion.div>
+      </div>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="relative mb-16"
-        >
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-              <div className="bg-white rounded-lg shadow-lg p-2">
-                <Image src="/images/tokyo-train-map.jpg" alt="Tokyo Train Map" width={200} height={150} className="w-full h-auto" />
-              </div>
-              <div className="bg-white rounded-lg shadow-lg p-2">
-                <Image src="/images/guide-book-cover.jpg" alt="Tokyo Anime Guide" width={200} height={150} className="w-full h-auto" />
-              </div>
-              <div className="bg-white rounded-lg shadow-lg p-2">
-                <Image src="/images/akiba-station.jpg" alt="Akihabara Station Guide" width={200} height={150} className="w-full h-auto" />
-              </div>
-              <div className="bg-white rounded-lg shadow-lg p-2">
-                <Image src="/images/anime-shop.jpg" alt="Anime Shop Guide" width={200} height={150} className="w-full h-auto" />
-              </div>
-            </div>
-          </div>
-        </motion.div>
+      {/* Conveyor Carousel */}
+      <ConveyorCarousel
+        images={carouselImages}
+        sectionId="top-carousel"
+        title=""
+        description=""
+        backgroundColor="bg-transparent"
+        itemWidth={{ mobile: 250, desktop: 300 }}
+        animationDuration={20}
+      />
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
