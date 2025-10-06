@@ -43,27 +43,73 @@ export default function InsideSection() {
           {features.map((feature, index) => (
             <motion.div
               key={feature.number}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ 
+                duration: 0.8, 
+                delay: index * 0.3,
+                ease: "easeOut"
+              }}
+              viewport={{ once: true, amount: 0.3 }}
               className="text-center"
             >
-              <div className="flex items-center justify-start gap-4 mb-8">
-                <div className="bg-brand-red text-white rounded-full w-20 h-20 flex flex-col items-center justify-center font-bold flex-shrink-0">
+              <motion.div 
+                className="flex items-center justify-start gap-4 mb-8"
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ 
+                  duration: 0.6, 
+                  delay: index * 0.3 + 0.2,
+                  ease: "easeOut"
+                }}
+                viewport={{ once: true }}
+              >
+                <motion.div 
+                  className="bg-brand-red text-white rounded-full w-20 h-20 flex flex-col items-center justify-center font-bold flex-shrink-0"
+                  initial={{ scale: 0 }}
+                  whileInView={{ scale: 1 }}
+                  transition={{ 
+                    duration: 0.5, 
+                    delay: index * 0.3 + 0.1,
+                    type: "spring",
+                    stiffness: 200
+                  }}
+                  viewport={{ once: true }}
+                >
                   <span className="text-xs">BENEFIT</span>
                   <span className="text-2xl">{feature.number}</span>
-                </div>
-                <div className="text-left">
+                </motion.div>
+                <motion.div 
+                  className="text-left"
+                  initial={{ opacity: 0, x: 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ 
+                    duration: 0.6, 
+                    delay: index * 0.3 + 0.4,
+                    ease: "easeOut"
+                  }}
+                  viewport={{ once: true }}
+                >
                   <h3 className="text-2xl md:text-3xl font-bold">
                     <span className="text-brand-red">{feature.title.split(' ')[0]}</span>{' '}
                     {feature.title.split(' ').slice(1).join(' ')}
                   </h3>
                   <p className="text-xl text-gray-700">{feature.subtitle}</p>
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
               
               {/* Image Placeholder Grid */}
-              <div className="flex justify-center mb-8">
+              <motion.div 
+                className="flex justify-center mb-8"
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ 
+                  duration: 0.7, 
+                  delay: index * 0.3 + 0.6,
+                  ease: "easeOut"
+                }}
+                viewport={{ once: true }}
+              >
                 <div className="relative">
                   {/* Background cards */}
                   <div className="grid grid-cols-2 gap-4 max-w-lg mx-auto">
@@ -92,7 +138,7 @@ export default function InsideSection() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </motion.div>
           ))}
         </div>
