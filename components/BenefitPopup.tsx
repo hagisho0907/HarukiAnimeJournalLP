@@ -70,50 +70,50 @@ export default function BenefitPopup({ isOpen, onClose, benefit }: BenefitPopupP
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.9, opacity: 0, y: 30 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
-            className="bg-white rounded-lg shadow-2xl p-6 max-w-2xl mx-4 relative border pointer-events-auto"
+            className="bg-white rounded-lg shadow-2xl p-3 md:p-6 max-w-sm md:max-w-2xl mx-4 relative border pointer-events-auto"
           >
             {/* ヘッダー */}
-            <div className="text-center mb-6">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            <div className="text-center mb-3 md:mb-6">
+              <h2 className="text-lg md:text-3xl font-bold mb-2 md:mb-4">
                 What this <span className="text-gray-500">guidebook</span><br />
                 <span className="text-brand-red">Gives</span> you
               </h2>
               
-              <div className="flex items-center justify-center gap-4 mb-4">
-                <div className="bg-brand-red text-white rounded-full w-14 h-14 flex flex-col items-center justify-center font-bold">
+              <div className="flex items-center justify-center gap-2 md:gap-4 mb-2 md:mb-4">
+                <div className="bg-brand-red text-white rounded-full w-10 h-10 md:w-14 md:h-14 flex flex-col items-center justify-center font-bold">
                   <span className="text-xs">BENEFIT</span>
-                  <span className="text-lg">{benefit.number}</span>
+                  <span className="text-sm md:text-lg">{benefit.number}</span>
                 </div>
                 <div className="text-left">
-                  <h3 className="text-xl font-bold">
+                  <h3 className="text-sm md:text-xl font-bold">
                     <span className="text-brand-red">{benefit.title.split(' ')[0]}</span>{' '}
                     {benefit.title.split(' ').slice(1).join(' ')}
                   </h3>
-                  <p className="text-gray-700">{benefit.subtitle}</p>
+                  <p className="text-xs md:text-base text-gray-700">{benefit.subtitle}</p>
                 </div>
               </div>
             </div>
 
             {/* メインコンテンツエリア */}
-            <div className="bg-gray-100 rounded-lg p-4 mb-4">
-              <div className="bg-white rounded p-3 mb-3">
-                <h4 className="font-bold mb-2">{benefit.title}</h4>
-                <div className="text-gray-600 text-sm mb-2">{benefit.subtitle}</div>
+            <div className="bg-gray-100 rounded-lg p-2 md:p-4 mb-2 md:mb-4">
+              <div className="bg-white rounded p-2 md:p-3 mb-2 md:mb-3">
+                <h4 className="text-sm md:text-base font-bold mb-1 md:mb-2">{benefit.title}</h4>
+                <div className="text-gray-600 text-xs md:text-sm mb-1 md:mb-2">{benefit.subtitle}</div>
               </div>
 
               {/* カルーセルエリア */}
-              <div className="relative w-full overflow-hidden bg-white rounded mb-3">
+              <div className="relative w-full overflow-hidden bg-white rounded mb-2 md:mb-3">
                 <div className="carousel-wrapper-popup">
                   <div className="carousel-belt-popup">
                     {allImages.map((image, index) => (
                       <div key={index} className="carousel-item-popup">
-                        <div className="relative h-32 rounded overflow-hidden">
+                        <div className="relative h-20 md:h-32 rounded overflow-hidden">
                           <Image
                             src={image.src}
                             alt={image.alt}
                             fill
                             className="object-cover"
-                            sizes="150px"
+                            sizes="(max-width: 768px) 80px, 150px"
                           />
                         </div>
                       </div>
@@ -122,8 +122,8 @@ export default function BenefitPopup({ isOpen, onClose, benefit }: BenefitPopupP
                 </div>
               </div>
 
-              <div className="bg-gray-200 rounded p-3">
-                <p className="text-sm text-gray-700">
+              <div className="bg-gray-200 rounded p-2 md:p-3">
+                <p className="text-xs md:text-sm text-gray-700">
                   {benefit.description}
                 </p>
               </div>
@@ -148,20 +148,39 @@ export default function BenefitPopup({ isOpen, onClose, benefit }: BenefitPopupP
               align-items: center;
               position: relative;
               width: 100%;
-              height: 140px;
+              height: 90px;
+            }
+
+            @media (min-width: 768px) {
+              .carousel-wrapper-popup {
+                height: 140px;
+              }
             }
 
             .carousel-belt-popup {
               display: flex;
-              gap: 0.75rem;
+              gap: 0.5rem;
               animation: scroll-popup 12s linear infinite;
               width: fit-content;
-              padding: 0.5rem;
+              padding: 0.25rem;
+            }
+
+            @media (min-width: 768px) {
+              .carousel-belt-popup {
+                gap: 0.75rem;
+                padding: 0.5rem;
+              }
             }
 
             .carousel-item-popup {
               flex-shrink: 0;
-              width: 120px;
+              width: 80px;
+            }
+
+            @media (min-width: 768px) {
+              .carousel-item-popup {
+                width: 120px;
+              }
             }
 
             @keyframes scroll-popup {
