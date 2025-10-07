@@ -43,7 +43,7 @@ export default function TestimonialsNew() {
           Testimonials
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-4 md:gap-12 lg:gap-16">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
@@ -53,7 +53,7 @@ export default function TestimonialsNew() {
               viewport={{ once: true }}
               className="flex flex-col items-center text-center"
             >
-              <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
+              <div className="w-20 h-20 md:w-32 md:h-32 rounded-full overflow-hidden mb-2 md:mb-4">
                 <Image
                   src={testimonial.avatar}
                   alt={`${testimonial.name} from ${testimonial.location}`}
@@ -63,11 +63,11 @@ export default function TestimonialsNew() {
                 />
               </div>
               
-              <h3 className="text-xl font-bold mb-2">{testimonial.name}, {testimonial.location}</h3>
+              <h3 className="text-sm md:text-xl font-bold mb-1 md:mb-2">{testimonial.name}, {testimonial.location}</h3>
               
-              <div className="flex text-brand-yellow text-2xl mb-4">★★★★★</div>
+              <div className="flex text-brand-yellow text-lg md:text-2xl mb-1 md:mb-4">★★★★★</div>
               
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-xs md:text-base text-gray-700 leading-relaxed px-2">
                 {testimonial.text}
               </p>
             </motion.div>

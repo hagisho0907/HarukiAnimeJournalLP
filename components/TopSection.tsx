@@ -101,27 +101,27 @@ export default function TopSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex flex-col md:flex-row items-center justify-center gap-12"
+          className="grid grid-cols-2 md:grid-cols-2 items-center justify-center gap-4 md:gap-12"
         >
           <div className="flex flex-col items-center text-center">
-            <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
+            <div className="w-20 h-20 md:w-32 md:h-32 rounded-full overflow-hidden mb-2 md:mb-4">
               <Image src="/images/top/Rob.png" alt="Rob from NYC" width={128} height={128} className="w-full h-full object-cover" />
             </div>
-            <h3 className="text-xl font-bold mb-2">Rob, NYC</h3>
-            <div className="flex text-brand-yellow text-2xl mb-2">★★★★★</div>
-            <p className="text-gray-700 max-w-xs">
+            <h3 className="text-sm md:text-xl font-bold mb-1 md:mb-2">Rob, NYC</h3>
+            <div className="flex text-brand-yellow text-lg md:text-2xl mb-1 md:mb-2">★★★★★</div>
+            <p className="text-xs md:text-base text-gray-700 px-2">
               Thanks to this guidebook, I found anime treasures you&apos;d never come across in the US. 
               It&apos;s literally like a treasure map drawn by locals in Japan.
             </p>
           </div>
 
           <div className="flex flex-col items-center text-center">
-            <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
+            <div className="w-20 h-20 md:w-32 md:h-32 rounded-full overflow-hidden mb-2 md:mb-4">
               <Image src="/images/top/Kaan.png" alt="Kaan from Istanbul" width={128} height={128} className="w-full h-full object-cover" />
             </div>
-            <h3 className="text-xl font-bold mb-2">Kaan, Istanbul</h3>
-            <div className="flex text-brand-yellow text-2xl mb-2">★★★★★</div>
-            <p className="text-gray-700 max-w-xs">
+            <h3 className="text-sm md:text-xl font-bold mb-1 md:mb-2">Kaan, Istanbul</h3>
+            <div className="flex text-brand-yellow text-lg md:text-2xl mb-1 md:mb-2">★★★★★</div>
+            <p className="text-xs md:text-base text-gray-700 px-2">
               On my first trip to Japan I wasted 150 USD on a fake anime figure, but after getting 
               this guidebook I can finally shop with confidence. Thanks!
             </p>
