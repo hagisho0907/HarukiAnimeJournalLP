@@ -28,7 +28,7 @@ export default function TopSection() {
             <br />
             in <span className="text-brand-red">Japan</span> with this
             <br />
-            <span className="text-black">Anime guide book!</span>
+            Anime guide book!
           </h1>
         </motion.div>
       </div>
