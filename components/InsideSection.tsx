@@ -94,11 +94,10 @@ export default function InsideSection() {
                   }}
                   viewport={{ once: true }}
                 >
-                  <h3 className="text-2xl md:text-3xl font-bold">
-                    <span className="text-brand-red">{feature.title.split(' ')[0]}</span>{' '}
-                    {feature.title.split(' ').slice(1).join(' ')}
+                  <h3 className="text-2xl md:text-3xl font-bold text-brand-red">
+                    {feature.title}
                   </h3>
-                  <p className="text-xl text-gray-700">{feature.subtitle}</p>
+                  <p className="text-2xl md:text-3xl font-bold text-gray-700">{feature.subtitle}</p>
                 </motion.div>
               </motion.div>
               
