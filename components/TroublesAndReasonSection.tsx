@@ -49,7 +49,7 @@ export default function TroublesAndReasonSection() {
           transition={{ duration: 0.8, delay: 0.3 }}
         >
           <h2 className="text-3xl md:text-6xl font-bold text-center mb-8 text-gray-800">
-            <span className="text-brand-red">Why</span> this guidebook<br />
+            Why this guidebook<br />
             <span className="text-brand-red">Can Solve</span> your problems
           </h2>
           
