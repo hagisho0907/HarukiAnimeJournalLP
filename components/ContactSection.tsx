@@ -17,7 +17,7 @@ export default function ContactSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-4xl lg:text-5xl font-bold text-center text-gray-800 mb-16"
+          className="text-4xl md:text-6xl font-bold text-center text-gray-800 mb-16"
         >
           Contact
         </motion.h2>

@@ -72,7 +72,7 @@ export default function AboutSection() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">
+            <h2 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6">
               About Me
             </h2>
             <div className="border-t-2 border-gray-300 pt-6 mb-8">
