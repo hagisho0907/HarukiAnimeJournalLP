@@ -70,8 +70,8 @@ export default function StickyCTA({
         },
         {
           // Trigger when target section is almost completely visible
-          rootMargin: '-10% 0px -100% 0px',
-          threshold: 0
+          rootMargin: '0px 0px -70% 0px',
+          threshold: 0.1
         }
       )
 
