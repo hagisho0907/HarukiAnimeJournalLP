@@ -94,10 +94,34 @@ export default function InsideSection() {
                   }}
                   viewport={{ once: true }}
                 >
-                  <h3 className="text-2xl md:text-3xl font-bold text-brand-red">
-                    {feature.title}
+                  <h3 className="text-2xl md:text-3xl font-bold">
+                    {feature.number === 1 ? (
+                      <span className="text-brand-red">{feature.title}</span>
+                    ) : feature.number === 2 ? (
+                      <>
+                        <span className="text-gray-700">Never get lost!</span>
+                      </>
+                    ) : feature.number === 3 ? (
+                      <>
+                        <span className="text-gray-700">No tour guide needed!</span>
+                      </>
+                    ) : (
+                      feature.title
+                    )}
                   </h3>
-                  <p className="text-2xl md:text-3xl font-bold text-gray-700">{feature.subtitle}</p>
+                  <p className="text-2xl md:text-3xl font-bold">
+                    {feature.number === 2 ? (
+                      <>
+                        A Google Maps <span className="text-brand-red">Link List</span>
+                      </>
+                    ) : feature.number === 3 ? (
+                      <>
+                        Ready to use <span className="text-brand-red">Tour Courses</span>
+                      </>
+                    ) : (
+                      <span className="text-gray-700">{feature.subtitle}</span>
+                    )}
+                  </p>
                 </motion.div>
               </motion.div>
               
