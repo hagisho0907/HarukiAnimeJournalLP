@@ -85,7 +85,7 @@ export default function AboutSection() {
           >
             {/* About Me タイトル */}
             <div className="mb-8">
-              <h3 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">About Me</h3>
+              <h3 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 font-tt-interphases">About Me</h3>
             </div>
             
             <div className="border-t-2 border-gray-300 pt-6 mb-8">
