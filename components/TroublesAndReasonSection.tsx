@@ -11,7 +11,7 @@ export default function TroublesAndReasonSection() {
           transition={{ duration: 0.8 }}
           className="mb-16"
         >
-          <h2 className="text-4xl md:text-6xl font-bold text-center mb-8">
+          <h2 className="text-3xl md:text-6xl font-bold text-center mb-8">
             You might run into<br />
             some <span className="text-brand-red">Trouble</span>, like...
           </h2>
@@ -48,7 +48,7 @@ export default function TroublesAndReasonSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          <h2 className="text-4xl md:text-6xl font-bold text-center mb-8">
+          <h2 className="text-3xl md:text-6xl font-bold text-center mb-8">
             <span className="text-brand-red">Why</span> this guidebook<br />
             <span className="text-brand-red">Can Solve</span> your problems
           </h2>

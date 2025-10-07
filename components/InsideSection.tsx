@@ -37,7 +37,7 @@ export default function InsideSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl md:text-6xl font-bold text-center mb-16"
+          className="text-3xl md:text-6xl font-bold text-center mb-16"
         >
           Let&apos;s See<br />
           What&apos;s Inside...
