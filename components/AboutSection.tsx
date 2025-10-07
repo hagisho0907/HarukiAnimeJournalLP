@@ -38,6 +38,17 @@ export default function AboutSection() {
   return (
     <section className="py-16 lg:py-24 bg-brand-cream">
       <div className="container mx-auto px-4 max-w-6xl">
+        {/* セクションタイトル */}
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-3xl md:text-6xl font-bold text-center text-gray-800 mb-16"
+        >
+          About Me
+        </motion.h2>
+
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left - Logo and Image */}
           <motion.div
@@ -72,9 +83,6 @@ export default function AboutSection() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-6xl font-bold text-gray-800 mb-6">
-              About Me
-            </h2>
             <div className="border-t-2 border-gray-300 pt-6 mb-8">
               <p className="text-gray-700 text-lg leading-relaxed font-tt-interphases">
                 <span className="font-league-spartan font-semibold">Haruki Anime Journal</span>, with 200K followers and over 200M total views, shares anime culture worldwide through engaging interviews. Our mission is to be a bridge between Japan and anime fans around the world, connecting communities and delivering authentic insights into the heart of Japanese anime.
