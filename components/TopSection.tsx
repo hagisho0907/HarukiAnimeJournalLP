@@ -39,13 +39,13 @@ export default function TopSection() {
           <div className="conveyor-belt-custom">
             {[...carouselImages, ...carouselImages].map((image, index) => (
               <div key={index} className="conveyor-item-custom">
-                <div className="relative h-[400px] md:h-[500px] rounded-lg overflow-hidden shadow-lg bg-white">
+                <div className="relative h-[267px] md:h-[333px] rounded-lg overflow-hidden shadow-lg bg-white">
                   <Image
                     src={image.src}
                     alt={image.alt}
                     fill
                     className="object-cover"
-                    sizes="300px"
+                    sizes="200px"
                   />
                 </div>
               </div>
@@ -73,12 +73,12 @@ export default function TopSection() {
 
         .conveyor-item-custom {
           flex-shrink: 0;
-          width: 250px;
+          width: 167px;
         }
 
         @media (min-width: 768px) {
           .conveyor-item-custom {
-            width: 300px;
+            width: 200px;
           }
         }
 
