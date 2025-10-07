@@ -72,27 +72,6 @@ export default function BenefitPopup({ isOpen, onClose, benefit }: BenefitPopupP
             transition={{ duration: 0.3, ease: "easeOut" }}
             className="bg-white rounded-lg shadow-2xl p-3 md:p-6 max-w-sm md:max-w-2xl mx-4 relative border pointer-events-auto"
           >
-            {/* ヘッダー */}
-            <div className="text-center mb-3 md:mb-6">
-              <h2 className="text-lg md:text-3xl font-bold mb-2 md:mb-4">
-                What this <span className="text-gray-500">guidebook</span><br />
-                <span className="text-brand-red">Gives</span> you
-              </h2>
-              
-              <div className="flex items-center justify-center gap-2 md:gap-4 mb-2 md:mb-4">
-                <div className="bg-brand-red text-white rounded-full w-10 h-10 md:w-14 md:h-14 flex flex-col items-center justify-center font-bold">
-                  <span className="text-xs">BENEFIT</span>
-                  <span className="text-sm md:text-lg">{benefit.number}</span>
-                </div>
-                <div className="text-left">
-                  <h3 className="text-sm md:text-xl font-bold">
-                    <span className="text-brand-red">{benefit.title.split(' ')[0]}</span>{' '}
-                    {benefit.title.split(' ').slice(1).join(' ')}
-                  </h3>
-                  <p className="text-xs md:text-base text-gray-700">{benefit.subtitle}</p>
-                </div>
-              </div>
-            </div>
 
             {/* メインコンテンツエリア */}
             <div className="bg-gray-100 rounded-lg p-2 md:p-4 mb-2 md:mb-4">
