@@ -105,28 +105,6 @@ export default function AboutSection() {
                   viewport={{ once: true }}
                   className="text-center"
                 >
-                  <div className={`${stat.color} mb-2 flex justify-center`}>
-                    {stat.platform === 'Instagram' && (
-                      <a href="https://www.instagram.com/harukianimejournal/?igsh=MWk4MGt3bm1pNWRjeg%3D%3D&utm_source=qr#" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
-                        <InstagramIcon className="w-8 h-8" />
-                      </a>
-                    )}
-                    {stat.platform === 'TikTok' && (
-                      <a href="https://www.tiktok.com/@harukianimejournal?_t=ZS-8zLp3wbbOpb&_r=1" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
-                        <TikTokIcon className="w-8 h-8" />
-                      </a>
-                    )}
-                    {stat.platform === 'YouTube' && (
-                      <a href="https://www.youtube.com/@harukianimejournal" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
-                        <YouTubeIcon className="w-8 h-8" />
-                      </a>
-                    )}
-                    {stat.platform === 'Facebook' && (
-                      <a href="https://www.facebook.com/people/Haruki-Nishioka/61561169736812/#" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
-                        <FacebookIcon className="w-8 h-8" />
-                      </a>
-                    )}
-                  </div>
                   <div className="text-2xl lg:text-3xl font-bold text-gray-800 mb-1">
                     {stat.count}
                   </div>
@@ -138,6 +116,47 @@ export default function AboutSection() {
             </div>
           </motion.div>
         </div>
+
+        {/* SNS Icons Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="flex justify-center gap-8 mt-16"
+        >
+          {socialStats.map((stat, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className={`${stat.color} flex justify-center`}
+            >
+              {stat.platform === 'Instagram' && (
+                <a href="https://www.instagram.com/harukianimejournal/?igsh=MWk4MGt3bm1pNWRjeg%3D%3D&utm_source=qr#" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
+                  <InstagramIcon className="w-8 h-8" />
+                </a>
+              )}
+              {stat.platform === 'TikTok' && (
+                <a href="https://www.tiktok.com/@harukianimejournal?_t=ZS-8zLp3wbbOpb&_r=1" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
+                  <TikTokIcon className="w-8 h-8" />
+                </a>
+              )}
+              {stat.platform === 'YouTube' && (
+                <a href="https://www.youtube.com/@harukianimejournal" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
+                  <YouTubeIcon className="w-8 h-8" />
+                </a>
+              )}
+              {stat.platform === 'Facebook' && (
+                <a href="https://www.facebook.com/people/Haruki-Nishioka/61561169736812/#" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
+                  <FacebookIcon className="w-8 h-8" />
+                </a>
+              )}
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
     </section>
   )
