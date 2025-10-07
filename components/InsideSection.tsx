@@ -99,11 +99,11 @@ export default function InsideSection() {
                       <span className="text-brand-red">{feature.title}</span>
                     ) : feature.number === 2 ? (
                       <>
-                        <span className="text-black">Never get lost!</span>
+                        <span className="text-gray-800">Never get lost!</span>
                       </>
                     ) : feature.number === 3 ? (
                       <>
-                        <span className="text-black">No tour guide needed!</span>
+                        <span className="text-gray-800">No tour guide needed!</span>
                       </>
                     ) : (
                       feature.title
@@ -112,14 +112,14 @@ export default function InsideSection() {
                   <p className="text-2xl md:text-3xl font-bold">
                     {feature.number === 2 ? (
                       <>
-                        <span className="text-black">A Google Maps</span> <span className="text-brand-red">Link List</span>
+                        <span className="text-gray-800">A Google Maps</span> <span className="text-brand-red">Link List</span>
                       </>
                     ) : feature.number === 3 ? (
                       <>
-                        <span className="text-black">Ready to use</span> <span className="text-brand-red">Tour Courses</span>
+                        <span className="text-gray-800">Ready to use</span> <span className="text-brand-red">Tour Courses</span>
                       </>
                     ) : (
-                      <span className="text-black">{feature.subtitle}</span>
+                      <span className="text-gray-800">{feature.subtitle}</span>
                     )}
                   </p>
                 </motion.div>
