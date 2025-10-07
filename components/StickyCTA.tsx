@@ -118,7 +118,7 @@ export default function StickyCTA({
           transition={{ duration: 0.3, ease: "easeOut" }}
           className="fixed bottom-0 left-0 right-0 z-50 p-2 md:p-4 bg-gradient-to-t from-white via-white to-transparent"
         >
-          <div className="container mx-auto max-w-4xl">
+          <div className="container mx-auto max-w-2xl md:max-w-2xl">
             <div className="bg-white rounded-lg shadow-2xl p-2 md:p-6 border border-gray-100">
               <div className="flex flex-row items-center justify-between gap-2 md:gap-4">
                 <div className="text-left flex-1">
