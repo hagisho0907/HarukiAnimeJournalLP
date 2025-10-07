@@ -75,10 +75,6 @@ export default function BenefitPopup({ isOpen, onClose, benefit }: BenefitPopupP
 
             {/* メインコンテンツエリア */}
             <div className="bg-gray-100 rounded-lg p-2 md:p-4 mb-2 md:mb-4">
-              <div className="bg-white rounded p-2 md:p-3 mb-2 md:mb-3">
-                <h4 className="text-sm md:text-base font-bold mb-1 md:mb-2">{benefit.title}</h4>
-                <div className="text-gray-600 text-xs md:text-sm mb-1 md:mb-2">{benefit.subtitle}</div>
-              </div>
 
               {/* カルーセルエリア */}
               <div className="relative w-full overflow-hidden bg-white rounded mb-2 md:mb-3">
@@ -101,7 +97,8 @@ export default function BenefitPopup({ isOpen, onClose, benefit }: BenefitPopupP
                 </div>
               </div>
 
-              <div className="bg-gray-200 rounded p-2 md:p-3">
+              <div className="bg-white rounded p-2 md:p-3">
+                <h4 className="text-sm md:text-base font-bold mb-1 md:mb-2 text-gray-800">{benefit.title}</h4>
                 <p className="text-xs md:text-sm text-gray-700">
                   {benefit.description}
                 </p>
