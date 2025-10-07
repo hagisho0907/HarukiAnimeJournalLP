@@ -69,8 +69,8 @@ export default function StickyCTA({
           })
         },
         {
-          // Trigger when target section starts entering viewport
-          rootMargin: '0px 0px -50% 0px',
+          // Trigger when target section is almost completely visible
+          rootMargin: '0px 0px -90% 0px',
           threshold: 0
         }
       )
