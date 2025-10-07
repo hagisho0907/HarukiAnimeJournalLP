@@ -58,11 +58,6 @@ export default function AboutSection() {
             viewport={{ once: true }}
             className="text-center lg:text-left"
           >
-            {/* About Me タイトル */}
-            <div className="mb-8">
-              <h3 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">About Me</h3>
-            </div>
-            
             {/* Logo */}
             <div className="mb-8">
               <h3 className="text-5xl text-gray-800 mb-2" style={{ fontFamily: 'Kalam, cursive', fontWeight: 'normal' }}>Haruki</h3>
@@ -88,6 +83,11 @@ export default function AboutSection() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
+            {/* About Me タイトル */}
+            <div className="mb-8">
+              <h3 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">About Me</h3>
+            </div>
+            
             <div className="border-t-2 border-gray-300 pt-6 mb-8">
               <p className="text-gray-700 text-lg leading-relaxed font-tt-interphases">
                 <span className="font-league-spartan font-semibold">Haruki Anime Journal</span>, with 200K followers and over 200M total views, shares anime culture worldwide through engaging interviews. Our mission is to be a bridge between Japan and anime fans around the world, connecting communities and delivering authentic insights into the heart of Japanese anime.
