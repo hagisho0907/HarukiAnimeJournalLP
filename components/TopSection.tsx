@@ -24,9 +24,13 @@ export default function TopSection() {
           className="text-center mb-12"
         >
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="text-brand-red">Avoid</span> the <span className="text-brand-red">Tourist Traps</span>
+            <span className="text-brand-red">Avoid</span> the{' '}
+            <br className="md:hidden" />
+            <span className="text-brand-red">Tourist Traps</span>
             <br />
-            in <span className="text-brand-red">Japan</span> with this
+            in <span className="text-brand-red">Japan</span>{' '}
+            <br className="md:hidden" />
+            with this
             <br />
             <span className="text-black">Anime guide book!</span>
           </h1>
