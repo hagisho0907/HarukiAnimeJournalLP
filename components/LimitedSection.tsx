@@ -53,7 +53,7 @@ export default function LimitedSection() {
               viewport={{ once: true }}
               className="text-white text-center lg:text-left"
             >
-              <h2 className="text-3xl md:text-5xl font-bold mb-6">
+              <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gray-800">
                 The Ultimate Tokyo<br />
                 Anime guide
               </h2>

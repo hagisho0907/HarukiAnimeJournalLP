@@ -23,7 +23,7 @@ export default function TopSection() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <h1 className="text-3xl md:text-6xl font-bold mb-6">
+          <h1 className="text-3xl md:text-6xl font-bold mb-6 text-gray-800">
             <span className="text-brand-red">Avoid</span> the <span className="text-brand-red">Tourist Traps</span>
             <br />
             in <span className="text-brand-red">Japan</span> with this
