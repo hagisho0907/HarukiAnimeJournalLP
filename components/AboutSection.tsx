@@ -46,7 +46,7 @@ export default function AboutSection() {
           viewport={{ once: true }}
           className="text-3xl md:text-6xl font-bold text-center text-gray-800 mb-16"
         >
-          About Me
+          Written by
         </motion.h2>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -58,6 +58,11 @@ export default function AboutSection() {
             viewport={{ once: true }}
             className="text-center lg:text-left"
           >
+            {/* About Me タイトル */}
+            <div className="mb-8">
+              <h3 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">About Me</h3>
+            </div>
+            
             {/* Logo */}
             <div className="mb-8">
               <h3 className="text-5xl text-gray-800 mb-2" style={{ fontFamily: 'Kalam, cursive', fontWeight: 'normal' }}>Haruki</h3>
