@@ -31,15 +31,15 @@ export default function TroubleSection() {
         >
           <div className="space-y-4 text-lg md:text-xl">
             <div className="flex items-start">
-              <span className="text-blue-500 mr-3">▶</span>
+              <span className="text-red-600 mr-3">▶</span>
               <p>Where do I even start?</p>
             </div>
             <div className="flex items-start">
-              <span className="text-blue-500 mr-3">▶</span>
+              <span className="text-red-600 mr-3">▶</span>
               <p>Am I just doing what every other tourist does?</p>
             </div>
             <div className="flex items-start">
-              <span className="text-blue-500 mr-3">▶</span>
+              <span className="text-red-600 mr-3">▶</span>
               <p>Is this stuff even legit or just influencer hype?</p>
             </div>
           </div>
