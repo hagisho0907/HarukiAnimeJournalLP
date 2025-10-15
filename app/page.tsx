@@ -1,38 +1,36 @@
-import HeroNew from '@/components/HeroNew'
-import RedBanner from '@/components/RedBanner'
-import PlanningSection from '@/components/PlanningSection'
-import TroublesSection from '@/components/TroublesSection'
-import ThreeReasonsNew from '@/components/ThreeReasonsNew'
-import CtaRed from '@/components/CtaRed'
-import GlimpseSection from '@/components/GlimpseSection'
-import ReadyToExplore from '@/components/ReadyToExplore'
+import TopSection from '@/components/TopSection'
+import TroubleSection from '@/components/TroubleSection'
 import AboutSection from '@/components/AboutSection'
-import LimitedSale from '@/components/LimitedSale'
-import ProductSummary from '@/components/ProductSummary'
-import TestimonialsNew from '@/components/TestimonialsNew'
+import QuestionSection from '@/components/QuestionSection'
+import IntroduceSection from '@/components/IntroduceSection'
+import InsideSection from '@/components/InsideSection'
+import BonusSection from '@/components/BonusSection'
+import ReasonSection from '@/components/ReasonSection'
+import DifferentSection from '@/components/DifferentSection'
+import ReviewSection from '@/components/ReviewSection'
+import GetSection from '@/components/GetSection'
+import IfSection from '@/components/IfSection'
+import TrustSection from '@/components/TrustSection'
 import FaqSection from '@/components/FaqSection'
-import MessageSection from '@/components/MessageSection'
-import FinalCta from '@/components/FinalCta'
 import ContactSection from '@/components/ContactSection'
 
 export default function Home() {
   return (
     <main>
-      <HeroNew />
-      <RedBanner />
-      <PlanningSection />
-      <TroublesSection />
-      <ThreeReasonsNew />
-      <CtaRed />
-      <GlimpseSection />
-      <ReadyToExplore />
+      <TopSection />
+      <TroubleSection />
       <AboutSection />
-      <LimitedSale />
-      <ProductSummary />
-      <TestimonialsNew />
+      <QuestionSection />
+      <IntroduceSection />
+      <InsideSection />
+      <BonusSection />
+      <ReasonSection />
+      <DifferentSection />
+      <ReviewSection />
+      <GetSection />
+      <IfSection />
+      <TrustSection />
       <FaqSection />
-      <MessageSection />
-      <FinalCta />
       <ContactSection />
     </main>
   )
