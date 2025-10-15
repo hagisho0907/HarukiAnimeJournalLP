@@ -52,9 +52,8 @@ export default function TroubleSection() {
           viewport={{ once: true }}
           className="text-center mb-8"
         >
-          <p className="text-lg md:text-xl italic">
-            <span className="font-bold">If that&apos;s you...keep reading.</span> You just found
-            what you didn&apos;t even know you needed.
+          <p className="text-lg md:text-xl font-bold italic">
+            If that&apos;s you...keep reading. You just found what you didn&apos;t even know you needed.
           </p>
         </motion.div>
 
