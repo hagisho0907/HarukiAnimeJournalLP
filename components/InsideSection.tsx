@@ -59,6 +59,25 @@ export default function InsideSection() {
         "• Recommended nearby food spots",
         "• Direct links to each detailed shop page"
       ]
+    },
+    {
+      number: 4,
+      title: "Local Knowledge Packed TIPS",
+      items: [
+        "Useful insights you can only get from someone living in Japan",
+        "Information on weather, best times to visit, things to watch out for, history, and more",
+        "Here are some examples of the tips included:"
+      ],
+      details: [
+        "• Beware of Tourist Pricing on Figures",
+        "• What is Akihabara&apos;s Pedestrian Paradise?",
+        "• Mandarake, the Backbone of Nakano&apos;s Anime Scene",
+        "• What is Nakano Broadway?",
+        "• Ikebukuro Station is a Dungeon",
+        "• What is Otome Road?",
+        "• The Legendary 8th Floor of...",
+        "• And more"
+      ]
     }
   ]
 
