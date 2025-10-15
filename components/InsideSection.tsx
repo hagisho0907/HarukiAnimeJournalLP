@@ -13,12 +13,12 @@ export default function InsideSection() {
           className="text-center"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-red-600 mb-12">
-            What's Inside
+            What&apos;s Inside
           </h2>
           
           <div className="space-y-6 text-gray-800 text-lg mb-8">
             <p>
-              This isn't some generic PDF with "Top 10 Anime Shops in Tokyo."
+              This isn&apos;t some generic PDF with &quot;Top 10 Anime Shops in Tokyo.&quot;
             </p>
             
             <p>

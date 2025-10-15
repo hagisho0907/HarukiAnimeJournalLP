@@ -16,7 +16,7 @@ export default function DifferentSection() {
           </h2>
           
           <div className="mb-8">
-            <p className="text-lg mb-4">I've personally:</p>
+            <p className="text-lg mb-4">I&apos;ve personally:</p>
             
             <ul className="space-y-3 text-gray-700 ml-8 list-disc">
               <li>Seen over 200 anime spots with my own eyes</li>
@@ -28,7 +28,7 @@ export default function DifferentSection() {
           </div>
           
           <p className="text-lg font-semibold italic mb-12">
-            Now I've compiled everything into one definitive guide.
+            Now I&apos;ve compiled everything into one definitive guide.
           </p>
           
           {/* Book showcase */}

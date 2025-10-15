@@ -44,7 +44,7 @@ export default function TrustSection() {
           
           <div className="text-lg text-gray-700 mb-12 space-y-4">
             <p>
-              Haruki is an anime creator based in Tokyo who shares Japan's anime culture with the world. He has 200K+ followers across social platforms and within the first six months of posting, his videos have already surpassed 100M views. People don't just watch him; they ask where to shop, what to see, and how to experience anime in Japan like a local.
+              Haruki is an anime creator based in Tokyo who shares Japan&apos;s anime culture with the world. He has 200K+ followers across social platforms and within the first six months of posting, his videos have already surpassed 100M views. People don&apos;t just watch him; they ask where to shop, what to see, and how to experience anime in Japan like a local.
             </p>
           </div>
           

@@ -51,7 +51,7 @@ export default function ReviewSection() {
                 
                 {/* Review text */}
                 <p className="text-gray-700 text-center mb-6 text-lg leading-relaxed">
-                  "{review.review}"
+                  &quot;{review.review}&quot;
                 </p>
                 
                 {/* Reviewer info */}

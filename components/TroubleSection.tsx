@@ -14,11 +14,11 @@ export default function TroubleSection() {
           className="text-center mb-8"
         >
           <h2 className="text-3xl md:text-5xl font-bold text-red-600 mb-6">
-            I guess you're still planning your Tokyo trip like this
+            I guess you&apos;re still planning your Tokyo trip like this
           </h2>
           <p className="text-lg md:text-xl text-gray-800 mb-8">
             You've got 27 tabs open, saved Instagram Reels and Tiktok videos, watched 5 hours of YouTube vlogs queued up...
-            and you're still thinking:
+            and you&apos;re still thinking:
           </p>
         </motion.div>
 
@@ -53,7 +53,7 @@ export default function TroubleSection() {
           className="text-center mb-8"
         >
           <p className="text-lg md:text-xl italic">
-            <span className="font-bold">If that's you...keep reading.</span> You just found
+            <span className="font-bold">If that&apos;s you...keep reading.</span> You just found
             what you didn't even know you needed.
           </p>
         </motion.div>

@@ -34,11 +34,11 @@ export default function BonusSection() {
             </div>
             
             <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-              Growing up in Tokyo, I've eaten my way through the city and found both legendary spots and hidden gems. And trust me, I'm not keeping them to myself.
+              Growing up in Tokyo, I&apos;ve eaten my way through the city and found both legendary spots and hidden gems. And trust me, I&apos;m not keeping them to myself.
             </p>
             
             <p className="text-lg mb-8">
-              As part of this guide, you'll get full access to my personal Google Map collection featuring <strong>160+ food spots</strong> across the city.
+              As part of this guide, you&apos;ll get full access to my personal Google Map collection featuring <strong>160+ food spots</strong> across the city.
             </p>
             
             <div className="text-left max-w-xl mx-auto space-y-3 mb-12">
@@ -63,7 +63,7 @@ export default function BonusSection() {
             </div>
             
             <p className="text-xl font-bold">
-              You won't find this list in any guides, blogs, or TikTok feeds.
+              You won&apos;t find this list in any guides, blogs, or TikTok feeds.
             </p>
           </div>
         </motion.div>

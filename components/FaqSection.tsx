@@ -18,7 +18,7 @@ export default function FaqSection() {
     },
     {
       question: "Is this worth it?",
-      answer: "If it saves you from one overpriced figure, one wasted day, or one missed experience... it's already paid for itself."
+      answer: "If it saves you from one overpriced figure, one wasted day, or one missed experience... it&apos;s already paid for itself."
     }
   ]
 

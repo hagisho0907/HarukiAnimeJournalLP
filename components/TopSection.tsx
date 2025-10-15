@@ -45,7 +45,7 @@ export default function TopSection() {
           className="text-center mb-12 max-w-3xl mx-auto"
         >
           <p className="text-lg md:text-xl text-gray-800">
-            This isn't another copy-paste travel guide. It's a blueprint created by a Tokyo-based anime native for
+            This isn&apos;t another copy-paste travel guide. It&apos;s a blueprint created by a Tokyo-based anime native for
             travelers who want the real otaku experience without spending hours researching. Skip the tourist traps,
             find the right shops, cafés, and events, and vibe through the city like you live here.
           </p>
@@ -71,7 +71,7 @@ export default function TopSection() {
               </div>
             </div>
             <p className="text-gray-700">
-              I found anime treasures you'd never come across in the US
+              I found anime treasures you&apos;d never come across in the US
             </p>
           </div>
 

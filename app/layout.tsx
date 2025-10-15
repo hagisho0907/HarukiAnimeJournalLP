@@ -81,6 +81,7 @@ export default function RootLayout({
             width="1"
             style={{ display: "none" }}
             src="https://www.facebook.com/tr?id=1877200786544476&ev=PageView&noscript=1"
+            alt=""
           />
         </noscript>
         {/* End Meta Pixel Code */}

@@ -16,7 +16,7 @@ export default function AboutSection() {
           {/* Text Content */}
           <div className="order-2 md:order-1">
             <h2 className="text-2xl md:text-3xl font-bold text-red-600 mb-4">
-              Hey, I'm Haruki! An Anime Lover Living in Tokyo
+              Hey, I&apos;m Haruki! An Anime Lover Living in Tokyo
             </h2>
             
             <div className="space-y-4 text-gray-700">
@@ -41,7 +41,7 @@ export default function AboutSection() {
               </p>
               
               <p>
-                That's when I knew. I want to connect Japan and the world through anime!
+                That&apos;s when I knew. I want to connect Japan and the world through anime!
               </p>
             </div>
           </div>
