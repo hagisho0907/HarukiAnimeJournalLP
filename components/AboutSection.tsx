@@ -2,9 +2,13 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
-export default function AboutSection() {
+interface AboutSectionProps {
+  id?: string
+}
+
+export default function AboutSection({ id }: AboutSectionProps = {}) {
   return (
-    <section className="py-16 px-4 bg-white">
+    <section id={id} className="py-16 px-4 bg-white">
       <div className="container mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -13,25 +13,39 @@ import IfSection from '@/components/IfSection'
 import TrustSection from '@/components/TrustSection'
 import FaqSection from '@/components/FaqSection'
 import ContactSection from '@/components/ContactSection'
+import StickyCTA from '@/components/StickyCTA'
 
 export default function Home() {
   return (
-    <main>
-      <TopSection />
-      <TroubleSection />
-      <AboutSection />
-      <QuestionSection />
-      <IntroduceSection />
-      <InsideSection />
-      <BonusSection />
-      <ReasonSection />
-      <DifferentSection />
-      <ReviewSection />
-      <GetSection />
-      <IfSection />
-      <TrustSection />
-      <FaqSection />
-      <ContactSection />
-    </main>
+    <>
+      <main>
+        <TopSection />
+        <TroubleSection />
+        <AboutSection id="about" />
+        <QuestionSection />
+        <IntroduceSection />
+        <InsideSection />
+        <BonusSection />
+        <ReasonSection />
+        <DifferentSection />
+        <ReviewSection />
+        <GetSection />
+        <IfSection />
+        <TrustSection />
+        <FaqSection id="faq" />
+        <ContactSection id="contact" />
+      </main>
+      <StickyCTA
+        buttonUrl="https://harukianimejournal.myshopify.com/products/the-ultimate-tokyo-anime-guide-1"
+        price="$29"
+        hideAtSectionId="contact"
+        alternateContent={{
+          title: "Ready to Explore the Real Tokyo Anime World?",
+          description: "No more tourist traps. No more 20-tab research spirals. Just real, curated Tokyo anime culture in your pocket.",
+          buttonText: "Get the Real Tokyo Anime Experience"
+        }}
+        alternateStartSection="faq"
+      />
+    </>
   )
 }

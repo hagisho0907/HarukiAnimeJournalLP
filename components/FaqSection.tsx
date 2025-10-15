@@ -2,7 +2,11 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
-export default function FaqSection() {
+interface FaqSectionProps {
+  id?: string
+}
+
+export default function FaqSection({ id }: FaqSectionProps = {}) {
   const faqs = [
     {
       question: "Is this just a tourist guide?",
@@ -23,7 +27,7 @@ export default function FaqSection() {
   ]
 
   return (
-    <section className="bg-brand-cream py-16 px-4">
+    <section id={id} className="bg-brand-cream py-16 px-4">
       <div className="container mx-auto max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
