@@ -24,7 +24,7 @@ export default function BonusSection() {
             <div className="relative max-w-xs mx-auto mb-8">
               <div className="bg-gray-200 rounded-lg shadow-lg p-8 h-64 flex items-center justify-center">
                 <p className="text-gray-600">
-                  Hidden Bangkok Food Gems Map Image Placeholder
+                  Hidden Tokyo Food Gems Map Image Placeholder
                 </p>
               </div>
               {/* Speech bubble */}
@@ -38,7 +38,7 @@ export default function BonusSection() {
             </p>
             
             <p className="text-lg mb-8">
-              As part of this guide, you&apos;ll get full access to my personal Google Map collection featuring <strong>160+ food spots</strong> across the city.
+              <strong>As part of this guide, you&apos;ll get full access to my personal Google Map collection featuring 160+ food spots across the city.</strong>
             </p>
             
             <div className="text-left max-w-xl mx-auto space-y-3 mb-12">

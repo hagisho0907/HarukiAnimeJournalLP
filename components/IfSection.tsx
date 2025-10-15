@@ -53,7 +53,7 @@ export default function IfSection() {
               <div className="relative h-96 bg-gradient-to-br from-[#6AC5D6] to-[#F5A623] rounded-lg overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center p-8">
                   <p className="text-white text-center">
-                    [Image of person reading Bangkok travel guide with excited expression]
+                    [Image of person reading Tokyo travel guide with excited expression]
                   </p>
                 </div>
               </div>

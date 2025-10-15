@@ -40,47 +40,41 @@ export default function ReasonSection() {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 items-start">
-          {/* Left side - Guide showcase */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="bg-white rounded-lg border-4 border-red-500 p-8"
-          >
-            {/* Speech bubble */}
-            <div className="relative mb-6">
-              <div className="absolute -top-4 -left-4 w-8 h-8 bg-gray-200 rounded-full border-2"></div>
-            </div>
-            
-            {/* Guide mockup placeholder */}
-            <div className="relative">
-              <div className="bg-gradient-to-br from-red-400 to-orange-300 rounded-lg p-8 mb-4 shadow-xl">
-                <div className="bg-white rounded p-4 text-center">
-                  <h3 className="text-2xl font-bold text-red-600 mb-2">Tokyo</h3>
-                  <h4 className="text-xl font-bold text-orange-500">Anime Guide</h4>
-                  <p className="text-sm text-gray-600 mt-4">Everything you need to explore Tokyo&apos;s anime culture</p>
-                </div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="bg-white rounded-lg border-4 border-red-500 p-6 md:p-8"
+        >
+          <div className="grid md:grid-cols-2 gap-8 items-start">
+            {/* Left side - Guide showcase */}
+            <div>
+              {/* Speech bubble */}
+              <div className="relative mb-6">
+                <div className="absolute -top-4 -left-4 w-8 h-8 bg-gray-200 rounded-full border-2"></div>
               </div>
               
-              {/* Physical book mockup */}
-              <div className="relative -mt-8 ml-8">
-                <div className="bg-white rounded-lg shadow-lg p-4 transform rotate-6">
-                  <div className="w-32 h-20 bg-gradient-to-br from-red-400 to-orange-300 rounded"></div>
+              {/* Guide mockup placeholder */}
+              <div className="relative">
+                <div className="bg-gradient-to-br from-red-400 to-orange-300 rounded-lg p-8 mb-4 shadow-xl">
+                  <div className="bg-white rounded p-4 text-center">
+                    <h3 className="text-2xl font-bold text-red-600 mb-2">Tokyo</h3>
+                    <h4 className="text-xl font-bold text-orange-500">Anime Guide</h4>
+                    <p className="text-sm text-gray-600 mt-4">Everything you need to explore Tokyo&apos;s anime culture</p>
+                  </div>
+                </div>
+                
+                {/* Physical book mockup */}
+                <div className="relative -mt-8 ml-8">
+                  <div className="bg-white rounded-lg shadow-lg p-4 transform rotate-6">
+                    <div className="w-32 h-20 bg-gradient-to-br from-red-400 to-orange-300 rounded"></div>
+                  </div>
                 </div>
               </div>
             </div>
-          </motion.div>
 
-          {/* Right side - Reasons list */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="bg-white rounded-lg border-4 border-red-500 p-6"
-          >
+            {/* Right side - Reasons list */}
             <div className="space-y-6">
               {reasons.map((reason, index) => (
                 <motion.div
@@ -103,8 +97,8 @@ export default function ReasonSection() {
                 </motion.div>
               ))}
             </div>
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   )

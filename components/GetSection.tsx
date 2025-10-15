@@ -20,36 +20,36 @@ export default function GetSection() {
             Everything you need to explore, understand, and experience Tokyo&apos;s anime world like a local, from hidden gems and insider tips to shops, hotels, and ready-to-go itineraries.
           </p>
           
-          <ul className="space-y-3 text-gray-700 mb-8">
-            <li className="flex items-start">
-              <span className="mr-2">•</span>
+          <div className="space-y-3 text-gray-700 mb-8">
+            <div className="flex items-start gap-3">
+              <span className="text-green-600 mt-1 flex-shrink-0 text-xl">✓</span>
               <span>ebook with 162+ pages of everything to know about Tokyo anime spots</span>
-            </li>
-            <li className="flex items-start">
-              <span className="mr-2">•</span>
+            </div>
+            <div className="flex items-start gap-3">
+              <span className="text-green-600 mt-1 flex-shrink-0 text-xl">✓</span>
               <span>Insider tips only locals know</span>
-            </li>
-            <li className="flex items-start">
-              <span className="mr-2">•</span>
+            </div>
+            <div className="flex items-start gap-3">
+              <span className="text-green-600 mt-1 flex-shrink-0 text-xl">✓</span>
               <span>Itineraries (one for each of the 5 must-visit anime areas)</span>
-            </li>
-            <li className="flex items-start">
-              <span className="mr-2">•</span>
+            </div>
+            <div className="flex items-start gap-3">
+              <span className="text-green-600 mt-1 flex-shrink-0 text-xl">✓</span>
               <span>Recommended hotel areas for easy access to major anime districts</span>
-            </li>
-            <li className="flex items-start">
-              <span className="mr-2">•</span>
+            </div>
+            <div className="flex items-start gap-3">
+              <span className="text-green-600 mt-1 flex-shrink-0 text-xl">✓</span>
               <span>Offline PDF — use it anywhere, no apps needed</span>
-            </li>
-            <li className="flex items-start">
-              <span className="mr-2">•</span>
+            </div>
+            <div className="flex items-start gap-3">
+              <span className="text-green-600 mt-1 flex-shrink-0 text-xl">✓</span>
               <span>Curated by an anime fan who actually lives here</span>
-            </li>
-            <li className="flex items-start">
-              <span className="mr-2">•</span>
+            </div>
+            <div className="flex items-start gap-3">
+              <span className="text-green-600 mt-1 flex-shrink-0 text-xl">✓</span>
               <span>BONUS: Hidden Tokyo Food Spots Map</span>
-            </li>
-          </ul>
+            </div>
+          </div>
           
           <div className="text-center pt-8 border-t border-gray-200">
             <p className="text-xl font-bold mb-4">

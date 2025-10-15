@@ -18,13 +18,28 @@ export default function DifferentSection() {
           <div className="mb-8">
             <p className="text-lg mb-4">I&apos;ve personally:</p>
             
-            <ul className="space-y-3 text-gray-700 ml-8 list-disc">
-              <li>Seen over 200 anime spots with my own eyes</li>
-              <li>Explored every neighborhood in Tokyo</li>
-              <li>Built friendships with locals who&apos;ve shown me their favorite spots</li>
-              <li>Researched what anime tourists really want by talking directly with visitors who came to Japan</li>
-              <li>Helped hundreds of followers plan their perfect Tokyo Anime trip</li>
-            </ul>
+            <div className="space-y-3 text-gray-700">
+              <div className="flex items-start gap-3">
+                <span className="text-green-600 mt-1 flex-shrink-0 text-xl">✓</span>
+                <p>Seen over 200 anime spots with my own eyes</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-green-600 mt-1 flex-shrink-0 text-xl">✓</span>
+                <p>Explored every neighborhood in Tokyo</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-green-600 mt-1 flex-shrink-0 text-xl">✓</span>
+                <p>Built friendships with locals who&apos;ve shown me their favorite spots</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-green-600 mt-1 flex-shrink-0 text-xl">✓</span>
+                <p>Researched what anime tourists really want by talking directly with visitors who came to Japan</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-green-600 mt-1 flex-shrink-0 text-xl">✓</span>
+                <p>Helped hundreds of followers plan their perfect Tokyo Anime trip</p>
+              </div>
+            </div>
           </div>
           
           <p className="text-lg font-semibold italic mb-12">
@@ -42,7 +57,7 @@ export default function DifferentSection() {
             <div className="bg-[#6AC5D6] rounded-lg p-8 shadow-lg">
               <div className="bg-white rounded-lg p-4 h-64 flex items-center justify-center">
                 <p className="text-gray-600 text-center">
-                  [Bangkok Travel Guide Book and Digital Version Display]
+                  [Tokyo Travel Guide Book and Digital Version Display]
                 </p>
               </div>
             </div>
