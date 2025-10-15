@@ -21,7 +21,7 @@ export default function DifferentSection() {
             <ul className="space-y-3 text-gray-700 ml-8 list-disc">
               <li>Seen over 200 anime spots with my own eyes</li>
               <li>Explored every neighborhood in Tokyo</li>
-              <li>Built friendships with locals who've shown me their favorite spots</li>
+              <li>Built friendships with locals who&apos;ve shown me their favorite spots</li>
               <li>Researched what anime tourists really want by talking directly with visitors who came to Japan</li>
               <li>Helped hundreds of followers plan their perfect Tokyo Anime trip</li>
             </ul>

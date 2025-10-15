@@ -17,7 +17,7 @@ export default function TroubleSection() {
             I guess you&apos;re still planning your Tokyo trip like this
           </h2>
           <p className="text-lg md:text-xl text-gray-800 mb-8">
-            You've got 27 tabs open, saved Instagram Reels and Tiktok videos, watched 5 hours of YouTube vlogs queued up...
+            You&apos;ve got 27 tabs open, saved Instagram Reels and Tiktok videos, watched 5 hours of YouTube vlogs queued up...
             and you&apos;re still thinking:
           </p>
         </motion.div>
@@ -54,7 +54,7 @@ export default function TroubleSection() {
         >
           <p className="text-lg md:text-xl italic">
             <span className="font-bold">If that&apos;s you...keep reading.</span> You just found
-            what you didn't even know you needed.
+            what you didn&apos;t even know you needed.
           </p>
         </motion.div>
 

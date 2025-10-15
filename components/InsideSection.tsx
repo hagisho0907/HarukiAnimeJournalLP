@@ -26,7 +26,7 @@ export default function InsideSection() {
             </p>
             
             <p className="font-bold text-xl">
-              Here's everything you will get inside:
+              Here&apos;s everything you will get inside:
             </p>
           </div>
 

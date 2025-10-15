@@ -41,7 +41,7 @@ export default function IntroduceSection() {
           className="max-w-3xl mx-auto space-y-6 text-lg"
         >
           <p>
-            <strong>A no-BS, local-level ebook that shows you how to actually explore Tokyo's anime culture</strong><br />
+            <strong>A no-BS, local-level ebook that shows you how to actually explore Tokyo&apos;s anime culture</strong><br />
             Not outdated blogs. Not a brochure. Not a bunch of recycled BS tips.
           </p>
           

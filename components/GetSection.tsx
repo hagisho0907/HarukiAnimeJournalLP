@@ -17,7 +17,7 @@ export default function GetSection() {
           </h2>
           
           <p className="text-lg text-gray-700 mb-8">
-            Everything you need to explore, understand, and experience Tokyo's anime world like a local, from hidden gems and insider tips to shops, hotels, and ready-to-go itineraries.
+            Everything you need to explore, understand, and experience Tokyo&apos;s anime world like a local, from hidden gems and insider tips to shops, hotels, and ready-to-go itineraries.
           </p>
           
           <ul className="space-y-3 text-gray-700 mb-8">
