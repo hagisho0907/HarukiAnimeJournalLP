@@ -59,32 +59,54 @@ THE ULTIMATE TOKYO ANIME GUIDE:Bebas Neue
 
 現在のサイトは以下のセクション構成になっています：
 
-1. **HeroNew** - メインヒーローセクション（カルーセルとBUY NOWボックス）
-2. **RedBanner** - 赤いバナー
-3. **PlanningSection** - プランニングセクション
-4. **TroublesSection** - トラブルセクション  
-5. **ThreeReasonsNew** - 3つの理由セクション
-6. **CtaRed** - 赤いCTAセクション
-7. **GlimpseSection** - グリンプスセクション
-8. **ReadyToExplore** - 探索準備セクション
-9. **AboutSection** - アバウトセクション
-10. **LimitedSale** - 限定セールセクション
-11. **ProductSummary** - 商品概要セクション
-12. **TestimonialsNew** - 証言セクション
-13. **FaqSection** - FAQセクション
-14. **MessageSection** - メッセージセクション
-15. **FinalCta** - 最終CTAセクション
-16. **ContactSection** - コンタクトセクション
+1. **TopSection** - メインヒーローセクション（コンベア式カルーセルと証言カード）
+2. **TroubleSection** - トラブルセクション（Tokyo旅行プランニングの悩み）
+3. **AboutSection** - アバウトセクション（Harukiの紹介）
+4. **QuestionSection** - クエスチョンセクション
+5. **IntroduceSection** - 紹介セクション
+6. **InsideSection** - インサイドセクション（ガイド内容4セクション詳細）
+7. **BonusSection** - ボーナスセクション
+8. **ReasonSection** - 理由セクション（なぜこのガイドが効果的か）
+9. **DifferentSection** - 違いセクション
+10. **ReviewSection** - レビューセクション（6つの実際の証言と写真）
+11. **GetSection** - ゲットセクション
+12. **IfSection** - イフセクション（このガイドが向いている人）
+13. **TrustSection** - トラストセクション
+14. **FaqSection** - FAQセクション
+15. **ContactSection** - コンタクトセクション
+
+### スティッキーCTA
+- デュアルデザイン（シンプルボタン → FAQからボックスデザイン）
+- Intersection Observer API による表示制御
+- Facebook Pixelトラッキング統合
 
 ## 実装済み機能
 
-### カードカルーセル
-- 3Dアニメーション効果付きのカードスライダー
-- 自動スライド（3秒間隔）と手動ナビゲーション
-- レスポンシブデザイン（モバイル/デスクトップ最適化）
-- 水平スクロール防止機能
+### コンベア式カルーセル
+- CSS-in-JSによる無限スクロールアニメーション
+- ホバー時の一時停止機能
+- レスポンシブデザイン対応
+- スムーズなループアニメーション
 
-### アナリティクス
-- Google Analytics 4 統合
-- カスタムイベントトラッキング
-- 全CTAボタンでのコンバージョン追跡
+### 証言者写真システム
+- TopSection: Robert、Kaanの実際の写真
+- ReviewSection: Robert、Ren、Kaan、Freddy.Elen、Vincentの実際の写真
+- object-centerによる顔の中心配置
+- 匿名者は写真なしで対応
+
+### スティッキーCTA機能
+- デュアルデザイン（シンプルボタン/ボックスデザイン）
+- Intersection Observer APIによる動的表示制御
+- Facebook Pixelトラッキング統合
+- レスポンシブ対応
+
+### アニメーション
+- Framer Motion統合
+- 各セクションのスクロールトリガーアニメーション
+- staggered animations（段階的アニメーション）
+- viewport once設定による最適化
+
+### カラーシステム
+- 統一された赤色テーマ（red-600）
+- ブランドクリーム背景（brand-cream）
+- セクション背景統一（#F5E6D3）

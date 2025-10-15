@@ -128,11 +128,7 @@ export default function ReviewSection() {
                       className="object-cover object-center"
                       sizes="64px"
                     />
-                  ) : (
-                    <div className="w-full h-full bg-gray-300 flex items-center justify-center">
-                      <span className="text-gray-600 text-xl font-bold">{review.avatar}</span>
-                    </div>
-                  )}
+                  ) : null}
                 </div>
                 <p className="font-bold text-lg text-black">{review.name}</p>
                 <p className="text-gray-600">{review.location}</p>

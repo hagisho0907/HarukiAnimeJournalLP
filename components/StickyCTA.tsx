@@ -180,19 +180,19 @@ export default function StickyCTA({
           <div className="container mx-auto max-w-4xl">
             {showAlternate && alternateContent ? (
               // Alternate design for FAQ and below
-              <div className="bg-white rounded-lg shadow-2xl p-6 md:p-8 border-4 border-red-600">
+              <div className="bg-white rounded-lg shadow-2xl p-3 md:p-6 border-2 md:border-4 border-red-600">
                 <div className="text-center">
-                  <h3 className="text-2xl md:text-3xl font-bold text-red-600 mb-4">
+                  <h3 className="text-lg md:text-2xl font-bold text-red-600 mb-2 md:mb-4">
                     {currentContent.title}
                   </h3>
-                  <p className="text-gray-700 mb-6 max-w-xl mx-auto">
+                  <p className="text-sm md:text-base text-gray-700 mb-3 md:mb-6 max-w-xl mx-auto">
                     {currentContent.description}
                   </p>
                   <Link
                     href={buttonUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 text-lg whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+                    className="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 md:py-4 md:px-8 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 text-sm md:text-lg whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
                     onClick={handleClick}
                   >
                     {currentContent.buttonText}
@@ -206,7 +206,7 @@ export default function StickyCTA({
                   href={buttonUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 text-lg whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+                  className="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 md:py-4 md:px-8 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 text-sm md:text-lg whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
                   onClick={handleClick}
                 >
                   {currentContent.buttonText}

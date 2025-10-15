@@ -18,7 +18,7 @@ export default function AboutSection({ id }: AboutSectionProps = {}) {
           className="grid md:grid-cols-2 gap-8 items-center"
         >
           {/* Text Content */}
-          <div className="order-2 md:order-1">
+          <div className="order-1 md:order-1">
             <h2 className="text-2xl md:text-3xl font-bold text-red-600 mb-4">
               Hey, I&apos;m Haruki! An Anime Lover Living in Tokyo
             </h2>
@@ -51,11 +51,15 @@ export default function AboutSection({ id }: AboutSectionProps = {}) {
           </div>
 
           {/* Image */}
-          <div className="order-1 md:order-2">
-            <div className="relative h-96 md:h-[500px] bg-gray-200 rounded-lg overflow-hidden">
-              <p className="absolute inset-0 flex items-center justify-center text-gray-600">
-                Haruki in anime store image placeholder
-              </p>
+          <div className="order-2 md:order-2">
+            <div className="relative h-96 md:h-[500px] rounded-lg overflow-hidden">
+              <Image
+                src="/images/about/me.jpg"
+                alt="Haruki - Tokyo-based anime content creator"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
           </div>
         </motion.div>
