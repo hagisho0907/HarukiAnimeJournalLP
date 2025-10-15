@@ -65,10 +65,14 @@ export default function TroubleSection() {
           viewport={{ once: true }}
           className="flex justify-center"
         >
-          <div className="relative w-72 h-96 bg-gray-200 rounded-lg overflow-hidden">
-            <p className="absolute inset-0 flex items-center justify-center text-gray-600">
-              Stressed person image placeholder
-            </p>
+          <div className="relative w-72 h-96 rounded-lg overflow-hidden shadow-lg">
+            <Image
+              src="/images/trouble/trouble.png"
+              alt="Person stressed about Tokyo trip planning"
+              fill
+              className="object-cover"
+              sizes="288px"
+            />
           </div>
         </motion.div>
       </div>
