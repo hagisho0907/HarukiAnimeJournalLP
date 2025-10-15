@@ -1,5 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function ReviewSection() {
   const reviews = [
@@ -86,8 +87,52 @@ export default function ReviewSection() {
               
               {/* Reviewer info */}
               <div className="flex flex-col items-center">
-                <div className="w-16 h-16 bg-gray-300 rounded-full mb-2 flex items-center justify-center">
-                  <span className="text-gray-600 text-xl font-bold">{review.avatar}</span>
+                <div className="w-16 h-16 rounded-full mb-2 overflow-hidden relative">
+                  {review.name === 'Robert' ? (
+                    <Image
+                      src="/images/testimonial/Robert.PNG"
+                      alt="Robert from New York City"
+                      fill
+                      className="object-cover object-center"
+                      sizes="64px"
+                    />
+                  ) : review.name === 'Ren' ? (
+                    <Image
+                      src="/images/testimonial/Ren.jpg"
+                      alt="Ren from Los Angeles"
+                      fill
+                      className="object-cover object-center"
+                      sizes="64px"
+                    />
+                  ) : review.name === 'Kaan' ? (
+                    <Image
+                      src="/images/testimonial/Kaan.PNG"
+                      alt="Kaan from Istanbul"
+                      fill
+                      className="object-cover object-center"
+                      sizes="64px"
+                    />
+                  ) : review.name === 'Freddy.Elen' ? (
+                    <Image
+                      src="/images/testimonial/Freddy.jpg"
+                      alt="Freddy.Elen from Newport Beach"
+                      fill
+                      className="object-cover object-center"
+                      sizes="64px"
+                    />
+                  ) : review.name === 'Vincent' ? (
+                    <Image
+                      src="/images/testimonial/Vincent.PNG"
+                      alt="Vincent from Italy"
+                      fill
+                      className="object-cover object-center"
+                      sizes="64px"
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-gray-300 flex items-center justify-center">
+                      <span className="text-gray-600 text-xl font-bold">{review.avatar}</span>
+                    </div>
+                  )}
                 </div>
                 <p className="font-bold text-lg text-black">{review.name}</p>
                 <p className="text-gray-600">{review.location}</p>

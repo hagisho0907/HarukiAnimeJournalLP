@@ -54,7 +54,15 @@ export default function TopSection() {
         >
           <div className="bg-white p-6 rounded-lg shadow-md">
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+              <div className="w-12 h-12 rounded-full mr-4 overflow-hidden relative">
+                <Image
+                  src="/images/testimonial/Robert.PNG"
+                  alt="Rob from NYC"
+                  fill
+                  className="object-cover object-center"
+                  sizes="48px"
+                />
+              </div>
               <div>
                 <div className="flex mb-1">
                   {[...Array(5)].map((_, i) => (
@@ -71,7 +79,15 @@ export default function TopSection() {
 
           <div className="bg-white p-6 rounded-lg shadow-md">
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+              <div className="w-12 h-12 rounded-full mr-4 overflow-hidden relative">
+                <Image
+                  src="/images/testimonial/Kaan.PNG"
+                  alt="Kaan from Istanbul"
+                  fill
+                  className="object-cover object-center"
+                  sizes="48px"
+                />
+              </div>
               <div>
                 <div className="flex mb-1">
                   {[...Array(5)].map((_, i) => (
