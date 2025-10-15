@@ -1,6 +1,5 @@
 'use client'
 import { motion } from 'framer-motion'
-import { Award } from 'lucide-react'
 
 export default function TrustSection() {
   const credentials = [
@@ -61,7 +60,7 @@ export default function TrustSection() {
                 viewport={{ once: true }}
                 className="flex items-start gap-3"
               >
-                <Award className="text-red-500 mt-1 flex-shrink-0" size={24} />
+                <span className="text-red-500 mt-1 flex-shrink-0 text-2xl">🏆</span>
                 <div>
                   <p className="font-bold">{cred.title}</p>
                   <p className="text-gray-600">— {cred.description}</p>

@@ -1,6 +1,5 @@
 'use client'
 import { motion } from 'framer-motion'
-import { Check } from 'lucide-react'
 
 export default function BonusSection() {
   return (
@@ -44,19 +43,19 @@ export default function BonusSection() {
             
             <div className="text-left max-w-xl mx-auto space-y-3 mb-12">
               <div className="flex items-start gap-3">
-                <Check className="text-green-600 mt-1 flex-shrink-0" size={20} />
+                <span className="text-green-600 mt-1 flex-shrink-0 text-xl">✓</span>
                 <p className="text-gray-700">
                   Local ramen shops, long-established izakayas,anime-themed cafes, late-night eats, and more...
                 </p>
               </div>
               <div className="flex items-start gap-3">
-                <Check className="text-green-600 mt-1 flex-shrink-0" size={20} />
+                <span className="text-green-600 mt-1 flex-shrink-0 text-xl">✓</span>
                 <p className="text-gray-700">
                   Updated regularly as I discover new favorites.
                 </p>
               </div>
               <div className="flex items-start gap-3">
-                <Check className="text-green-600 mt-1 flex-shrink-0" size={20} />
+                <span className="text-green-600 mt-1 flex-shrink-0 text-xl">✓</span>
                 <p className="text-gray-700">
                   Works directly in Google Maps. Just tap and go.
                 </p>

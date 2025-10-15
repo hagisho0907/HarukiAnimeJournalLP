@@ -1,6 +1,5 @@
 'use client'
 import { motion } from 'framer-motion'
-import { Star } from 'lucide-react'
 
 export default function ReviewSection() {
   const reviews = [
@@ -46,7 +45,7 @@ export default function ReviewSection() {
                 {/* Rating stars */}
                 <div className="flex justify-center mb-4">
                   {[...Array(review.rating)].map((_, i) => (
-                    <Star key={i} className="w-6 h-6 text-yellow-400 fill-current" />
+                    <span key={i} className="text-yellow-400 text-2xl">★</span>
                   ))}
                 </div>
                 
