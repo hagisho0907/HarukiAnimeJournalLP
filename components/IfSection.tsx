@@ -34,9 +34,9 @@ export default function IfSection() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="flex items-start gap-3"
+                  className="flex items-center gap-3"
                 >
-                  <span className="text-red-600 mt-1 flex-shrink-0 text-xl">▶</span>
+                  <span className="text-red-600 flex-shrink-0 text-xl">▶</span>
                   <p className="text-lg text-gray-700">{point}</p>
                 </motion.div>
               ))}
