@@ -20,23 +20,23 @@ export default function DifferentSection() {
             
             <div className="space-y-3 text-gray-700">
               <div className="flex items-start gap-3">
-                <span className="text-green-600 mt-1 flex-shrink-0 text-xl">✓</span>
+                <span className="text-green-600 flex-shrink-0 text-xl leading-relaxed">✓</span>
                 <p>Seen over 200 anime spots with my own eyes</p>
               </div>
               <div className="flex items-start gap-3">
-                <span className="text-green-600 mt-1 flex-shrink-0 text-xl">✓</span>
+                <span className="text-green-600 flex-shrink-0 text-xl leading-relaxed">✓</span>
                 <p>Explored every neighborhood in Tokyo</p>
               </div>
               <div className="flex items-start gap-3">
-                <span className="text-green-600 mt-1 flex-shrink-0 text-xl">✓</span>
+                <span className="text-green-600 flex-shrink-0 text-xl leading-relaxed">✓</span>
                 <p>Built friendships with locals who&apos;ve shown me their favorite spots</p>
               </div>
               <div className="flex items-start gap-3">
-                <span className="text-green-600 mt-1 flex-shrink-0 text-xl">✓</span>
+                <span className="text-green-600 flex-shrink-0 text-xl leading-relaxed">✓</span>
                 <p>Researched what anime tourists really want by talking directly with visitors who came to Japan</p>
               </div>
               <div className="flex items-start gap-3">
-                <span className="text-green-600 mt-1 flex-shrink-0 text-xl">✓</span>
+                <span className="text-green-600 flex-shrink-0 text-xl leading-relaxed">✓</span>
                 <p>Helped hundreds of followers plan their perfect Tokyo Anime trip</p>
               </div>
             </div>
