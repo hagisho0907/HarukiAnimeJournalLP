@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
+import { trackEvent } from '@/utils/trackEvent'
 
 interface StickyCTAProps {
   title?: string
@@ -148,8 +149,8 @@ export default function StickyCTA({
 
   const handleClick = () => {
     // Facebook Pixel tracking (if tracking ID provided)
-    if (trackingId && typeof window !== 'undefined' && window.fbq) {
-      window.fbq('track', 'InitiateCheckout', {
+    if (trackingId) {
+      trackEvent('InitiateCheckout', {
         value: parseFloat(price.replace('$', '')),
         currency: 'USD',
         content_type: 'product',
@@ -217,11 +218,4 @@ export default function StickyCTA({
       )}
     </AnimatePresence>
   )
-}
-
-// Facebook Pixel用の型定義
-declare global {
-  interface Window {
-    fbq?: any
-  }
 }
