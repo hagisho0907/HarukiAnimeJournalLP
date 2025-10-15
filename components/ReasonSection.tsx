@@ -56,18 +56,18 @@ export default function ReasonSection() {
             
             {/* Guide mockup placeholder */}
             <div className="relative">
-              <div className="bg-gradient-to-br from-teal-400 to-orange-300 rounded-lg p-8 mb-4 shadow-xl">
+              <div className="bg-gradient-to-br from-red-400 to-orange-300 rounded-lg p-8 mb-4 shadow-xl">
                 <div className="bg-white rounded p-4 text-center">
-                  <h3 className="text-2xl font-bold text-teal-600 mb-2">Bangkok</h3>
-                  <h4 className="text-xl font-bold text-orange-500">Back Book</h4>
-                  <p className="text-sm text-gray-600 mt-4">Everything you need to explore Bangkok&apos;s hidden gems</p>
+                  <h3 className="text-2xl font-bold text-red-600 mb-2">Tokyo</h3>
+                  <h4 className="text-xl font-bold text-orange-500">Anime Guide</h4>
+                  <p className="text-sm text-gray-600 mt-4">Everything you need to explore Tokyo&apos;s anime culture</p>
                 </div>
               </div>
               
               {/* Physical book mockup */}
               <div className="relative -mt-8 ml-8">
                 <div className="bg-white rounded-lg shadow-lg p-4 transform rotate-6">
-                  <div className="w-32 h-20 bg-gradient-to-br from-teal-400 to-orange-300 rounded"></div>
+                  <div className="w-32 h-20 bg-gradient-to-br from-red-400 to-orange-300 rounded"></div>
                 </div>
               </div>
             </div>

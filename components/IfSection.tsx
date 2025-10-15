@@ -36,7 +36,7 @@ export default function IfSection() {
                   viewport={{ once: true }}
                   className="flex items-start gap-3"
                 >
-                  <span className="text-[#5AC8D8] mt-1 flex-shrink-0 text-xl">▶</span>
+                  <span className="text-red-600 mt-1 flex-shrink-0 text-xl">▶</span>
                   <p className="text-lg text-gray-700">{point}</p>
                 </motion.div>
               ))}

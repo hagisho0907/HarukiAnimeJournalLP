@@ -105,11 +105,11 @@ export default function ReviewSection() {
           className="flex justify-center"
         >
           <div className="relative">
-            <div className="bg-gradient-to-br from-teal-400 to-orange-300 rounded-lg p-8 shadow-xl max-w-xs">
+            <div className="bg-gradient-to-br from-red-400 to-orange-300 rounded-lg p-8 shadow-xl max-w-xs">
               <div className="bg-white rounded p-4 text-center">
-                <h3 className="text-xl font-bold text-teal-600 mb-2">Bangkok</h3>
-                <h4 className="text-lg font-bold text-orange-500">Back Book</h4>
-                <p className="text-xs text-gray-600 mt-2">Ultimate Travel Guide</p>
+                <h3 className="text-xl font-bold text-red-600 mb-2">Tokyo</h3>
+                <h4 className="text-lg font-bold text-orange-500">Anime Guide</h4>
+                <p className="text-xs text-gray-600 mt-2">Ultimate Anime Guide</p>
               </div>
             </div>
             
