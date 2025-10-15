@@ -21,31 +21,31 @@ export default function GetSection() {
           </p>
           
           <div className="space-y-3 text-gray-700 mb-8">
-            <div className="flex items-start gap-3">
+            <div className="flex items-center gap-3">
               <span className="text-green-600 flex-shrink-0 text-xl leading-relaxed">✓</span>
               <span>ebook with 162+ pages of everything to know about Tokyo anime spots</span>
             </div>
-            <div className="flex items-start gap-3">
+            <div className="flex items-center gap-3">
               <span className="text-green-600 flex-shrink-0 text-xl leading-relaxed">✓</span>
               <span>Insider tips only locals know</span>
             </div>
-            <div className="flex items-start gap-3">
+            <div className="flex items-center gap-3">
               <span className="text-green-600 flex-shrink-0 text-xl leading-relaxed">✓</span>
               <span>Itineraries (one for each of the 5 must-visit anime areas)</span>
             </div>
-            <div className="flex items-start gap-3">
+            <div className="flex items-center gap-3">
               <span className="text-green-600 flex-shrink-0 text-xl leading-relaxed">✓</span>
               <span>Recommended hotel areas for easy access to major anime districts</span>
             </div>
-            <div className="flex items-start gap-3">
+            <div className="flex items-center gap-3">
               <span className="text-green-600 flex-shrink-0 text-xl leading-relaxed">✓</span>
               <span>Offline PDF — use it anywhere, no apps needed</span>
             </div>
-            <div className="flex items-start gap-3">
+            <div className="flex items-center gap-3">
               <span className="text-green-600 flex-shrink-0 text-xl leading-relaxed">✓</span>
               <span>Curated by an anime fan who actually lives here</span>
             </div>
-            <div className="flex items-start gap-3">
+            <div className="flex items-center gap-3">
               <span className="text-green-600 flex-shrink-0 text-xl leading-relaxed">✓</span>
               <span>BONUS: Hidden Tokyo Food Spots Map</span>
             </div>
