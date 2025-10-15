@@ -1,6 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import BookConveyorCarousel from './BookConveyorCarousel'
 
 export default function TopSection() {
   return (
@@ -27,15 +28,8 @@ export default function TopSection() {
           </h3>
         </motion.div>
 
-        {/* Book carousel placeholder */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="relative h-96 bg-gray-200 rounded-lg mb-12 flex items-center justify-center"
-        >
-          <p className="text-gray-600">Book carousel will be placed here</p>
-        </motion.div>
+        {/* Book carousel */}
+        <BookConveyorCarousel />
 
         {/* Description */}
         <motion.div
