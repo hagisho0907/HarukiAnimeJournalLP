@@ -65,7 +65,7 @@ export default function TroubleSection() {
           viewport={{ once: true }}
           className="flex justify-center"
         >
-          <div className="relative w-72 h-96 rounded-lg overflow-hidden shadow-lg">
+          <div className="relative w-72 h-96 overflow-hidden">
             <Image
               src="/images/trouble/trouble.png"
               alt="Person stressed about Tokyo trip planning"
