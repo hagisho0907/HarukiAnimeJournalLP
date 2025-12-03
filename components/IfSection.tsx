@@ -42,7 +42,7 @@ export default function IfSection() {
               ))}
             </div>
             
-            {/* Image placeholder */}
+            {/* Image */}
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -50,12 +50,12 @@ export default function IfSection() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="relative h-96 bg-gradient-to-br from-[#6AC5D6] to-[#F5A623] rounded-lg overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center p-8">
-                  <p className="text-white text-center">
-                    [Image of person reading Tokyo travel guide with excited expression]
-                  </p>
-                </div>
+              <div className="relative h-96 rounded-lg overflow-hidden">
+                <img 
+                  src="/images/if-section/Ifsection.png" 
+                  alt="Person reading Tokyo travel guide with excited expression"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </motion.div>
           </div>
