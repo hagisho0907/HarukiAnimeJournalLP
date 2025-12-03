@@ -119,42 +119,47 @@ export default function InsideSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="bg-white rounded-lg border-4 border-red-500 p-6 md:p-8"
+              className="bg-white rounded-lg border-4 border-cyan-400 p-6 md:p-8"
             >
-              <div className="mb-6">
-                <span className="text-orange-500 text-xl font-bold">Section {section.number} ;</span>
-                <h3 className="text-red-600 text-2xl md:text-3xl font-bold mt-2">
-                  {section.title}
-                </h3>
-              </div>
-              
-              {/* Main items with checkmarks */}
-              <div className="mb-6">
-                {section.items.map((item, itemIndex) => (
-                  <div key={itemIndex} className="flex items-start gap-3 mb-3">
-                    <span className="text-green-600 text-xl mt-1">✓</span>
-                    <p className="text-gray-800 font-medium">{item}</p>
+              <div className="grid md:grid-cols-2 gap-8 items-start">
+                {/* Left side - Text content */}
+                <div>
+                  <div className="mb-6">
+                    <span className="text-orange-500 text-xl font-bold">Section {section.number};</span>
+                    <h3 className="text-cyan-600 text-2xl md:text-3xl font-bold mt-2">
+                      {section.title}
+                    </h3>
                   </div>
-                ))}
-              </div>
-              
-              {/* Detailed breakdown */}
-              <div className="text-left">
-                {section.details.map((detail, detailIndex) => (
-                  <p key={detailIndex} className="text-gray-700 mb-1">
-                    {detail}
-                  </p>
-                ))}
-              </div>
-              
-              {/* Decorative images */}
-              <div className="mt-6 flex justify-center">
-                <div className="w-32 h-20 rounded-lg overflow-hidden">
-                  <img 
-                    src={`/images/inside-section/section-${section.number}.png`} 
-                    alt={`Section ${section.number} visual`}
-                    className="w-full h-full object-cover"
-                  />
+                  
+                  {/* Main items with checkmarks */}
+                  <div className="mb-6">
+                    {section.items.map((item, itemIndex) => (
+                      <div key={itemIndex} className="flex items-start gap-3 mb-3">
+                        <span className="text-green-600 text-xl mt-1">✓</span>
+                        <p className="text-gray-800 font-medium">{item}</p>
+                      </div>
+                    ))}
+                  </div>
+                  
+                  {/* Detailed breakdown */}
+                  <div className="text-left">
+                    {section.details.map((detail, detailIndex) => (
+                      <p key={detailIndex} className="text-gray-700 mb-1">
+                        {detail}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Right side - Large showcase image */}
+                <div className="flex justify-center">
+                  <div className="relative">
+                    <img 
+                      src="/images/inside-section/inside-showcase.png" 
+                      alt="Inside section showcase with devices and guide"
+                      className="w-full h-auto object-cover rounded-lg"
+                    />
+                  </div>
                 </div>
               </div>
             </motion.div>
