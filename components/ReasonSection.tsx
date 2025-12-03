@@ -54,7 +54,7 @@ export default function ReasonSection() {
                 <img 
                   src="/images/reason-section/reason.png" 
                   alt="Tokyo Anime Guide showcase"
-                  className="w-full h-auto object-cover rounded-lg shadow-xl"
+                  className="w-full h-auto object-cover rounded-lg"
                 />
               </div>
             </div>

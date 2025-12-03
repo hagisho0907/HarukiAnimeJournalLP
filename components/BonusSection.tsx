@@ -22,7 +22,7 @@ export default function BonusSection() {
             
             {/* Map Image */}
             <div className="relative max-w-xs mx-auto mb-8">
-              <div className="rounded-lg shadow-lg overflow-hidden">
+              <div className="rounded-lg overflow-hidden">
                 <img 
                   src="/images/bonus-section/bonus.png" 
                   alt="Hidden Tokyo Food Gems Map"

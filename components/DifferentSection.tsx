@@ -54,7 +54,7 @@ export default function DifferentSection() {
             viewport={{ once: true }}
             className="relative max-w-md mx-auto"
           >
-            <div className="rounded-lg overflow-hidden shadow-lg">
+            <div className="rounded-lg overflow-hidden">
               <img 
                 src="/images/different-section/different.png" 
                 alt="Tokyo Travel Guide Book and Digital Version Display"

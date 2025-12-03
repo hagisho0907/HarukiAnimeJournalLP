@@ -142,7 +142,7 @@ export default function ReviewSection() {
             <img 
               src="/images/review-section/review.png" 
               alt="Tokyo Anime Guide showcase"
-              className="w-full h-auto object-cover rounded-lg shadow-xl"
+              className="w-full h-auto object-cover rounded-lg"
             />
           </div>
         </motion.div>
