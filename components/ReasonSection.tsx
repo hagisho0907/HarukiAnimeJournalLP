@@ -50,10 +50,6 @@ export default function ReasonSection() {
           <div className="grid md:grid-cols-2 gap-8 items-start">
             {/* Left side - Guide showcase */}
             <div>
-              {/* Speech bubble */}
-              <div className="relative mb-6">
-                <div className="absolute -top-4 -left-4 w-8 h-8 bg-gray-200 rounded-full border-2"></div>
-              </div>
               
               {/* Guide image */}
               <div className="relative">

@@ -29,10 +29,6 @@ export default function BonusSection() {
                   className="w-full h-auto object-cover"
                 />
               </div>
-              {/* Speech bubble */}
-              <div className="absolute -left-12 top-8 w-12 h-12 bg-red-500 rounded-full flex items-center justify-center">
-                <div className="absolute -right-2 top-4 w-4 h-4 bg-red-500 transform rotate-45"></div>
-              </div>
             </div>
             
             <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
