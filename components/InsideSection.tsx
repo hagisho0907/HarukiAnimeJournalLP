@@ -119,14 +119,14 @@ export default function InsideSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="bg-white rounded-lg border-4 border-cyan-400 p-6 md:p-8"
+              className="bg-white rounded-lg border-4 border-red-500 p-6 md:p-8"
             >
               <div className="grid md:grid-cols-2 gap-8 items-start">
                 {/* Left side - Text content */}
                 <div>
                   <div className="mb-6">
                     <span className="text-orange-500 text-xl font-bold">Section {section.number};</span>
-                    <h3 className="text-cyan-600 text-2xl md:text-3xl font-bold mt-2">
+                    <h3 className="text-red-600 text-2xl md:text-3xl font-bold mt-2">
                       {section.title}
                     </h3>
                   </div>
@@ -151,12 +151,12 @@ export default function InsideSection() {
                   </div>
                 </div>
 
-                {/* Right side - Large showcase image */}
+                {/* Right side - Section specific image */}
                 <div className="flex justify-center">
                   <div className="relative">
                     <img 
-                      src="/images/inside-section/inside-showcase.png" 
-                      alt="Inside section showcase with devices and guide"
+                      src={`/images/inside-section/section-${section.number}.png`} 
+                      alt={`Section ${section.number} visual`}
                       className="w-full h-auto object-cover rounded-lg"
                     />
                   </div>
