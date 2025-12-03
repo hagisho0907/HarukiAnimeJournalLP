@@ -145,18 +145,12 @@ export default function ReviewSection() {
           viewport={{ once: true }}
           className="flex justify-center"
         >
-          <div className="relative">
-            <div className="bg-gradient-to-br from-red-400 to-orange-300 rounded-lg p-8 shadow-xl max-w-xs">
-              <div className="bg-white rounded p-4 text-center">
-                <h3 className="text-xl font-bold text-red-600 mb-2">Tokyo</h3>
-                <h4 className="text-lg font-bold text-orange-500">Anime Guide</h4>
-                <p className="text-xs text-gray-600 mt-2">Ultimate Anime Guide</p>
-              </div>
-            </div>
-            
-            {/* Floating elements */}
-            <div className="absolute -top-4 -right-4 w-12 h-8 bg-white rounded shadow-lg transform rotate-12"></div>
-            <div className="absolute -bottom-2 -left-2 w-8 h-8 bg-white rounded shadow-lg transform -rotate-12"></div>
+          <div className="relative max-w-xs">
+            <img 
+              src="/images/review-section/review.png" 
+              alt="Tokyo Anime Guide showcase"
+              className="w-full h-auto object-cover rounded-lg shadow-xl"
+            />
           </div>
         </motion.div>
       </div>
