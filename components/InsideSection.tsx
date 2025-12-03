@@ -147,10 +147,14 @@ export default function InsideSection() {
                 ))}
               </div>
               
-              {/* Decorative images placeholder */}
+              {/* Decorative images */}
               <div className="mt-6 flex justify-center">
-                <div className="w-32 h-20 bg-gray-200 rounded-lg flex items-center justify-center">
-                  <span className="text-gray-500 text-sm">Section {section.number} visual</span>
+                <div className="w-32 h-20 rounded-lg overflow-hidden">
+                  <img 
+                    src={`/images/inside-section/section-${section.number}.png`} 
+                    alt={`Section ${section.number} visual`}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </motion.div>

@@ -20,12 +20,14 @@ export default function BonusSection() {
               The Hidden Tokyo Food Gems Map
             </h3>
             
-            {/* Map Image Placeholder */}
+            {/* Map Image */}
             <div className="relative max-w-xs mx-auto mb-8">
-              <div className="bg-gray-200 rounded-lg shadow-lg p-8 h-64 flex items-center justify-center">
-                <p className="text-gray-600">
-                  Hidden Tokyo Food Gems Map Image Placeholder
-                </p>
+              <div className="rounded-lg shadow-lg overflow-hidden">
+                <img 
+                  src="/images/bonus-section/bonus.png" 
+                  alt="Hidden Tokyo Food Gems Map"
+                  className="w-full h-auto object-cover"
+                />
               </div>
               {/* Speech bubble */}
               <div className="absolute -left-12 top-8 w-12 h-12 bg-red-500 rounded-full flex items-center justify-center">

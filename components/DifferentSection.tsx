@@ -54,12 +54,12 @@ export default function DifferentSection() {
             viewport={{ once: true }}
             className="relative max-w-md mx-auto"
           >
-            <div className="bg-[#6AC5D6] rounded-lg p-8 shadow-lg">
-              <div className="bg-white rounded-lg p-4 h-64 flex items-center justify-center">
-                <p className="text-gray-600 text-center">
-                  [Tokyo Travel Guide Book and Digital Version Display]
-                </p>
-              </div>
+            <div className="rounded-lg overflow-hidden shadow-lg">
+              <img 
+                src="/images/different-section/different.png" 
+                alt="Tokyo Travel Guide Book and Digital Version Display"
+                className="w-full h-auto object-cover"
+              />
             </div>
           </motion.div>
         </motion.div>

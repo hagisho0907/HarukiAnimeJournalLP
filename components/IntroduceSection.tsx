@@ -26,11 +26,13 @@ export default function IntroduceSection() {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="relative h-96 bg-gray-200 rounded-lg mb-12 max-w-3xl mx-auto"
+          className="relative mb-12 max-w-3xl mx-auto"
         >
-          <p className="absolute inset-0 flex items-center justify-center text-gray-600">
-            Ebook mockup with devices placeholder
-          </p>
+          <img 
+            src="/images/introduce-section/introduce.png" 
+            alt="Ebook mockup with devices"
+            className="w-full h-auto object-cover rounded-lg"
+          />
         </motion.div>
 
         <motion.div

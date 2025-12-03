@@ -69,7 +69,7 @@ export default function TrustSection() {
             ))}
           </div>
           
-          {/* Photo collage placeholder */}
+          {/* Photo collage */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -77,12 +77,12 @@ export default function TrustSection() {
             viewport={{ once: true }}
             className="relative"
           >
-            <div className="bg-gradient-to-br from-[#6AC5D6] to-[#F5A623] rounded-lg p-8 shadow-lg">
-              <div className="bg-white/90 rounded-lg p-4 h-64 flex items-center justify-center">
-                <p className="text-gray-600 text-center">
-                  [Photo collage of Haruki at various anime events and with industry professionals]
-                </p>
-              </div>
+            <div className="rounded-lg overflow-hidden shadow-lg">
+              <img 
+                src="/images/trust-section/trust.JPG" 
+                alt="Photo collage of Haruki at various anime events and with industry professionals"
+                className="w-full h-auto object-cover"
+              />
             </div>
           </motion.div>
         </motion.div>

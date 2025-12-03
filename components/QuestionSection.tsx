@@ -31,11 +31,13 @@ export default function QuestionSection() {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="relative h-96 bg-gray-200 rounded-lg mb-8 max-w-2xl mx-auto"
+          className="relative mb-8 max-w-2xl mx-auto"
         >
-          <p className="absolute inset-0 flex items-center justify-center text-gray-600">
-            Phone mockup with DM messages placeholder
-          </p>
+          <img 
+            src="/images/question-section/question.png" 
+            alt="Phone mockup with DM messages"
+            className="w-full h-auto object-cover rounded-lg"
+          />
         </motion.div>
 
         <motion.div
