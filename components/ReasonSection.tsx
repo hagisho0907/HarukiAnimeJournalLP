@@ -26,7 +26,7 @@ export default function ReasonSection() {
   ]
 
   return (
-    <section className="py-16 px-4 bg-cyan-400">
+    <section className="py-16 px-4 bg-[#F5E6D3]">
       <div className="container mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -35,7 +35,7 @@ export default function ReasonSection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-black mb-12">
             Why This Guide Works
           </h2>
         </motion.div>
@@ -45,12 +45,12 @@ export default function ReasonSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="bg-white rounded-lg p-6 md:p-8"
+          className="bg-white rounded-lg border-4 border-red-500 p-6 md:p-8"
         >
           <div className="grid md:grid-cols-2 gap-8 items-center">
             {/* Left side - Guide showcase */}
             <div className="flex justify-center">
-              <div className="relative">
+              <div className="relative max-w-sm">
                 <img 
                   src="/images/reason-section/reason.png" 
                   alt="Tokyo Anime Guide showcase"
