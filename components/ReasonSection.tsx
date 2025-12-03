@@ -26,7 +26,7 @@ export default function ReasonSection() {
   ]
 
   return (
-    <section className="py-16 px-4 bg-[#F5E6D3]">
+    <section className="py-16 px-4 bg-cyan-400">
       <div className="container mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -35,7 +35,7 @@ export default function ReasonSection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-black mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-12">
             Why This Guide Works
           </h2>
         </motion.div>
@@ -45,13 +45,11 @@ export default function ReasonSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="bg-white rounded-lg border-4 border-red-500 p-6 md:p-8"
+          className="bg-white rounded-lg p-6 md:p-8"
         >
-          <div className="grid md:grid-cols-2 gap-8 items-start">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
             {/* Left side - Guide showcase */}
-            <div>
-              
-              {/* Guide image */}
+            <div className="flex justify-center">
               <div className="relative">
                 <img 
                   src="/images/reason-section/reason.png" 
@@ -61,8 +59,8 @@ export default function ReasonSection() {
               </div>
             </div>
 
-            {/* Right side - Reasons list */}
-            <div className="space-y-6">
+            {/* Right side - Reasons grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {reasons.map((reason, index) => (
                 <motion.div
                   key={index}
@@ -70,17 +68,15 @@ export default function ReasonSection() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="flex items-start gap-4"
+                  className="text-center"
                 >
-                  <div className="text-3xl">{reason.icon}</div>
-                  <div>
-                    <h3 className="text-red-600 font-bold text-lg mb-2">
-                      {reason.title}
-                    </h3>
-                    <p className="text-gray-700 leading-relaxed">
-                      {reason.description}
-                    </p>
-                  </div>
+                  <div className="text-3xl mb-3">{reason.icon}</div>
+                  <h3 className="text-red-600 font-bold text-lg mb-2">
+                    {reason.title}
+                  </h3>
+                  <p className="text-gray-700 leading-relaxed text-sm">
+                    {reason.description}
+                  </p>
                 </motion.div>
               ))}
             </div>
