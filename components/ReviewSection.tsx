@@ -138,7 +138,7 @@ export default function ReviewSection() {
           viewport={{ once: true }}
           className="flex justify-center"
         >
-          <div className="relative max-w-xs">
+          <div className="relative max-w-sm">
             <img 
               src="/images/review-section/review.png" 
               alt="Tokyo Anime Guide showcase"
