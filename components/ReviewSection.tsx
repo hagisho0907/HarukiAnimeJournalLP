@@ -64,7 +64,9 @@ export default function ReviewSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white rounded-lg border-4 border-red-600 p-6"
+              className={`bg-white rounded-lg border-4 border-red-600 p-6 ${
+                index === 4 ? 'md:col-span-2 md:max-w-md md:mx-auto' : ''
+              }`}
             >
               {/* Rating stars */}
               <div className="flex justify-center mb-4">
