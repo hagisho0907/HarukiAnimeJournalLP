@@ -39,13 +39,6 @@ export default function ReviewSection() {
       review: 'I didn&apos;t just want to shop, I wanted to experience real otaku culture. This guide gave my trip purpose. With Haruki&apos;s insights, I discovered hidden spots and shops that perfectly matched my vibe.',
       avatar: 'V'
     },
-    {
-      name: 'Anonymous',
-      location: 'Verified Buyer',
-      rating: 5,
-      review: 'I&apos;m not a seasoned traveler and Tokyo felt overwhelming at first. But this guide broke everything down in a chill, easy way. I felt way more prepared and excited. Zero regrets buying this!',
-      avatar: '?'
-    }
   ]
 
   return (
