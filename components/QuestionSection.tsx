@@ -55,8 +55,9 @@ export default function QuestionSection() {
               alt="Tokyo planning illustration"
               className="w-full h-auto rounded-lg"
               onError={(e) => {
-                console.log('Image failed to load:', e.target.src);
-                e.target.style.display = 'none';
+                const target = e.target as HTMLImageElement;
+                console.log('Image failed to load:', target.src);
+                target.style.display = 'none';
               }}
               onLoad={() => console.log('Image loaded successfully')}
             />
