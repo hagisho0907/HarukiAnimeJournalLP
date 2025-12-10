@@ -21,18 +21,18 @@ export default function QuestionSection() {
             You've got 27 tabs open, saved Instagram Reels and Tiktok videos, watched 5 hours of YouTube vlogs queued up... and you're still thinking:
           </p>
           
-          <div className="space-y-4 mb-8">
-            <div className="flex items-center text-left text-lg md:text-xl">
-              <span className="text-red-500 mr-4">▶</span>
-              <span>Where do I even start?</span>
+          <div className="space-y-4 mb-8 max-w-2xl mx-auto">
+            <div className="flex items-center justify-start text-left text-lg md:text-xl">
+              <span className="text-red-500 mr-4 text-2xl">▶</span>
+              <span className="text-gray-800">Where do I even start?</span>
             </div>
-            <div className="flex items-center text-left text-lg md:text-xl">
-              <span className="text-red-500 mr-4">▶</span>
-              <span>Am I just doing what every other tourist does?</span>
+            <div className="flex items-center justify-start text-left text-lg md:text-xl">
+              <span className="text-red-500 mr-4 text-2xl">▶</span>
+              <span className="text-gray-800">Am I just doing what every other tourist does?</span>
             </div>
-            <div className="flex items-center text-left text-lg md:text-xl">
-              <span className="text-red-500 mr-4">▶</span>
-              <span>Is this stuff even legit or just influencer hype?</span>
+            <div className="flex items-center justify-start text-left text-lg md:text-xl">
+              <span className="text-red-500 mr-4 text-2xl">▶</span>
+              <span className="text-gray-800">Is this stuff even legit or just influencer hype?</span>
             </div>
           </div>
           
@@ -49,12 +49,10 @@ export default function QuestionSection() {
           viewport={{ once: true }}
           className="mt-12 max-w-3xl mx-auto"
         >
-          <Image
+          <img
             src="/images/question-section/question.png"
             alt="Tokyo planning illustration"
-            width={800}
-            height={600}
-            className="w-full h-auto rounded-lg shadow-lg"
+            className="w-full h-auto rounded-lg shadow-lg max-w-2xl mx-auto"
           />
         </motion.div>
       </div>
