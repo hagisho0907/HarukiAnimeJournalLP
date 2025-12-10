@@ -38,7 +38,7 @@ export default function BookConveyorCarousel({
                 key={index}
                 className="conveyor-item"
               >
-                <div className="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-lg">
+                <div className="relative h-96 md:h-[500px] rounded-lg overflow-hidden shadow-lg">
                   <Image
                     src={image.src}
                     alt={image.alt}
