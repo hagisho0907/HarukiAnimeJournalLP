@@ -4,14 +4,8 @@ import Image from 'next/image'
 
 export default function QuestionSection() {
   return (
-    <section className="bg-brand-cream py-16 px-4 relative min-h-screen flex items-center">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
-        style={{ backgroundImage: "url('/images/question-section/question.png')" }}
-      ></div>
-      
-      <div className="container mx-auto max-w-4xl text-center relative z-10">
+    <section className="bg-brand-cream py-16 px-4">
+      <div className="container mx-auto max-w-4xl text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -45,6 +39,23 @@ export default function QuestionSection() {
           <p className="text-2xl md:text-3xl italic font-bold text-black">
             If that's you...keep reading. You just found what you didn't even know you needed.
           </p>
+        </motion.div>
+        
+        {/* Image Section */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="mt-12 max-w-3xl mx-auto"
+        >
+          <Image
+            src="/images/question-section/question.png"
+            alt="Tokyo planning illustration"
+            width={800}
+            height={600}
+            className="w-full h-auto rounded-lg shadow-lg"
+          />
         </motion.div>
       </div>
     </section>
