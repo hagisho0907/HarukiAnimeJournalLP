@@ -1,5 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 interface CarouselItem {
   src: string
@@ -37,12 +38,14 @@ export default function BookConveyorCarousel({
                 key={index}
                 className="conveyor-item"
               >
-                <div className="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-lg bg-gray-200">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <p className="text-gray-600 text-center p-4">
-                      {image.alt}
-                    </p>
-                  </div>
+                <div className="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-lg">
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 200px, 280px"
+                  />
                 </div>
               </div>
             ))}
