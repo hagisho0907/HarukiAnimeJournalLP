@@ -1,6 +1,5 @@
 'use client'
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 
 interface CarouselItem {
   src: string
@@ -13,10 +12,10 @@ interface BookConveyorCarouselProps {
 
 export default function BookConveyorCarousel({
   images = [
-    { src: '/placeholder-book1.jpg', alt: 'Tokyo Anime Guide Book' },
-    { src: '/placeholder-book2.jpg', alt: 'Map Feature' },
-    { src: '/placeholder-book3.jpg', alt: 'Shop Directory' },
-    { src: '/placeholder-book4.jpg', alt: 'Area Guide' }
+    { src: '/images/top-carousel/book-1.jpg', alt: 'Tokyo Anime Guide Book' },
+    { src: '/images/top-carousel/book-2.jpg', alt: 'Map Feature' },
+    { src: '/images/top-carousel/book-3.jpg', alt: 'Shop Directory' },
+    { src: '/images/top-carousel/book-4.jpg', alt: 'Area Guide' }
   ]
 }: BookConveyorCarouselProps) {
   // Duplicate images for seamless loop
