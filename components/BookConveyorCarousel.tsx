@@ -13,10 +13,10 @@ interface BookConveyorCarouselProps {
 
 export default function BookConveyorCarousel({
   images = [
-    { src: '/images/top-carousel/book-1.jpg', alt: 'Tokyo Anime Guide Book' },
-    { src: '/images/top-carousel/book-2.jpg', alt: 'Map Feature' },
-    { src: '/images/top-carousel/book-3.jpg', alt: 'Shop Directory' },
-    { src: '/images/top-carousel/book-4.jpg', alt: 'Area Guide' }
+    { src: '/images/top-section/carousel-1.jpg', alt: 'Tokyo Anime Guide Book' },
+    { src: '/images/top-section/carousel-2.jpg', alt: 'Map Feature' },
+    { src: '/images/top-section/carousel-3.jpg', alt: 'Shop Directory' },
+    { src: '/images/top-section/carousel-4.jpg', alt: 'Area Guide' }
   ]
 }: BookConveyorCarouselProps) {
   // Duplicate images for seamless loop
@@ -38,7 +38,7 @@ export default function BookConveyorCarousel({
                 key={index}
                 className="conveyor-item"
               >
-                <div className="relative h-96 md:h-[500px] rounded-lg overflow-hidden shadow-lg">
+                <div className="relative h-[480px] md:h-[600px] rounded-lg overflow-hidden shadow-lg">
                   <Image
                     src={image.src}
                     alt={image.alt}
