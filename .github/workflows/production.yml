@@ -1,9 +1,11 @@
 name: Vercel Production Deployment
 
 on:
-  push:
-    branches:
-      - main
+  # Temporarily disabled - using Vercel's native Git integration instead
+  # push:
+  #   branches:
+  #     - main
+  workflow_dispatch:
 
 jobs:
   deploy:
