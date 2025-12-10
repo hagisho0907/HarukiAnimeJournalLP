@@ -38,13 +38,13 @@ export default function BookConveyorCarousel({
                 key={index}
                 className="conveyor-item"
               >
-                <div className="relative h-[480px] md:h-[600px] rounded-lg overflow-hidden shadow-lg">
+                <div className="relative h-[420px] md:h-[520px] rounded-lg overflow-hidden shadow-lg">
                   <Image
                     src={image.src}
                     alt={image.alt}
                     fill
                     className="object-cover"
-                    sizes="(max-width: 768px) 200px, 280px"
+                    sizes="(max-width: 768px) 250px, 350px"
                   />
                 </div>
               </div>
@@ -72,12 +72,12 @@ export default function BookConveyorCarousel({
 
         .conveyor-item {
           flex-shrink: 0;
-          width: 200px;
+          width: 250px;
         }
 
         @media (min-width: 768px) {
           .conveyor-item {
-            width: 280px;
+            width: 350px;
           }
         }
 
