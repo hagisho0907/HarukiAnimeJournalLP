@@ -13,7 +13,7 @@ export default function QuestionSection() {
           viewport={{ once: true }}
           className="mb-12"
         >
-          <h2 className="text-4xl md:text-6xl font-bold mb-8 text-red-500">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-8 text-red-500 leading-tight">
             I guess you're still planning your Tokyo trip like this
           </h2>
           
@@ -49,11 +49,18 @@ export default function QuestionSection() {
           viewport={{ once: true }}
           className="mt-12 max-w-3xl mx-auto"
         >
-          <img
-            src="/images/question-section/question.png"
-            alt="Tokyo planning illustration"
-            className="w-full h-auto rounded-lg shadow-lg max-w-2xl mx-auto"
-          />
+          <div className="bg-white p-4 rounded-lg shadow-lg">
+            <img
+              src="/images/question-section/question.png"
+              alt="Tokyo planning illustration"
+              className="w-full h-auto rounded-lg"
+              onError={(e) => {
+                console.log('Image failed to load:', e.target.src);
+                e.target.style.display = 'none';
+              }}
+              onLoad={() => console.log('Image loaded successfully')}
+            />
+          </div>
         </motion.div>
       </div>
     </section>
