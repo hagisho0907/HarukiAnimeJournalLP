@@ -1,6 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { useState } from 'react'
 
 interface CarouselItem {
   src: string
@@ -19,6 +20,7 @@ export default function BookConveyorCarousel({
     { src: '/images/top-section/carousel-4.jpg', alt: 'Area Guide' }
   ]
 }: BookConveyorCarouselProps) {
+  const [isInteracting, setIsInteracting] = useState(false)
   // Duplicate images for seamless loop
   const allImages = [...images, ...images]
 
@@ -31,8 +33,18 @@ export default function BookConveyorCarousel({
     >
       {/* Conveyor Belt Container */}
       <div className="relative w-full overflow-hidden">
-        <div className="conveyor-wrapper">
-          <div className="conveyor-belt">
+        <div
+          className="conveyor-wrapper"
+          style={{ touchAction: 'pan-y' }}
+          onPointerDown={() => setIsInteracting(true)}
+          onPointerUp={() => setIsInteracting(false)}
+          onPointerLeave={() => setIsInteracting(false)}
+          onPointerCancel={() => setIsInteracting(false)}
+        >
+          <div
+            className="conveyor-belt"
+            style={{ animationPlayState: isInteracting ? 'paused' : undefined }}
+          >
             {allImages.map((image, index) => (
               <div
                 key={index}
