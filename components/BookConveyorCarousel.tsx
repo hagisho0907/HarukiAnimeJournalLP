@@ -1,7 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import { useState, useEffect, useRef } from 'react'
+import { useState } from 'react'
 
 interface CarouselItem {
   src: string
@@ -21,41 +21,11 @@ export default function BookConveyorCarousel({
   ]
 }: BookConveyorCarouselProps) {
   const [isInteracting, setIsInteracting] = useState(false)
-  const carouselRef = useRef<HTMLDivElement>(null)
-  
   // Duplicate images for seamless loop
   const allImages = [...images, ...images]
 
-  useEffect(() => {
-    const carousel = carouselRef.current
-    if (!carousel) return
-
-    const handleTouchStart = () => setIsInteracting(true)
-    const handleTouchMove = () => setIsInteracting(true)
-    const handleTouchEnd = () => setIsInteracting(false)
-    const handleTouchCancel = () => setIsInteracting(false)
-    const handleMouseEnter = () => setIsInteracting(true)
-    const handleMouseLeave = () => setIsInteracting(false)
-
-    // Touch events
-    carousel.addEventListener('touchstart', handleTouchStart, { passive: true })
-    carousel.addEventListener('touchmove', handleTouchMove, { passive: true })
-    carousel.addEventListener('touchend', handleTouchEnd, { passive: true })
-    carousel.addEventListener('touchcancel', handleTouchCancel, { passive: true })
-    
-    // Mouse events
-    carousel.addEventListener('mouseenter', handleMouseEnter)
-    carousel.addEventListener('mouseleave', handleMouseLeave)
-
-    return () => {
-      carousel.removeEventListener('touchstart', handleTouchStart)
-      carousel.removeEventListener('touchmove', handleTouchMove)
-      carousel.removeEventListener('touchend', handleTouchEnd)
-      carousel.removeEventListener('touchcancel', handleTouchCancel)
-      carousel.removeEventListener('mouseenter', handleMouseEnter)
-      carousel.removeEventListener('mouseleave', handleMouseLeave)
-    }
-  }, [])
+  const pause = () => setIsInteracting(true)
+  const resume = () => setIsInteracting(false)
 
   return (
     <motion.div
@@ -67,13 +37,21 @@ export default function BookConveyorCarousel({
       {/* Conveyor Belt Container */}
       <div className="relative w-full overflow-hidden">
         <div
-          ref={carouselRef}
           className="conveyor-wrapper"
           style={{ touchAction: 'pan-y' }}
+          onTouchStart={pause}
+          onTouchEnd={resume}
+          onTouchCancel={resume}
+          onPointerDown={pause}
+          onPointerUp={resume}
+          onPointerCancel={resume}
+          onPointerLeave={resume}
+          onMouseEnter={pause}
+          onMouseLeave={resume}
         >
           <div
             className="conveyor-belt"
-            style={{ animationPlayState: isInteracting ? 'paused' : undefined }}
+            style={{ animationPlayState: isInteracting ? 'paused' : 'running' }}
           >
             {allImages.map((image, index) => (
               <div
