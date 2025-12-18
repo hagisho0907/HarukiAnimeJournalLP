@@ -39,6 +39,7 @@ export default function BookConveyorCarousel({
           onPointerEnter={() => setIsInteracting(true)}
           onPointerLeave={() => setIsInteracting(false)}
           onTouchStart={() => setIsInteracting(true)}
+          onTouchMove={() => setIsInteracting(true)}
           onTouchEnd={() => setIsInteracting(false)}
           onTouchCancel={() => setIsInteracting(false)}
           onPointerUp={() => setIsInteracting(false)}
