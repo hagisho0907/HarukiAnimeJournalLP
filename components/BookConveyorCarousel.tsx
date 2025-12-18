@@ -36,9 +36,9 @@ export default function BookConveyorCarousel({
         <div
           className="conveyor-wrapper"
           style={{ touchAction: 'pan-y' }}
-          onPointerDown={() => setIsInteracting(true)}
-          onPointerUp={() => setIsInteracting(false)}
+          onPointerEnter={() => setIsInteracting(true)}
           onPointerLeave={() => setIsInteracting(false)}
+          onPointerUp={() => setIsInteracting(false)}
           onPointerCancel={() => setIsInteracting(false)}
         >
           <div
