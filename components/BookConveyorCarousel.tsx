@@ -1,7 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 interface CarouselItem {
   src: string
@@ -21,8 +21,41 @@ export default function BookConveyorCarousel({
   ]
 }: BookConveyorCarouselProps) {
   const [isInteracting, setIsInteracting] = useState(false)
+  const carouselRef = useRef<HTMLDivElement>(null)
+  
   // Duplicate images for seamless loop
   const allImages = [...images, ...images]
+
+  useEffect(() => {
+    const carousel = carouselRef.current
+    if (!carousel) return
+
+    const handleTouchStart = () => setIsInteracting(true)
+    const handleTouchMove = () => setIsInteracting(true)
+    const handleTouchEnd = () => setIsInteracting(false)
+    const handleTouchCancel = () => setIsInteracting(false)
+    const handleMouseEnter = () => setIsInteracting(true)
+    const handleMouseLeave = () => setIsInteracting(false)
+
+    // Touch events
+    carousel.addEventListener('touchstart', handleTouchStart, { passive: true })
+    carousel.addEventListener('touchmove', handleTouchMove, { passive: true })
+    carousel.addEventListener('touchend', handleTouchEnd, { passive: true })
+    carousel.addEventListener('touchcancel', handleTouchCancel, { passive: true })
+    
+    // Mouse events
+    carousel.addEventListener('mouseenter', handleMouseEnter)
+    carousel.addEventListener('mouseleave', handleMouseLeave)
+
+    return () => {
+      carousel.removeEventListener('touchstart', handleTouchStart)
+      carousel.removeEventListener('touchmove', handleTouchMove)
+      carousel.removeEventListener('touchend', handleTouchEnd)
+      carousel.removeEventListener('touchcancel', handleTouchCancel)
+      carousel.removeEventListener('mouseenter', handleMouseEnter)
+      carousel.removeEventListener('mouseleave', handleMouseLeave)
+    }
+  }, [])
 
   return (
     <motion.div
@@ -34,16 +67,9 @@ export default function BookConveyorCarousel({
       {/* Conveyor Belt Container */}
       <div className="relative w-full overflow-hidden">
         <div
+          ref={carouselRef}
           className="conveyor-wrapper"
           style={{ touchAction: 'pan-y' }}
-          onPointerEnter={() => setIsInteracting(true)}
-          onPointerLeave={() => setIsInteracting(false)}
-          onTouchStart={() => setIsInteracting(true)}
-          onTouchMove={() => setIsInteracting(true)}
-          onTouchEnd={() => setIsInteracting(false)}
-          onTouchCancel={() => setIsInteracting(false)}
-          onPointerUp={() => setIsInteracting(false)}
-          onPointerCancel={() => setIsInteracting(false)}
         >
           <div
             className="conveyor-belt"
