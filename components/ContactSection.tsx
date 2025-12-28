@@ -2,9 +2,13 @@
 import { motion } from 'framer-motion'
 import { InstagramIcon, TikTokIcon, YouTubeIcon } from './SocialIcons'
 
-export default function ContactSection() {
+interface ContactSectionProps {
+  id?: string
+}
+
+export default function ContactSection({ id }: ContactSectionProps = {}) {
   return (
-    <>
+    <div id={id}>
       {/* Decorative divider */}
       <div className="bg-brand-cream">
         <div className="h-1 bg-gradient-to-r from-brand-red via-brand-gold to-brand-red"></div>
@@ -93,6 +97,6 @@ export default function ContactSection() {
         </motion.div>
       </div>
       </section>
-    </>
+    </div>
   )
 }
