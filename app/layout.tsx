@@ -87,12 +87,7 @@ export default function RootLayout({
         {/* End Meta Pixel Code */}
       </head>
       <body className={`${inter.className} overflow-x-hidden`}>
-        <div className="bg-brand-gold text-black text-center py-2 font-bold text-lg fixed top-0 left-0 right-0 z-50">
-          dev版
-        </div>
-        <div className="pt-12">
-          {children}
-        </div>
+        {children}
       </body>
     </html>
   );
